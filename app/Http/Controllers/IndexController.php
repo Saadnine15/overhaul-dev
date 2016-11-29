@@ -76,7 +76,8 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function productsdb(){
-        return ProductModel::where('store_url', 'test-shop-368.myshopify.com')->pluck('product_id', 'handle');
+        $result = ProductModel::where('store_url', 'test-shop-368.myshopify.com')->pluck('product_id', 'handle');
+        echo gettype($result);
     }
 
     public function jobsFailed(){
