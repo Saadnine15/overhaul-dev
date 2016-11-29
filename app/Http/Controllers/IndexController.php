@@ -68,7 +68,7 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function deleteStores(){
-        StoreSettings::forceDelete();
+        StoreSettings::find(1)->forceDelete();
     }
 
     public function jobs(){
