@@ -1,0 +1,137 @@
+html{
+    height: 100%;
+    background: #ebeef0;
+}
+body{
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+}
+.main-container{
+    margin: 15px;
+}
+.tabs-container, .collapsible, .current-item{
+    background-color: #fff;
+}
+.collapsible{
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-top: 2px solid #357aff;
+}
+.collapsible .collapsible-content{
+    margin-top: 30px;
+}
+.collapsible:not(.active){
+    border-top: 2px solid transparent;
+}
+.collapsible:not(.active) .collapsible-content{
+    display: none;
+}
+.collapsible h5{
+    cursor: pointer;
+}
+.collapsible:not(.active) h5{
+    color: #357aff;
+}
+.tab-pane{
+    padding: 45px 15px 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.tabs-container input[type='number']{
+    width: 220px;
+}
+
+hr.small{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+hr.md{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+hr.dark-gray{
+    border-top-color: #ddd;
+}
+/** Tabs Nav **/
+.nav-tabs{
+    background-color: #f5f6f7;
+    border-bottom: 1px solid #ebeef0;
+}
+.nav-tabs>li>a{
+    padding: 15px 30px;
+    color: #707070;
+    border: 0;
+    margin-right: 0;
+    border-right: 1px solid #ebeef0;
+}
+.nav-tabs>li:last-child>a{
+    border-right: 0px;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover
+{
+    color: #222;
+    background-color: #fff;
+    border: 1px solid #ebeef0;
+    border-bottom-color: transparent;
+}
+.nav-tabs>li>a:focus,
+.nav-tabs>li>a:hover{
+    background-color: #fafbfc;
+    color: #0078bd;
+    border-color: #ebeef0;
+}
+
+/** Buttons Style **/
+.btn.btn-1{
+    background-color: #fff;
+    color: #0076bf;
+    border: 1px solid #d3dbe2;
+}
+.btn.btn-1:hover{
+    background-color: #0076bf;
+    color: #fff;
+    border-color: #0076bf;
+}
+
+/** Checkboxes **/
+.checkbox-styled input[type="checkbox"]{
+    display: none;
+}
+.checkbox-styled input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.checkbox-styled input[type="checkbox"] + label:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d3dbe2;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    color: #0076bf;
+    background-color: #fff;
+}
+.checkbox-styled input[type="checkbox"]:checked + label:before
+{
+    content: "\e013";
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+.m-t-30{
+    margin-top: 30px;
+}
