@@ -12,6 +12,7 @@ use App\StoreSettings;
 use App\BillingAPI;
 use App\Orders;
 use Request;
+use App\Models\Product as ProductModel;
 
 
 class WebhookController extends ShopifyAppBaseController{
@@ -25,6 +26,14 @@ class WebhookController extends ShopifyAppBaseController{
             }
         }
         parent::__construct( $shop_name );
+    }
+
+    public function postAddedNewProduct(){
+        $webhook_content = Request::input('webhook_data');
+
+        $product = new ProductModel();
+        $product->product_id = $webhook_content['id'];
+        $product->handle = $webhook_content['handle'];
     }
 
     public function postAddedNewCustomer(){

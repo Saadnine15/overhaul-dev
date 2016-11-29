@@ -9,6 +9,8 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use App\StoreSettings;
 
 use App\Models\Product as ProductModel;
+use App\Models\ProductVariant as ProductVariantModel;
+
 use App\Product;
 use App\ShopifyApiThrottle;
 use Request;
@@ -94,6 +96,8 @@ class ProductsImporter extends Job implements ShouldQueue
         $already_existing_product_ids = ProductModel::whereIn('product_id', $product_ids)->pluck('product_id', 'handle');
 
         $now = \Carbon\Carbon::now()->toDateTimeString();
+        ProductModel::where('store_url', $this->store_settings->shop_name)->get();
+
         foreach( $products as $index => $product ){
 
             $id_already_exists = false;
@@ -122,6 +126,14 @@ class ProductsImporter extends Job implements ShouldQueue
                 $product_to_be_updated->product_id = $product['id'];
                 $product_to_be_updated->handle = $product['handle'];
                 $product->save();
+
+                //variants
+                if( $id_already_exists ){
+                    $product_variants = ProductVariantModel::where('product_id', $product['id'])->get();
+                    if( !$product_variants->isEmpty() ){
+
+                    }
+                }
             }
         }
 
