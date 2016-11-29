@@ -107,6 +107,7 @@ class ProductsImporter extends Job implements ShouldQueue
                 $new_products[] = [
                     'product_id'    =>  $product['id'],
                     'handle'        =>  $product['handle'],
+                    'store_url'        =>  $this->store_settings->store_name,
                     'created_at'    =>  $now,
                     'updated_at'    =>  $now
                 ];
