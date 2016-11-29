@@ -9,6 +9,7 @@ use App\StoreSettings;
 use App\BillingAPI;
 use App\Orders;
 use App\Product;
+use App\Models\Product as ProductModel;
 use Log;
 use saudslm\ShopifyAppHelper\ShopifyAppHepler;
 use App\ShopifyApiThrottle;
@@ -68,6 +69,10 @@ class IndexController extends ShopifyAppInstallationBaseController
 
     public function jobs(){
         return ShopifyBaseModel::all();
+    }
+
+    public function productsdb(){
+        ProductModel::whereIn('product_id', [1,2,3])->pluck('product_id', 'id');
     }
 
     public function jobsFailed(){
