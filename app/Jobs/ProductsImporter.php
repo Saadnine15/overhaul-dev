@@ -91,7 +91,7 @@ class ProductsImporter extends Job implements ShouldQueue
         $new_products = [];
 
         $already_existing_product_ids = array_column($products, 'id');
-        $already_existing_product = Product::whereIn('product_id', $already_existing_product_ids)->;
+        $already_existing_product = Product::whereIn('product_id', $already_existing_product_ids)->pluck('product_id', 'id');
 
         $now = \Carbon\Carbon::now()->toDateTimeString();
         foreach( $products as $index => $product ){
