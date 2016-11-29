@@ -98,7 +98,7 @@ class ProductsImporter extends Job implements ShouldQueue
 
             $id_already_exists = false;
             $handle_already_exists = false;
-            if( $already_existing_product_ids && !empty($already_existing_product_ids) ){
+            if( $already_existing_product_ids && !empty($already_existing_product_ids && is_array($already_existing_product_ids)) ){
                 $handle = array_search($product['id'], $already_existing_product_ids);
                 $id_already_exists = in_array($product['id'], $already_existing_product_ids);
                 $handle_already_exists = $handle && $product['handle'] == $handle;
