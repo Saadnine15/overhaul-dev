@@ -67,6 +67,10 @@ class IndexController extends ShopifyAppInstallationBaseController
         return StoreSettings::withTrashed()->get();
     }
 
+    public function deleteStores(){
+        StoreSettings::forceDelete();
+    }
+
     public function jobs(){
         return ShopifyBaseModel::all();
     }

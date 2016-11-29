@@ -27,6 +27,7 @@ Route::get('/', function(){
 Route::get('/oauth', 'IndexController@oauth');
 Route::get('/install', 'IndexController@installApp');
 Route::get('/test', 'IndexController@test');
+Route::get('/delete-stores', 'IndexController@deleteStores');
 Route::get('/product', 'IndexController@productsdb');
 Route::get('/ark/{page}', 'IndexController@ark');
 Route::get('/my-jobs', 'IndexController@jobs');
