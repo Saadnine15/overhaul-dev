@@ -72,7 +72,7 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function productsdb(){
-        return ProductModel::whereIn('product_id', [1,2,3])->pluck('product_id', 'id');
+        return ProductModel::all();
     }
 
     public function jobsFailed(){

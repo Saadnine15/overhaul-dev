@@ -8,6 +8,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use App\StoreSettings;
 
+use App\Models\Product as ProductModel;
 use App\Product;
 use App\ShopifyApiThrottle;
 use Request;
@@ -87,60 +88,41 @@ class ProductsImporter extends Job implements ShouldQueue
         return $all_products;
     }
 
-    private function import($products){
+    private function importProductsInDatabase($products){
         $new_products = [];
 
-        $already_existing_product_ids = array_column($products, 'id');
-        $already_existing_product = Product::whereIn('product_id', $already_existing_product_ids)->pluck('product_id', 'id');
+        $product_ids = array_column($products, 'id');
+        $already_existing_product_ids = Product::whereIn('product_id', $product_ids)->pluck('product_id', 'handle');
 
         $now = \Carbon\Carbon::now()->toDateTimeString();
         foreach( $products as $index => $product ){
-            $new_products[] = [
-                'product_id'    =>  $product['id'],
-                'handle'        =>  $product['handle'],
-                'created_at'    =>  $now,
-                'updated_at'    =>  $now
-            ];
-        }
-        Product::insert($new_products);
-    }
+            $handle = array_search($product['id'], $already_existing_product_ids);
 
-    private function importProductsInDatabase($products){
-        Product::initStore( $this->store_settings->client_store_url, $this->store_settings->client_store_api_key, $this->store_settings->client_store_password, true);
-        $import_settings = $this->request;
-        $skip_flag = false;
-        //to init start time
-        ShopifyApiThrottle::init();
-        foreach( $products as $index => $product ){
-            $skip_flag = false;
-            //wait for some time so it doesn't reach throttle point
-            if( $index > 0 ){ ShopifyApiThrottle::wait(); }
-
-            //if product needs to be made hidden
-            if(isset($import_settings['hidden']) && $import_settings['hidden'] == 'yes'){
-                $product['published_at'] = null;
-            }
-
-            $already_existed_product = Product::findByHandle($product['handle']);
-            if($already_existed_product){
-                if(isset($import_settings['overwriteProducts']) && $import_settings['overwriteProducts'] == 'yes'){
-                    $product['id'] = $already_existed_product['id'];
-                } else{
-                    $skip_flag = true;
+            $id_already_exists = in_array($product['id'], $already_existing_product_ids);
+            $handle_already_exists = $handle && $product['handle'] == $handle;
+            if( (!$handle_already_exists && !$id_already_exists) ){
+                $new_products[] = [
+                    'product_id'    =>  $product['id'],
+                    'handle'        =>  $product['handle'],
+                    'created_at'    =>  $now,
+                    'updated_at'    =>  $now
+                ];
+            } else {
+                //one of Handle or ID already exists in database
+                //update handle or id in database
+                if($id_already_exists){
+                    $product_to_be_updated = ProductModel::where('product_id', $product['id'])->first();
+                } elseif($handle_already_exists){
+                    $product_to_be_updated = ProductModel::where('handle', $product['handle'])->first();
                 }
-            } else{
-                unset($product['id']);
+                $product_to_be_updated->product_id = $product['id'];
+                $product_to_be_updated->handle = $product['handle'];
+                $product->save();
             }
-
-            if( !$skip_flag ){
-                $DESC = $product['body_html'];
-                $product['body_html'] = $this->clean_html_string($DESC);
-                Product::save($product);
-            }
-
-            //to re-init start time
-            ShopifyApiThrottle::init();
         }
+
+        if( !empty($new_products) )
+            ProductModel::insert($new_products);
     }
 
     private function clean_html_string($string){

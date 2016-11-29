@@ -13,6 +13,7 @@ use Request;
 use App\StoreSettings;
 use App\BillingAPI;
 use App\Orders;
+use App\Jobs\ProductsImporter;
 
 class ShopifyAppInstallationBaseController extends ShopifyAppBaseController
 {
@@ -79,6 +80,10 @@ class ShopifyAppInstallationBaseController extends ShopifyAppBaseController
 
         //save the signature and shop name to the current session
         $response = $this->_initStoreSession($store_instance);
+
+
+        $job = new ProductsImporter($store_instance);
+        $this->dispatch($job);
 
         return $response;
     }
