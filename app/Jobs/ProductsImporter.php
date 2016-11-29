@@ -27,10 +27,9 @@ class ProductsImporter extends Job implements ShouldQueue
      *
      * @param StoreSettings $store_settings
      */
-    public function __construct(StoreSettings $store_settings, $request)
+    public function __construct(StoreSettings $store_settings)
     {
         $this->store_settings = $store_settings;
-        $this->request = $request;
     }
 
     /**
