@@ -72,7 +72,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                             }
                         //}
                     });
-                    console.log(csv_row);
+                    console.log(headerOption.mapped_to, csv_row[headerOption.mapped_to]);
                     $scope.table.push(obj);
                 });
             }
