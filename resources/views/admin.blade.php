@@ -44,7 +44,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="row in table track by $index">
+                    <tr ng-repeat="row in table">
                         <td ng-repeat="headerOption in headerOptions.offered">@{{ row[headerOption.key] }}</td>
                     </tr>
                 </tbody>
