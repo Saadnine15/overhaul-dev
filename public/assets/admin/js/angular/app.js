@@ -17,7 +17,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         $scope.csv = {};
 
         $scope.readCSV = function(csv_data){
-            console.log(data);
+            console.log(csv_data);
         }
 
 
