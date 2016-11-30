@@ -32,13 +32,12 @@ var angularApp = angular.module('product-updating-app', included_modules)
             $scope.csv = csv_data;
             $scope.headerOptions.inCSV[""] = "Select an option";
             angular.forEach(csv_data.headers, function(value, key){
-                console.log(key + ': ' + value);
                 $scope.headerOptions.inCSV[value] = value;
             });
         };
 
         $scope.updateProducts = function(){
-
+            console.log($scope.headerOptions.offered);
         }
 
 
@@ -64,7 +63,6 @@ var angularApp = angular.module('product-updating-app', included_modules)
         });*/
 
         $scope.saveChildStoreSettings = function(){
-            console.log($scope.headerOptions.offered);
             /*var config = {};
             shopifyApp.Bar.loadingOn();
             $http.post('/save-child-store', $scope.childStore, config)
