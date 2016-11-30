@@ -100,7 +100,7 @@ class IndexController extends ShopifyAppInstallationBaseController
         }*/
         $product_id = $webhook_content['id'];
 
-        ProductModel::where('product_id', $product_id)->delete();
+        return ProductModel::where('product_id', $product_id)->first();
         ProductVariantModel::where('product_id', $product_id)->delete();
     }
 
