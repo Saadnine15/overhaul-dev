@@ -76,7 +76,7 @@ class IndexController extends ShopifyAppInstallationBaseController
         $product = new ProductModel();
         $product->product_id = $webhook_content['id'];
         $product->handle = $webhook_content['handle'];
-        $product->shop_url = $this->store;
+        $product->store_url = $store_settings->store_name;
         $product->save();
 
         // Variants

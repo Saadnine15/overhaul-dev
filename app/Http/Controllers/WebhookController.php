@@ -33,7 +33,7 @@ class WebhookController extends ShopifyAppBaseController{
         $product = new ProductModel();
         $product->product_id = $webhook_content['id'];
         $product->handle = $webhook_content['handle'];
-        $product->shop_url = $this->store;
+        $product->store_url = $this->store;
         $product->save();
 
         // Variants
@@ -73,7 +73,7 @@ class WebhookController extends ShopifyAppBaseController{
         $product = ProductModel::where('product_id', $product_id)->first();
         $product->product_id = $webhook_content['id'];
         $product->handle = $webhook_content['handle'];
-        $product->shop_url = $this->store;
+        $product->store_url = $this->store;
         $product->save();
 
         // Variants
