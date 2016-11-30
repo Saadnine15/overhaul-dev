@@ -58,6 +58,24 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 });*/
         }
 
+        $scope.table = [];
+        $scope.updateTable = function(headerOption){
+            var obj = {};
+            if(headerOption.mapped_to != ""){
+                angular.forEach($scope.csv, function(csv_row, key){
+                    angular.forEach($scope.headerOptions.offered, function(option, k){
+                        if(option.mapped_to != ""){
+                            obj[option.key] = csv_row[option.mapped_to];
+                        } else{
+                            obj[option.key] = "";
+                        }
+                    });
+
+                    $scope.table.push(obj);
+                });
+            }
+        }
+
 
 
 
