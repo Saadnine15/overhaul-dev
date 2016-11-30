@@ -30,6 +30,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
         $scope.readCSV = function(csv_data){
             $scope.csv = csv_data;
+            $scope.headerOptions.inCSV[""] = "Select an option";
             angular.forEach(csv_data.headers, function(value, key){
                 console.log(key + ': ' + value);
                 $scope.headerOptions.inCSV[value] = value;
@@ -54,9 +55,9 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
         $scope.products = [];
 
-        $http.get('/get-child-store').then(function(value) {
+        /*$http.get('/get-child-store').then(function(value) {
             $scope.childStore = value.data;
-        });
+        });*/
 
         /*$http.get('/products').then(function(value) {
             $scope.products = value.data;
