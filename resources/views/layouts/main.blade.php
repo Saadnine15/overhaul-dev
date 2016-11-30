@@ -45,7 +45,7 @@
 
 </head>
 
-<body ng-app="customer-tagging-app">
+<body ng-app="product-updating-app">
 <input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}"/>
 <div class="main-container">
     @yield('content')

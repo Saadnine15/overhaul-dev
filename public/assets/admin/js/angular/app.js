@@ -1,5 +1,5 @@
 var included_modules = [];
-var angularApp = angular.module('customer-tagging-app', included_modules)
+var angularApp = angular.module('product-updating-app', included_modules)
 
     .config(function($httpProvider, $provide) {
         //alert(angular.element($("#_token")).val());
@@ -7,6 +7,16 @@ var angularApp = angular.module('customer-tagging-app', included_modules)
     })
 
     .controller('StoreController', ['$rootScope', '$scope', '$http', 'shopifyApp', function ($rootScope, $scope, $http, shopifyApp) {
+        $scope.headerOptions = [];
+        $scope.headerOptions.offered = {
+            "variant_id": "Variant Id",
+            "variant_price": "Variant Price",
+            "variant_compare_at_price": "Compare at Price"
+        };
+        $scope.headerOptions.inCSV = {};
+
+
+
 
         $scope.childStore = {};
         $scope.childStore.Url = "";
@@ -28,7 +38,7 @@ var angularApp = angular.module('customer-tagging-app', included_modules)
         });*/
 
         $scope.saveChildStoreSettings = function(){
-            var config = {};
+            /*var config = {};
             shopifyApp.Bar.loadingOn();
             $http.post('/save-child-store', $scope.childStore, config)
                 .then(function (data, status, headers, config) {
@@ -41,13 +51,11 @@ var angularApp = angular.module('customer-tagging-app', included_modules)
                         "<hr />config: " + config;
                     shopifyApp.flashError("An error occurred while saving.");
                     shopifyApp.Bar.loadingOff();
-                });
+                });*/
         }
 
         $scope.importProducts = function(){
-            $http.post('/products/import', $scope.importSettings).then(function(value) {
 
-            });
         }
 
         //init Shopify App
