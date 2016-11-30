@@ -37,7 +37,7 @@
                     </div>
                 </div>
             </div>
-            <table>
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <td ng-repeat="headerOption in headerOptions.offered">@{{ headerOption.value }}</td>
