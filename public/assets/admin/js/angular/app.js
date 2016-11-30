@@ -111,7 +111,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         return {
             restrict: 'A',
             scope: {
-                results: '=bind',
+                csv: '=',
                 separator: '=',
                 callback: '&saveResultsCallback'
             },
