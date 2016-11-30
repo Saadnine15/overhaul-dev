@@ -41,7 +41,8 @@ class APIController extends ShopifyApiBaseController {
                         $arr[$shopify_key] = $row[$csv_key];
                         if($shopify_key == "sku"){
                             //if( isset($variants_array[$arr[$shopify_key]]) ){
-                                $arr["id"] = $variants_array[$arr[$shopify_key]];
+                                $arr[$shopify_key] = ltrim($arr[$shopify_key], "'");
+                                $arr["id"] = $variants_array[$arr[$shopify_key]]['variant_id'];
                             //}
                         }
                     }
