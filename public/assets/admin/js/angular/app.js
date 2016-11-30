@@ -72,11 +72,11 @@ var angularApp = angular.module('product-updating-app', included_modules)
                             }
                         //}
                     });
-
+                    console.log(csv_row);
                     $scope.table.push(obj);
                 });
             }
-            console.log($scope.table)
+            //console.log($scope.table)
         }
 
 
