@@ -153,7 +153,6 @@ class ShopifyAppInstallationBaseController extends ShopifyAppBaseController
 
         $webhook = $shopify('POST', '/admin/webhooks.json', $webhook_params);
         return $webhook;
-
     }
 
     /**

@@ -32,7 +32,8 @@ class ShopifyModel
      * @var string
      */
     private static $shopify_entity_to_uri_mapping = [
-        "product"   =>      "/admin/products/#{id}.json"
+        "product"   =>      "/admin/products/#{id}.json",
+        "variant"   =>      ""
     ];
 
     public function __construct($shop = '', $access_token = '')
@@ -124,19 +125,20 @@ class ShopifyModel
         return self::get($count_uri, $params);
     }
 
-    public static function save( $params = [] ){
+    public static function save( $params = [], $request_uri = "" ){
         $entity = [];
         $instance = new static;
         $entity_name = $instance->shopify_entity;
         if( isset($params[$entity_name]) ){
             $params = $params[$entity_name];
         }
+
         if( isset($params['id']) && !empty($params['id']) ){
-            $uri = self::get_uri($params['id']);
+            $uri = $request_uri != "" ? $request_uri : self::get_uri($params['id']);
             $entity = self::put($uri, [$entity_name => $params]);
 
         } else{
-            $uri = self::get_uri();
+            $uri = $request_uri != "" ? $request_uri : self::get_uri();
             $entity = self::post($uri, [$entity_name => $params]);
         }
         return $entity;

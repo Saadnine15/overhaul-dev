@@ -7,6 +7,8 @@
  */
 
 namespace App\Http\Controllers;
+
+use App\Jobs\ProductsUpdater;
 use Request;
 use App\Models\ProductVariant as ProductVariantModel;
 
@@ -37,10 +39,17 @@ class APIController extends ShopifyApiBaseController {
                 foreach ($key_mapping_array as $csv_key => $shopify_key){
                     if(isset($row[$csv_key])){
                         $arr[$shopify_key] = $row[$csv_key];
+                        if($shopify_key == "sku"){
+                            $arr["id"] = $variants_array[$arr[$shopify_key]];
+                        }
                     }
                 }
                 $shopify_request_param_arr[] = $arr;
             }
+
+            $store_settings = StoreSettings::where('store_name', session()->get('shop'))->first();
+            $job = new ProductsUpdater($store_settings);
+            $this->dispatch($job);
 
             return $shopify_request_param_arr;
         }
