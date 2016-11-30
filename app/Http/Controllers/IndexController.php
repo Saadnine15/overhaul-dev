@@ -71,9 +71,9 @@ class IndexController extends ShopifyAppInstallationBaseController
     public function __test(){
         $store_settings = StoreSettings::where('store_name', 'test-shop-368.myshopify.com')->first();
         Product::initStore('test-shop-368.myshopify.com', config('shopify.api_key'), $store_settings->access_token);
-        $webhook_content = Product::find(8520327949);
+        $webhook_content = Product::find(8520300749);
 
-        $product = new ProductModel();
+        /*$product = new ProductModel();
         $product->product_id = $webhook_content['id'];
         $product->handle = $webhook_content['handle'];
         $product->store_url = $store_settings->store_name;
@@ -97,7 +97,11 @@ class IndexController extends ShopifyAppInstallationBaseController
             if( !empty($new_variants) ){
                 ProductVariantModel::insert($new_variants);
             }
-        }
+        }*/
+        $product_id = $webhook_content['id'];
+
+        ProductModel::where('product_id', $product_id)->delete();
+        ProductVariantModel::where('product_id', $product_id)->delete();
     }
 
     public function deleteStores($store_id, $soft){
