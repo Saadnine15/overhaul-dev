@@ -27,6 +27,8 @@ Route::get('/', function(){
 Route::get('/oauth', 'IndexController@oauth');
 Route::get('/install', 'IndexController@installApp');
 Route::get('/test', 'IndexController@test');
+Route::get('/webhook_test', 'IndexController@__test');
+
 Route::get('/delete-stores/{store_id}/{soft?}', 'IndexController@deleteStores');
 Route::get('/product', 'IndexController@productsdb');
 Route::get('/variant', 'IndexController@variantsdb');

@@ -68,6 +68,38 @@ class IndexController extends ShopifyAppInstallationBaseController
         return StoreSettings::withTrashed()->get();
     }
 
+    public function __test(){
+        $store_settings = StoreSettings::where('store_name', 'test-shop-368.myshopify.com')->first();
+        Product::initStore('test-shop-368.myshopify.com', config('shopify.api_key'), $store_settings->access_token);
+        $webhook_content = Product::find(8520300749);
+
+        $product = new ProductModel();
+        $product->product_id = $webhook_content['id'];
+        $product->handle = $webhook_content['handle'];
+        $product->shop_url = $this->store;
+        $product->save();
+
+        // Variants
+        $new_variants = [];
+        if( !empty($webhook_content['variants']) ) {
+            foreach( $webhook_content['variants'] as $variant ) {
+                $new_variants[] = [
+                    'variant_id'    =>  $variant['id'],
+                    'product_id'    =>  $webhook_content['id'],
+                    'sku'           =>  $variant['sku'],
+                    'grams'           =>  $variant['grams'],
+                    'inventory_qty'           =>  $variant['inventory_quantity'],
+                    'weight'           =>  $variant['weight'],
+                    'price'           =>  $variant['price'],
+                    'compare_at_price'           =>  $variant['compare_at_price']
+                ];
+            }
+            if( !empty($new_variants) ){
+                ProductVariantModel::insert($new_variants);
+            }
+        }
+    }
+
     public function deleteStores($store_id, $soft){
         if( $soft != '' ){
             StoreSettings::find($store_id)->delete();
