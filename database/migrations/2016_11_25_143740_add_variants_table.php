@@ -18,6 +18,7 @@ class AddVariantsTable extends Migration
             $table->bigInteger('product_id');
             $table->string('sku')->nullable();
             $table->double('grams')->nullable();
+            $table->double('weight')->nullable();
             //$table->string('inventory_tracker')->nullable();
             //$table->string('inventory_policy')->nullable();
             $table->integer('inventory_qty');

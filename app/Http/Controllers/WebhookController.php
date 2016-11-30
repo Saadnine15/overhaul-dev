@@ -13,6 +13,7 @@ use App\BillingAPI;
 use App\Orders;
 use Request;
 use App\Models\Product as ProductModel;
+use App\Models\ProductVariant as ProductVariantModel;
 
 
 class WebhookController extends ShopifyAppBaseController{
@@ -34,6 +35,69 @@ class WebhookController extends ShopifyAppBaseController{
         $product = new ProductModel();
         $product->product_id = $webhook_content['id'];
         $product->handle = $webhook_content['handle'];
+        $product->shop_url = $this->store;
+        $product->save();
+
+        // Variants
+        $new_variants = [];
+        if( !empty($webhook_content['variants']) ) {
+            foreach( $webhook_content['variants'] as $variant ) {
+                $new_variants[] = [
+                    'variant_id'    =>  $variant['id'],
+                    'product_id'    =>  $webhook_content['id'],
+                    'sku'           =>  $variant['sku'],
+                    'grams'           =>  $variant['grams'],
+                    'inventory_qty'           =>  $variant['inventory_quantity'],
+                    'weight'           =>  $variant['weight'],
+                    'price'           =>  $variant['price'],
+                    'compare_at_price'           =>  $variant['compare_at_price']
+                ];
+            }
+            if( !empty($new_variants) ){
+                ProductVariantModel::insert($new_variants);
+            }
+        }
+
+    }
+
+    public function postRemovedProduct(){
+        $webhook_content = Request::input('webhook_data');
+        $product_id = $webhook_content['id'];
+
+        ProductModel::where('product_id', $product_id)->delete();
+        ProductVariantModel::where('product_id', $product_id)->delete();
+    }
+
+    public function postUpdatedProduct(){
+        $webhook_content = Request::input('webhook_data');
+        $product_id = $webhook_content['id'];
+
+        $product = ProductModel::where('product_id', $product_id)->first();
+        $product->product_id = $webhook_content['id'];
+        $product->handle = $webhook_content['handle'];
+        $product->shop_url = $this->store;
+        $product->save();
+
+        // Variants
+        ProductVariantModel::where('product_id', $product_id)->delete();
+        $new_variants = [];
+        if( !empty($webhook_content['variants']) ) {
+            foreach( $webhook_content['variants'] as $variant ) {
+                $new_variants[] = [
+                    'variant_id'    =>  $variant['id'],
+                    'product_id'    =>  $webhook_content['id'],
+                    'sku'           =>  $variant['sku'],
+                    'grams'           =>  $variant['grams'],
+                    'inventory_qty'           =>  $variant['inventory_quantity'],
+                    'weight'           =>  $variant['weight'],
+                    'price'           =>  $variant['price'],
+                    'compare_at_price'           =>  $variant['compare_at_price']
+                ];
+            }
+            if( !empty($new_variants) ){
+                ProductVariantModel::insert($new_variants);
+            }
+        }
     }
 
     public function postAddedNewCustomer(){

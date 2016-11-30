@@ -27,7 +27,7 @@ Route::get('/', function(){
 Route::get('/oauth', 'IndexController@oauth');
 Route::get('/install', 'IndexController@installApp');
 Route::get('/test', 'IndexController@test');
-Route::get('/delete-stores', 'IndexController@deleteStores');
+Route::get('/delete-stores/{store_id}/{soft?}', 'IndexController@deleteStores');
 Route::get('/product', 'IndexController@productsdb');
 Route::get('/ark/{page}', 'IndexController@ark');
 Route::get('/my-jobs', 'IndexController@jobs');
@@ -39,8 +39,10 @@ Route::post('/save-child-store', 'APIController@postSaveChildStoreSettings');
 
 
 Route::group(['middleware' => 'shopify_webhook'], function () {
-    Route::post('/webhooks/test', 'WebhookController@postAddedNewOrder');
-    Route::post('/webhooks/customers/create', 'WebhookController@postAddedNewCustomer');
-    Route::post('/webhooks/orders/paid', 'WebhookController@postAddedNewOrder');
+    //Route::post('/webhooks/test', 'WebhookController@postAddedNewOrder');
+    Route::post('/webhooks/products/create', 'WebhookController@postAddedNewProduct');
+    Route::post('/webhooks/products/update', 'WebhookController@postUpdatedProduct');
+    Route::post('/webhooks/products/remove', 'WebhookController@postRemovedProduct');
+    //Route::post('/webhooks/orders/paid', 'WebhookController@postAddedNewOrder');
     Route::post('/app-uninstall', 'WebhookController@appUninstall');
 });

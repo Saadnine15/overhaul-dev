@@ -90,13 +90,28 @@ class ProductsImporter extends Job implements ShouldQueue
     }
 
     private function importProductsInDatabase($products){
-        $new_products = [];
 
+        $this->deleteAlreadyExistingVariants();
+        $this->insertProductsInDatabase($products);
+
+    }
+
+    private function deleteAlreadyExistingVariants(){
+        $product_ids = ProductModel::where('store_url', $this->store_settings->shop_name)->pluck('product_id', 'id')->toArray();
+        if( !empty($product_ids) ){
+            ProductVariantModel::whereIn('product_id', $product_ids)->delete();
+        }
+    }
+
+    private function insertProductsInDatabase($products){
+        $new_products = [];
+        $new_variants = [];
         $product_ids = array_column($products, 'id');
         $already_existing_product_ids = ProductModel::whereIn('product_id', $product_ids)->pluck('product_id', 'handle')->toArray();
 
         $now = \Carbon\Carbon::now()->toDateTimeString();
-        ProductModel::where('store_url', $this->store_settings->shop_name)->get();
+
+
 
         foreach( $products as $index => $product ){
 
@@ -126,19 +141,30 @@ class ProductsImporter extends Job implements ShouldQueue
                 $product_to_be_updated->product_id = $product['id'];
                 $product_to_be_updated->handle = $product['handle'];
                 $product->save();
+            }
 
-                //variants
-                if( $id_already_exists ){
-                    $product_variants = ProductVariantModel::where('product_id', $product['id'])->get();
-                    if( !$product_variants->isEmpty() ){
-
-                    }
+            //variants
+            if( !empty($product['variants']) ){
+                foreach( $product['variants'] as $variant ){
+                    $new_variants[] = [
+                        'variant_id'        =>  $variant['id'],
+                        'product_id'        =>  $product['id'],
+                        'sku'               =>  $variant['sku'],
+                        'grams'             =>  $variant['grams'],
+                        'inventory_qty'     =>  $variant['inventory_quantity'],
+                        'weight'            =>  $variant['weight'],
+                        'price'             =>  $variant['price'],
+                        'compare_at_price'  =>  $variant['compare_at_price']
+                    ];
                 }
             }
         }
 
         if( !empty($new_products) )
             ProductModel::insert($new_products);
+        if( !empty($new_variants) ){
+            ProductVariantModel::insert($new_variants);
+        }
     }
 
     private function clean_html_string($string){

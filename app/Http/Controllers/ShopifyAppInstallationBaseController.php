@@ -85,7 +85,75 @@ class ShopifyAppInstallationBaseController extends ShopifyAppBaseController
         $job = new ProductsImporter($store_instance);
         $this->dispatch($job);
 
+        $this->registerProductWebhooks();
+
         return $response;
+    }
+
+    private function registerProductWebhooks(){
+        $this->_registerAppUnInstallWebhook();
+
+        // Product create, update, delete webhooks
+        $this->registerCreateProductWebhook();
+        $this->registerUpdateProductWebhook();
+        $this->registerDeleteProductWebhook();
+    }
+
+    private function registerCreateProductWebhook(){
+        $webhook_params = [
+            'webhook' => [
+                'topic' => 'products/create',
+                'address' => url('/webhooks/products/create'),
+                'format' => 'json'
+            ]
+        ];
+        $shopify = $this->_shopifyApi();
+
+        $webhook = $shopify('POST', '/admin/webhooks.json', $webhook_params);
+        return $webhook;
+    }
+
+    private function registerUpdateProductWebhook(){
+        $webhook_params = [
+            'webhook' => [
+                'topic' => 'products/update',
+                'address' => url('/webhooks/products/update'),
+                'format' => 'json'
+            ]
+        ];
+        $shopify = $this->_shopifyApi();
+
+        $webhook = $shopify('POST', '/admin/webhooks.json', $webhook_params);
+        return $webhook;
+    }
+
+    private function registerDeleteProductWebhook(){
+        $webhook_params = [
+            'webhook' => [
+                'topic' => 'products/delete',
+                'address' => url('/webhooks/products/delete'),
+                'format' => 'json'
+            ]
+        ];
+        $shopify = $this->_shopifyApi();
+
+        $webhook = $shopify('POST', '/admin/webhooks.json', $webhook_params);
+        return $webhook;
+    }
+
+    private function _registerAppUnInstallWebhook(){
+        $webhook_params = [
+            'webhook' => [
+                'topic' => 'app/uninstalled',
+                'address' => url('/app-uninstall'),
+                'format' => 'json'
+            ]
+        ];
+        $shopify = $this->_shopifyApi();
+
+        $webhook = $shopify('POST', '/admin/webhooks.json', $webhook_params);
+        return $webhook;
+
     }
 
     /**

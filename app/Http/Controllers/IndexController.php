@@ -67,8 +67,12 @@ class IndexController extends ShopifyAppInstallationBaseController
         return StoreSettings::withTrashed()->get();
     }
 
-    public function deleteStores(){
-        StoreSettings::find(1)->forceDelete();
+    public function deleteStores($store_id, $soft){
+        if( $soft != '' ){
+            StoreSettings::find($store_id)->delete();
+        } else {
+            StoreSettings::find($store_id)->forceDelete();
+        }
     }
 
     public function jobs(){
@@ -76,7 +80,7 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function productsdb(){
-        $result = ProductModel::where('store_url', 'test-shop-368.myshopifya.com')->pluck('product_id', 'handle')->toArray();
+        $result = ProductModel::where('store_url', 'test-shop-368.myshopify.com')->pluck('product_id', 'handle')->toArray();
         return $result;
     }
 
