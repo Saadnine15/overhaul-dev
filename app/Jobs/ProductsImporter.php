@@ -140,7 +140,7 @@ class ProductsImporter extends Job implements ShouldQueue
                 }
                 $product_to_be_updated->product_id = $product['id'];
                 $product_to_be_updated->handle = $product['handle'];
-                $product->save();
+                $product_to_be_updated->save();
             }
 
             //variants
