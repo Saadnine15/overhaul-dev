@@ -17,7 +17,7 @@
     <div ng-controller="StoreController">
         <div class="white-block">
 
-            <input type="file" csv-reader="" save-results-callback="readCSV">
+            <input type="file" csv-reader="" save-results-callback="readCSV(results)">
 
             <br/>
             <div class="row" ng-repeat="headerOption in headerOptions.offered">
