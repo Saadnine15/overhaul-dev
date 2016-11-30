@@ -16,6 +16,10 @@
 
     <div ng-controller="StoreController">
         <div class="white-block">
+
+            <input type="file" csv-reader="" callback="readCSV">
+
+            <br/>
             <div class="row" ng-repeat="headerOption in headerOptions.offered">
                 <div class="col-sm-6">
                     <div class="form-group">
