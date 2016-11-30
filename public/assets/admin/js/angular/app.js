@@ -23,6 +23,11 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 key: "variant_compare_at_price",
                 value: "Compare at Price",
                 mapped_to: ""
+            },
+            {
+                key: "variant_inventory_qty",
+                value: "Inventory Quantity",
+                mapped_to: ""
             }
         ];
         $scope.headerOptions.inCSV = {};
