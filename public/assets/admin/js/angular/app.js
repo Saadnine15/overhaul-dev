@@ -16,7 +16,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         $scope.headerOptions.inCSV = {};
         $scope.csv = {};
 
-        $scope.readCSV = function(data){
+        $scope.readCSV = function(csv_data){
             console.log(data);
         }
 
@@ -149,11 +149,11 @@ var angularApp = angular.module('product-updating-app', included_modules)
                             scope.$apply(function () {
 
                                 // Our data after it has been converted to JSON
-                                scope.csv = convertToJSON(data);
+                                res = convertToJSON(data);
 
 
                                 // Call our callback function
-                                scope.callback(scope.csv);
+                                scope.callback({csv_data: res});
                             });
                         };
 
