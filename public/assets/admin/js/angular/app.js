@@ -147,8 +147,8 @@ var angularApp = angular.module('product-updating-app', included_modules)
                             scope.$apply(function () {
 
                                 // Our data after it has been converted to JSON
-                                console.log(data);
                                 res = convertToJSON(data);
+                                console.log(res);
 
                                 // Call our callback function
                                 scope.callback(res);
