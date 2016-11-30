@@ -61,6 +61,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         $scope.table = [];
         $scope.updateTable = function(headerOption){
             var obj = {};
+            var table = [];
             if(headerOption.mapped_to != ""){
                 angular.forEach($scope.csv, function(csv_row, key){
                     angular.forEach($scope.headerOptions.offered, function(option, k){
@@ -73,9 +74,10 @@ var angularApp = angular.module('product-updating-app', included_modules)
                             }
                         //}
                     });
-                    $scope.table.push(obj);
+                    table.push(obj);
                 });
             }
+            $scope.table = table;
             //console.log($scope.table)
         }
 
