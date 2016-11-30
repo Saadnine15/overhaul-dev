@@ -16,8 +16,8 @@ var angularApp = angular.module('product-updating-app', included_modules)
         $scope.headerOptions.inCSV = {};
         $scope.csv = {};
 
-        $scope.readCSV = function(){
-            console.log($scope.csv);
+        $scope.readCSV = function(data){
+            console.log(data);
         }
 
 
@@ -153,7 +153,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
 
                                 // Call our callback function
-                                scope.callback();
+                                scope.callback(scope.csv);
                             });
                         };
 
