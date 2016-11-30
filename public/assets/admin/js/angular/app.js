@@ -64,6 +64,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         });*/
 
         $scope.saveChildStoreSettings = function(){
+            console.log($scope.headerOptions.offered);
             /*var config = {};
             shopifyApp.Bar.loadingOn();
             $http.post('/save-child-store', $scope.childStore, config)
