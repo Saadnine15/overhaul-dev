@@ -110,6 +110,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         return {
             restrict: 'A',
             scope: {
+                results: '=',
                 separator: '=',
                 callback: '&saveResultsCallback'
             },
@@ -148,11 +149,11 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
                                 // Our data after it has been converted to JSON
                                 res = convertToJSON(data);
-                                scope.resultes = res;
+                                scope.results = res;
                                 console.log(res);
 
                                 // Call our callback function
-                                scope.callback(res);
+                                scope.callback(scope.results);
                             });
                         };
 
