@@ -111,7 +111,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
             restrict: 'A',
             scope: {
                 separator: '=',
-                callback: '&'
+                callback: '&saveResultsCallback'
             },
             link: function (scope, element, attrs) {
 
