@@ -9,8 +9,6 @@
 namespace App\Http\Controllers;
 
 use App\StoreSettings;
-use App\BillingAPI;
-use App\Orders;
 use Request;
 use App\Models\Product as ProductModel;
 use App\Models\ProductVariant as ProductVariantModel;
