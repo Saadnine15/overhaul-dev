@@ -149,9 +149,8 @@ var angularApp = angular.module('product-updating-app', included_modules)
                             scope.$apply(function () {
 
                                 // Our data after it has been converted to JSON
-                                res = convertToJSON(data);
-                                scope.results = res;
-                                console.log(res);
+                                scope.csv = convertToJSON(data);
+
 
                                 // Call our callback function
                                 scope.callback();
