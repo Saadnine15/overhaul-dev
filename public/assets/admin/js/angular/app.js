@@ -44,7 +44,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         $scope.updateProducts = function(){
             var config = {};
             var params = {
-                header_options: $scope.headerOptions,
+                header_options: $scope.headerOptions.offered,
                 csv_content: $scope.csv
             };
             console.log(params);
