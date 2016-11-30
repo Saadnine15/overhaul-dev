@@ -35,7 +35,9 @@ class APIController extends ShopifyApiBaseController {
             foreach($csv_data as $key => $row){
                 $arr = [];
                 foreach ($key_mapping_array as $csv_key => $shopify_key){
-                    $arr[$shopify_key] = $row[$csv_key];
+                    if(isset($row[$csv_key])){
+                        $arr[$shopify_key] = $row[$csv_key];
+                    }
                 }
                 $shopify_request_param_arr[] = $arr;
             }
