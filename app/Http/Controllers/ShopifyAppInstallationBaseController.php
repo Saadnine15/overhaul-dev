@@ -117,7 +117,7 @@ class ShopifyAppInstallationBaseController extends ShopifyAppBaseController
         $webhook_params = [
             'webhook' => [
                 'topic' => 'products/update',
-                'address' => "http://requestb.in/y4hrvwy4",
+                'address' => url('/webhooks/products/update'),
                 'format' => 'json'
             ]
         ];
@@ -131,7 +131,7 @@ class ShopifyAppInstallationBaseController extends ShopifyAppBaseController
         $webhook_params = [
             'webhook' => [
                 'topic' => 'products/delete',
-                'address' => "http://requestb.in/y4hrvwy4",
+                'address' => url('/webhooks/products/delete'),
                 'format' => 'json'
             ]
         ];

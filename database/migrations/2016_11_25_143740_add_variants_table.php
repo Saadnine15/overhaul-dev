@@ -12,7 +12,7 @@ class AddVariantsTable extends Migration
      */
     public function up()
     {
-        Schema::table('variants', function (Blueprint $table) {
+        Schema::schema('variants', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('variant_id');
             $table->bigInteger('product_id');
