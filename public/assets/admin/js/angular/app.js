@@ -14,9 +14,10 @@ var angularApp = angular.module('product-updating-app', included_modules)
             "variant_compare_at_price": "Compare at Price"
         };
         $scope.headerOptions.inCSV = {};
+        $scope.csv = {};
 
-        $scope.readCSV = function(result){
-            console.log(result);
+        $scope.readCSV = function(){
+            console.log($scope.csv);
         }
 
 
@@ -153,7 +154,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 console.log(res);
 
                                 // Call our callback function
-                                scope.callback(scope.results);
+                                scope.callback();
                             });
                         };
 
