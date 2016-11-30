@@ -10,7 +10,7 @@ use App\BillingAPI;
 use App\Orders;
 use App\Product;
 use App\Models\Product as ProductModel;
-use App\Models\ProductVariant as ProductVariantsModel;
+use App\Models\ProductVariant as ProductVariantModel;
 use Log;
 use saudslm\ShopifyAppHelper\ShopifyAppHepler;
 use App\ShopifyApiThrottle;
@@ -120,7 +120,7 @@ class IndexController extends ShopifyAppInstallationBaseController
     public function variantsdb(){
         $result = ProductModel::where('store_url', 'test-shop-368.myshopify.com')->pluck('product_id', 'handle')->toArray();
 
-        $return = ProductVariantsModel::whereIn('product_id', $result)->get();
+        $return = ProductVariantModel::whereIn('product_id', $result)->get();
         return $return;
     }
 
