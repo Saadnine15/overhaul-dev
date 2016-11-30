@@ -71,7 +71,7 @@ class IndexController extends ShopifyAppInstallationBaseController
     public function __test(){
         $store_settings = StoreSettings::where('store_name', 'test-shop-368.myshopify.com')->first();
         Product::initStore('test-shop-368.myshopify.com', config('shopify.api_key'), $store_settings->access_token);
-        $webhook_content = Product::find(8520300749);
+        $webhook_content = Product::find(8520327949);
 
         $product = new ProductModel();
         $product->product_id = $webhook_content['id'];
