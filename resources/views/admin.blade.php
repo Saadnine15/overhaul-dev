@@ -23,14 +23,15 @@
             <div class="row" ng-repeat="headerOption in headerOptions.offered">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <select class="form-control">
-                            <option ng-repeat="(key, value) in headerOptions.offered" value="@{{ key }}">@{{ value }}</option>
-                        </select>
+                        <label>@{{ headerOption.value }}</label>
+                        <!--<select class="form-control">
+                            <option ng-repeat="(key, option) in headerOptions.offered" value="@{{ option.key }}">@{{ option.value }}</option>
+                        </select>-->
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <select class="form-control">
+                        <select class="form-control" ng-model="headerOption.mapped_to">
                             <option ng-repeat="(key, value) in headerOptions.inCSV" value="@{{ key }}">@{{ value }}</option>
                         </select>
                     </div>

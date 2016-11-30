@@ -8,11 +8,23 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
     .controller('StoreController', ['$rootScope', '$scope', '$http', 'shopifyApp', function ($rootScope, $scope, $http, shopifyApp) {
         $scope.headerOptions = [];
-        $scope.headerOptions.offered = {
-            "variant_id": "Variant Id",
-            "variant_price": "Variant Price",
-            "variant_compare_at_price": "Compare at Price"
-        };
+        $scope.headerOptions.offered = [
+            {
+                key: "variant_sku",
+                value: "Variant Sku",
+                mapped_to: ""
+            },
+            {
+                key: "variant_price",
+                value: "Variant Price",
+                mapped_to: ""
+            },
+            {
+                key: "variant_compare_at_price",
+                value: "Compare at Price",
+                mapped_to: ""
+            }
+        ];
         $scope.headerOptions.inCSV = {};
         $scope.csv = {};
 
@@ -22,6 +34,10 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 console.log(key + ': ' + value);
                 $scope.headerOptions.inCSV[value] = value;
             });
+        };
+
+        $scope.updateProducts = function(){
+
         }
 
 
@@ -68,7 +84,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         }
 
         //init Shopify App
-        shopifyApp.init('Product Importer', $scope.saveChildStoreSettings, []);
+        shopifyApp.init('Product Importer', $scope.updateProducts, []);
 
 
     }])
