@@ -21,6 +21,7 @@ class APIController extends ShopifyApiBaseController {
         $csv_data = Request::input('csv_content');
 
         $variant_sku_array = $this->getVariantsArrayFromCSVData($header_options, $csv_data);
+        return $variant_sku_array;
         if($variant_sku_array){
             $product_variants = ProductVariantModel::whereIn('sku', $variant_sku_array)->get();
             $variants_array = [];
@@ -66,10 +67,12 @@ class APIController extends ShopifyApiBaseController {
                 break;
             }
         }
-        if($variant_sku_mapped_to != "")
-            return array_column($csv_data, $variant_sku_mapped_to);
-        else
+        if($variant_sku_mapped_to != ""){
+            $variant_array = array_column($csv_data, $variant_sku_mapped_to);
+            return array_map(function($val) { return ltrim($val, "'"); }, $variant_array);
+        } else{
             return false;
+        }
     }
 
     public function getKeyMapping($header_options){
