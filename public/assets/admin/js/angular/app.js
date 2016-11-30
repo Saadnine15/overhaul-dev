@@ -29,7 +29,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         $scope.csv = {};
 
         $scope.readCSV = function(csv_data){
-            $scope.csv = csv_data;
+            $scope.csv = csv_data.content;
             $scope.headerOptions.inCSV[""] = "Select an option";
             angular.forEach(csv_data.headers, function(value, key){
                 $scope.headerOptions.inCSV[value] = value;
@@ -37,7 +37,25 @@ var angularApp = angular.module('product-updating-app', included_modules)
         };
 
         $scope.updateProducts = function(){
-            console.log($scope.headerOptions.offered);
+            var config = {};
+            var params = {
+                header_options: $scope.headerOptions,
+                csv_content: $scope.csv
+            };
+            console.log(params);
+            /*shopifyApp.Bar.loadingOn();
+            $http.post('/update-variants', params, config)
+                .then(function (data, status, headers, config) {
+                    shopifyApp.flashNotice("Successfully Updated.");
+                    shopifyApp.Bar.loadingOff();
+                }, function (data, status, header, config) {
+                    var e = "Data: " + data +
+                        "<hr />status: " + status +
+                        "<hr />headers: " + header +
+                        "<hr />config: " + config;
+                    shopifyApp.flashError("An error occurred while saving.");
+                    shopifyApp.Bar.loadingOff();
+                });*/
         }
 
 
