@@ -37,6 +37,7 @@ Route::get('/my-jobs', 'IndexController@jobs');
 
 Route::get('/products', 'APIController@getProducts');
 Route::post('/products/import', 'APIController@postImportProducts');
+Route::post('/update-variants', 'APIController@postUpdateProductVariants');
 Route::get('/get-child-store', 'APIController@getChildStoreSettings');
 Route::post('/save-child-store', 'APIController@postSaveChildStoreSettings');
 

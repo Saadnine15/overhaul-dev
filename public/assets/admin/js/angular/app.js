@@ -48,7 +48,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 csv_content: $scope.csv
             };
             console.log(params);
-            /*shopifyApp.Bar.loadingOn();
+            shopifyApp.Bar.loadingOn();
             $http.post('/update-variants', params, config)
                 .then(function (data, status, headers, config) {
                     shopifyApp.flashNotice("Successfully Updated.");
@@ -60,7 +60,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                         "<hr />config: " + config;
                     shopifyApp.flashError("An error occurred while saving.");
                     shopifyApp.Bar.loadingOff();
-                });*/
+                });
         }
 
         $scope.table = [];
