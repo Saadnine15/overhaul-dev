@@ -29,6 +29,7 @@ Route::get('/install', 'IndexController@installApp');
 Route::get('/test', 'IndexController@test');
 Route::get('/delete-stores/{store_id}/{soft?}', 'IndexController@deleteStores');
 Route::get('/product', 'IndexController@productsdb');
+Route::get('/variant', 'IndexController@variantsdb');
 Route::get('/ark/{page}', 'IndexController@ark');
 Route::get('/my-jobs', 'IndexController@jobs');
 
