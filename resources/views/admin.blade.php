@@ -19,15 +19,15 @@
             <div class="row" ng-repeat="headerOption in headerOptions.offered">
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <select class="form-control" ng-repeat="(key, value) in headerOptions.offered">
-                            <option value="@{{ key }}">@{{ value }}</option>
+                        <select class="form-control">
+                            <option ng-repeat="(key, value) in headerOptions.offered" value="@{{ key }}">@{{ value }}</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="form-group">
-                        <select class="form-control" ng-repeat="(key, value) in headerOptions.inCSV">
-                            <option value="@{{ key }}">@{{ value }}</option>
+                        <select class="form-control">
+                            <option ng-repeat="(key, value) in headerOptions.inCSV" value="@{{ key }}">@{{ value }}</option>
                         </select>
                     </div>
                 </div>
