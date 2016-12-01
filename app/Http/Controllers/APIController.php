@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 use App\Jobs\ProductsUpdater;
 use Request;
+use App\StoreSettings;
 use App\Models\ProductVariant as ProductVariantModel;
 
 
