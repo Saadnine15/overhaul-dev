@@ -69,7 +69,7 @@ class ProductsUpdater extends Job implements ShouldQueue
             if(isset($variant['id']) && isset($variant['sku']) && !empty($variant['sku']) && !empty($variant['id'])){
 
                 $variant_id = $variant["id"];
-                unset($variant["id"]);
+                //unset($variant["id"]);
                 unset($variant["sku"]);
 
                 Variant::save($variant, "/admin/variants/" . $variant_id . ".json");
