@@ -102,7 +102,9 @@ class IndexController extends ShopifyAppInstallationBaseController
 
         $product_ids = ProductModel::where('store_url', "test-shop-368.myshopify.com")->pluck('product_id', 'id')->toArray();
         //ProductModel::where('store_url', "test-shop-368.myshopify.com")->delete();
-        ProductVariantModel::whereIn('product_id', $product_ids)->delete();
+        if( !empty($product_ids) ){
+            ProductVariantModel::whereIn('product_id', $product_ids)->delete();
+        }
     }
 
     public function deleteStores($store_id, $soft){
