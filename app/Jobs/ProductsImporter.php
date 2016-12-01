@@ -20,7 +20,6 @@ class ProductsImporter extends Job implements ShouldQueue
     use InteractsWithQueue, SerializesModels;
 
     protected $store_settings;
-    protected $request;
 
     /**
      * ProductsExportAndImport constructor.
@@ -97,7 +96,9 @@ class ProductsImporter extends Job implements ShouldQueue
     }
 
     private function deleteAlreadyExistingVariants(){
-        Log::info('STORE URL: '. $this->store_settings->shop_name);
+        Log::info('STORE URL: ' . $this->store_settings->store_name);
+
+
         $product_ids = ProductModel::where('store_url', $this->store_settings->shop_name)->pluck('product_id', 'id')->toArray();
         //if( !empty($product_ids) ){
             ProductVariantModel::whereIn('product_id', $product_ids)->delete();
@@ -123,7 +124,7 @@ class ProductsImporter extends Job implements ShouldQueue
                 $id_already_exists = in_array($product['id'], $already_existing_product_ids);
                 $handle_already_exists = $handle && $product['handle'] == $handle;
             }
-            if( (!$handle_already_exists && !$id_already_exists) ){
+            if( ( !$handle_already_exists && !$id_already_exists ) ){
                 $new_products[] = [
                     'product_id'    =>  $product['id'],
                     'handle'        =>  $product['handle'],
