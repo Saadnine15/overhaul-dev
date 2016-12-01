@@ -89,16 +89,12 @@ class ProductsImporter extends Job implements ShouldQueue
     }
 
     private function importProductsInDatabase($products){
-
         $this->deleteAlreadyExistingVariants();
         $this->insertProductsInDatabase($products);
-
     }
 
     private function deleteAlreadyExistingVariants(){
-        Log::info('STORE URL: ' . $this->store_settings->store_name);
-
-
+        //Log::info('STORE URL: ' . $this->store_settings->store_name);
         $product_ids = ProductModel::where('store_url', $this->store_settings->store_name)->pluck('product_id', 'id')->toArray();
         if( !empty($product_ids) ){
             ProductVariantModel::whereIn('product_id', $product_ids)->delete();
