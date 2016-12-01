@@ -69,8 +69,8 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function __test(){
-        $store_settings = StoreSettings::where('store_name', 'test-shop-368.myshopify.com')->first();
-        Product::initStore('test-shop-368.myshopify.com', config('shopify.api_key'), $store_settings->access_token);
+        //$store_settings = StoreSettings::where('store_name', 'test-shop-368.myshopify.com')->first();
+        //Product::initStore('test-shop-368.myshopify.com', config('shopify.api_key'), $store_settings->access_token);
         //$webhook_content = Product::find(8520300749);
 
         /*$product = new ProductModel();
@@ -101,7 +101,7 @@ class IndexController extends ShopifyAppInstallationBaseController
         $product_id = 8520300749;//$webhook_content['id'];
 
         $product_ids = ProductModel::where('store_url', "test-shop-368.myshopify.com")->pluck('product_id', 'id')->toArray();
-        ProductModel::where('store_url', "test-shop-368.myshopify.com")->delete();
+        //ProductModel::where('store_url', "test-shop-368.myshopify.com")->delete();
         ProductVariantModel::whereIn('product_id', $product_ids)->delete();
     }
 
