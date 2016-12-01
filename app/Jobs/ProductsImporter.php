@@ -91,7 +91,7 @@ class ProductsImporter extends Job implements ShouldQueue
     private function importProductsInDatabase($products){
 
         $this->deleteAlreadyExistingVariants();
-        $this->insertProductsInDatabase($products);
+        //$this->insertProductsInDatabase($products);
 
     }
 
