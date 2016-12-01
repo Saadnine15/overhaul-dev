@@ -72,7 +72,7 @@ class ProductsUpdater extends Job implements ShouldQueue
                 unset($variant["id"]);
                 unset($variant["sku"]);
 
-                Varaint::save($variant, "/admin/variants/" . $variant_id . ".json");
+                Variant::save($variant, "/admin/variants/" . $variant_id . ".json");
 
             }
             //to re-init start time
