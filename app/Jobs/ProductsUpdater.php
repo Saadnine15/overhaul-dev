@@ -10,7 +10,7 @@ use App\StoreSettings;
 use App\Variant;
 use App\ShopifyApiThrottle;
 
-class ProductUpdater extends Job implements ShouldQueue
+class ProductsUpdater extends Job implements ShouldQueue
 {
     use InteractsWithQueue, SerializesModels;
 
