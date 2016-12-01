@@ -24,7 +24,6 @@ class APIController extends ShopifyApiBaseController {
 
         if($variant_sku_array){
             $product_variants = ProductVariantModel::whereIn('sku', $variant_sku_array)->get();
-            return $product_variants;
             $variants_array = [];
             foreach($product_variants as $variant){
                 $variants_array[$variant->sku] = [
@@ -42,19 +41,19 @@ class APIController extends ShopifyApiBaseController {
                     if(isset($row[$csv_key])){
                         $arr[$shopify_key] = $row[$csv_key];
                         if($shopify_key == "sku"){
-                            //if( isset($variants_array[$arr[$shopify_key]]) ){
-                                $arr[$shopify_key] = ltrim($arr[$shopify_key], "'");
+                            $arr[$shopify_key] = ltrim($arr[$shopify_key], "'");
+                            if( isset($variants_array[$arr[$shopify_key]]) ){
                                 $arr["id"] = $variants_array[$arr[$shopify_key]]['variant_id'];
-                            //}
+                            }
                         }
                     }
                 }
                 $shopify_request_param_arr[] = $arr;
             }
 
-            $store_settings = StoreSettings::where('store_name', session()->get('shop'))->first();
-            $job = new ProductsUpdater($store_settings);
-            $this->dispatch($job);
+            //$store_settings = StoreSettings::where('store_name', session()->get('shop'))->first();
+            //$job = new ProductsUpdater($store_settings);
+            //$this->dispatch($job);
 
             return $shopify_request_param_arr;
         }
