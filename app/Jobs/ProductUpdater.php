@@ -10,7 +10,7 @@ use App\StoreSettings;
 use App\Variant;
 use App\ShopifyApiThrottle;
 
-class ProductsUpdater extends Job implements ShouldQueue
+class ProductUpdater extends Job implements ShouldQueue
 {
     use InteractsWithQueue, SerializesModels;
 
@@ -37,11 +37,7 @@ class ProductsUpdater extends Job implements ShouldQueue
      */
     public function handle()
     {
-        /*********** Export Products From Master Store ************/
-        $master_store_products = $this->exportProducts();
-
-        /*********** Import Products In Child Store ************/
-        $this->importProductsInDatabase($master_store_products);
+        $this->updateVariants();
     }
 
     /**
@@ -70,12 +66,15 @@ class ProductsUpdater extends Job implements ShouldQueue
             //wait for some time so it doesn't reach throttle point
             if( $index > 1 ){ ShopifyApiThrottle::wait(); }
 
-            $variant_id = $variant["id"];
-            unset($variant["id"]);
-            unset($variant["sku"]);
+            if(isset($variant['id']) && isset($variant['sku']) && !empty($variant['sku']) && !empty($variant['id'])){
 
-            Varaint::save($variant, "/admin/variants/" . $variant_id . ".json");
+                $variant_id = $variant["id"];
+                unset($variant["id"]);
+                unset($variant["sku"]);
 
+                Varaint::save($variant, "/admin/variants/" . $variant_id . ".json");
+
+            }
             //to re-init start time
             ShopifyApiThrottle::init();
             $index++;
