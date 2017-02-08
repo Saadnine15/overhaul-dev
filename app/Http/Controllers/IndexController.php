@@ -126,7 +126,8 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function variantsdb(){
-        $result = ProductModel::where('store_url', 'test-shop-368.myshopify.com')->pluck('product_id', 'handle')->toArray();
+        $store_url = Request::get('store_url');
+        $result = ProductModel::where('store_url', $store_url)->pluck('product_id', 'handle')->toArray();
 
         $return = ProductVariantModel::whereIn('product_id', $result)->get();
         return $return;
