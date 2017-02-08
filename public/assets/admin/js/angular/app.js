@@ -142,7 +142,15 @@ var angularApp = angular.module('product-updating-app', included_modules)
         var convertToJSON = function (content) {
 
             var text = content.csv;
-            console.log(text);
+
+            var lines = content.csv.split('\n'),
+                headers = lines[0].split(content.separator),
+                columnCount = lines[0].split(content.separator).length,
+                results = [];
+            results.headers = [];
+            results.content = [];
+
+            results.headers = headers;
 
             var re_valid = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
             var re_value = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
@@ -160,8 +168,9 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 });
             // Handle special case of empty last value.
             if (/,\s*$/.test(text)) a.push('');
-            console.log(a);
-            return a;
+            results.content = a;
+
+            return results;
 
             // Declare our variables
             /*var lines = content.csv.split('\n'),
