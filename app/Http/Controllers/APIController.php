@@ -39,7 +39,7 @@ class APIController extends ShopifyApiBaseController {
             foreach($csv_data as $key => $row){
                 $arr = [];
                 foreach ($key_mapping_array as $csv_key => $shopify_key){
-                    if(isset($row[$csv_key])){
+                    if(isset($row[$csv_key]) && !empty($row[$csv_key])){
                         $arr[$shopify_key] = $row[$csv_key];
                         if($shopify_key == "sku"){
                             $arr[$shopify_key] = ltrim($arr[$shopify_key], "'");
@@ -49,7 +49,8 @@ class APIController extends ShopifyApiBaseController {
                         }
                     }
                 }
-                $shopify_request_param_arr[] = $arr;
+                if( !empty($arr) )
+                    $shopify_request_param_arr[] = $arr;
             }
 
             $store_settings = StoreSettings::where('store_name', session()->get('shop'))->first();
