@@ -252,7 +252,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 // Our data after it has been converted to JSON
                                 //res = convertToJSON(data);
 
-                                var restult = Papa.parse(data, {
+                                var restult = Papa.parse(data.csv, {
                                     delimiter: ','
                                 });
 
