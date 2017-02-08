@@ -252,12 +252,11 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 // Our data after it has been converted to JSON
                                 //res = convertToJSON(data);
 
-                                Papa.parse(data, {
-                                    complete: function(results) {
-                                        console.log(results);
-                                    }
+                                var restult = Papa.parse(data, {
+                                    delimiter: ','
                                 });
 
+                                console.log(restult);
 
                                 // Call our callback function
                                 //scope.callback({csv_data: res});
