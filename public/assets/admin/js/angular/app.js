@@ -156,6 +156,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
             var re_value = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
             // Return NULL if input string is not well formed CSV string.
             if (!re_valid.test(text)) return null;
+            console.log(text);
             var a = [];                     // Initialize array to receive values.
             text.replace(re_value, // "Walk" the string using replace with callback.
                 function(m0, m1, m2, m3) {
