@@ -191,6 +191,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 // it to the data array.
                 arrData[arrData.length - 1].push(strMatchedValue);
             }
+            console.log(arrData);
             // Return the parsed data.
             return (arrData);
 
