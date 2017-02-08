@@ -139,7 +139,9 @@ var angularApp = angular.module('product-updating-app', included_modules)
     .directive('csvReader', [function () {
 
         // Function to convert to JSON
-        var convertToJSON = function (text) {
+        var convertToJSON = function (content) {
+
+            var text = content.csv;
 
             var re_valid = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
             var re_value = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
@@ -157,6 +159,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 });
             // Handle special case of empty last value.
             if (/,\s*$/.test(text)) a.push('');
+            console.log(a);
             return a;
 
             // Declare our variables
