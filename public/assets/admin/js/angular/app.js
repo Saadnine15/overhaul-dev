@@ -158,8 +158,8 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 var obj = {};
 
                 // Get our current line
-                //var line = lines[i].split(new RegExp(content.separator + '(?:,?(".+?"))|(?:,?(.+?),?)'));
-                var line = lines[i].split(new RegExp(content.separator + '(?:^|,)(?=[^"]|(")?)"?((?(1)[^"]*|[^,"]*))"?(?=,|$)'));
+                var line = lines[i].split(new RegExp(content.separator + '(?:,?(".+?"))|(?:,?(.+?),?)'));
+                //var line = lines[i].split(new RegExp(content.separator + '(?:^|,)(?=[^"]|(")?)"?((?(1)[^"]*|[^,"]*))"?(?=,|$)'));
                 //var line = lines[i].split(new RegExp(content.separator + '(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)'));
                 console.log('line', line);
                 // For each header
