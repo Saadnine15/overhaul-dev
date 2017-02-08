@@ -34,6 +34,7 @@
     @yield('page_level_scripts_styles')
 
     <script src="{{ secure_asset('assets/admin/js/angular/app.js') }}"></script>
+    <script src="{{ secure_asset('assets/admin/js/papaparse.min.js') }}"></script>
 
     <script type="text/javascript">
        ShopifyApp.init({

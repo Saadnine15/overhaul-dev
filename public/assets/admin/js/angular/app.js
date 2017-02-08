@@ -250,11 +250,17 @@ var angularApp = angular.module('product-updating-app', included_modules)
                             scope.$apply(function () {
 
                                 // Our data after it has been converted to JSON
-                                res = convertToJSON(data);
+                                //res = convertToJSON(data);
+
+                                Papa.parse(data, {
+                                    complete: function(results) {
+                                        console.log(results);
+                                    }
+                                });
 
 
                                 // Call our callback function
-                                scope.callback({csv_data: res});
+                                //scope.callback({csv_data: res});
                             });
                         };
 
