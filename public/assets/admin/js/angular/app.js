@@ -141,7 +141,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         // Function to convert to JSON
         var convertToJSON = function (content) {
 
-            var text = content.csv;
+            var text = (content.csv + '').replace(/[\\"']/g, '\\$&').replace(/\u0000/g, '\\0');
 
             var lines = content.csv.split('\n'),
                 headers = lines[0].split(content.separator),
@@ -156,7 +156,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
             var re_value = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
             // Return NULL if input string is not well formed CSV string.
             if (!re_valid.test(text)) return null;
-            console.log(text);
+
             var a = [];                     // Initialize array to receive values.
             text.replace(re_value, // "Walk" the string using replace with callback.
                 function(m0, m1, m2, m3) {
