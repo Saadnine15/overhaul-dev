@@ -256,7 +256,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                     delimiter: ','
                                 });
 
-                                console.log(restult);
+                                console.log(result);
 
                                 // Call our callback function
                                 //scope.callback({csv_data: res});
