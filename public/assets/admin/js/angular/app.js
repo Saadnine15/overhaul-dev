@@ -84,7 +84,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 });
             }
             $scope.table = table;
-            console.log($scope.table)
+            console.log($scope.headerOptions)
         }
 
 
