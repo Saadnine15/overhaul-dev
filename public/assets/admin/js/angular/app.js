@@ -257,20 +257,18 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                     header: true
                                 });
 
-                                console.log(result);
 
-                                /*var res = [];
+                                var res = [];
                                 res.headers = [];
                                 res.content = [];
 
-                                res.headers = result.data[0];
-                                result.data.splice(0, 1);
-                                res.content = result.data;*/
+                                res.headers = result.meta.fields;
+                                res.content = result.data;
 
-                                //console.log(res);
+                                console.log(res);
 
                                 // Call our callback function
-                                //scope.callback({csv_data: res});
+                                scope.callback({csv_data: res});
                             });
                         };
 
