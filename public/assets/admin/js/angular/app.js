@@ -259,13 +259,13 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
                                 console.log(result);
 
-                                var res = [];
+                                /*var res = [];
                                 res.headers = [];
                                 res.content = [];
 
                                 res.headers = result.data[0];
                                 result.data.splice(0, 1);
-                                res.content = result.data;
+                                res.content = result.data;*/
 
                                 //console.log(res);
 
