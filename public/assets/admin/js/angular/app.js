@@ -253,8 +253,11 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 //res = convertToJSON(data);
 
                                 var result = Papa.parse(data.csv, {
-                                    delimiter: ','
+                                    delimiter: ',',
+                                    header: true
                                 });
+
+                                console.log(result);
 
                                 var res = [];
                                 res.headers = [];
@@ -264,10 +267,10 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 result.data.splice(0, 1);
                                 res.content = result.data;
 
-                                console.log(res);
+                                //console.log(res);
 
                                 // Call our callback function
-                                scope.callback({csv_data: res});
+                                //scope.callback({csv_data: res});
                             });
                         };
 
