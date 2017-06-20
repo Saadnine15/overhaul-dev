@@ -63,7 +63,6 @@ class ShopifyAppInstallationBaseController extends ShopifyAppBaseController
 
         $store_instance = null;
         $store = StoreSettings::withTrashed()->where('store_name', $this->store)->first();
-
         if( $store ){
             $store->restore();
             $store->access_token = $access_token;
