@@ -27,6 +27,7 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function installApp(){
+        echo 11;die;
         return $this->install();
     }
 
