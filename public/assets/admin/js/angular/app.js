@@ -68,6 +68,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
             var obj = {};
             var table = [];
             if(headerOption.mapped_to != ""){
+                console.log(11);
                 console.log($scope.csv);
                 angular.forEach($scope.csv, function(csv_row, key){
                     obj = {};
