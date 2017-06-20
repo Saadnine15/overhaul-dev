@@ -66,19 +66,6 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <table class="table table-striped">
-                                <thead>
-                                <tr>
-                                    <td ng-repeat="headerOption in headerOptions.offered">@{{ headerOption.value }}</td>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr ng-repeat="row in table">
-                                    <td ng-repeat="headerOption in headerOptions.offered">@{{ row[headerOption.key] }}</td>
-                                </tr>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                 </div>
