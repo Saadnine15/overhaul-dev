@@ -16,19 +16,21 @@
     <div ng-controller="StoreController" data-reactroot="" class="Polaris-Page">
         <div class="Polaris-Page__Content">
             <div class="Polaris-Layout">
-                <div class="Polaris-Layout__AnnotationWrapper">
-                    <div class="Polaris-Layout__Annotation">
-                        <div class="Polaris-TextContainer">
-                            <h2 class="Polaris-Heading">File</h2>
+                <div class="Polaris-Layout__AnnotatedSection">
+                    <div class="Polaris-Layout__AnnotationWrapper">
+                        <div class="Polaris-Layout__Annotation">
+                            <div class="Polaris-TextContainer">
+                                <h2 class="Polaris-Heading">File</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="Polaris-Layout__AnnotationContent">
-                        <div class="Polaris-Card">
-                            <div class="Polaris-Card__Section">
-                                <div class="Polaris-SettingAction">
-                                    <div class="Polaris-SettingAction__Setting">Upload CSV file of products</div>
-                                    <div class="Polaris-SettingAction__Action">
-                                        <input type="file" csv-reader="" save-results-callback="readCSV(csv_data)">
+                        <div class="Polaris-Layout__AnnotationContent">
+                            <div class="Polaris-Card">
+                                <div class="Polaris-Card__Section">
+                                    <div class="Polaris-SettingAction">
+                                        <div class="Polaris-SettingAction__Setting">Upload CSV file of products</div>
+                                        <div class="Polaris-SettingAction__Action">
+                                            <input type="file" csv-reader="" save-results-callback="readCSV(csv_data)">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -41,9 +43,7 @@
                             <div class="Polaris-FormLayout">
                                 <div role="group" class="">
                                     <div class="Polaris-FormLayout__Items">
-                                        <div class="Polaris-FormLayout__Item">
 
-                                        </div>
                                         <div class="Polaris-FormLayout__Item" ng-repeat="headerOption in headerOptions.offered">
                                             <div class="">
                                                 <div class="Polaris-Labelled__LabelWrapper">
