@@ -83,9 +83,6 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 }
 
 
-                            } else{
-
-                                obj[option.key] = "";
                             }
                         }
                     });
