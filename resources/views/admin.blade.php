@@ -16,12 +16,35 @@
     <div ng-controller="StoreController" data-reactroot="" class="Polaris-Page">
         <div class="Polaris-Page__Content">
             <div class="Polaris-Layout">
+                <div class="Polaris-Layout__AnnotationWrapper">
+                    <div class="Polaris-Layout__Annotation">
+                        <div class="Polaris-TextContainer">
+                            <h2 class="Polaris-Heading">Upload</h2>
+                            <p>Please upload file</p>
+                        </div>
+                    </div>
+                    <div class="Polaris-Layout__AnnotationContent">
+                        <div class="Polaris-Card">
+                            <div class="Polaris-Card__Section">
+                                <div class="Polaris-SettingAction">
+                                    <div class="Polaris-SettingAction__Setting">Upload your store’s logo, change colors and fonts, and more.</div>
+                                    <div class="Polaris-SettingAction__Action">
+                                        <input type="file" csv-reader="" save-results-callback="readCSV(csv_data)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Layout__AnnotationWrapper">
                         <div class="white-block">
                             <div class="Polaris-FormLayout">
                                 <div role="group" class="">
                                     <div class="Polaris-FormLayout__Items">
+                                        <div class="Polaris-FormLayout__Item">
+
+                                        </div>
                                         <div class="Polaris-FormLayout__Item" ng-repeat="headerOption in headerOptions.offered">
                                             <div class="">
                                                 <div class="Polaris-Labelled__LabelWrapper">
@@ -29,6 +52,7 @@
                                                         <label id="TextField13Label" for="TextField13" class="Polaris-Label__Text">@{{ headerOption.value }}</label>
                                                     </div>
                                                 </div>
+
                                                 <div class="Polaris-Select Polaris-Select--placeholder">
                                                     <select class="Polaris-Select__Input" aria-invalid="false" ng-model="headerOption.mapped_to" ng-change="updateTable(headerOption)" >
                                                         <option label="Select" value="__placeholder__" disabled="" hidden=""></option>
@@ -43,7 +67,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="file" csv-reader="" save-results-callback="readCSV(csv_data)">
 
                             <br/>
                             <div class="row" ng-repeat="headerOption in headerOptions.offered">
