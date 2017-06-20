@@ -55,7 +55,7 @@ class ShopifyAppInstallationBaseController extends ShopifyAppBaseController
     }
 
     private function _addNewStoreSettings(){
-        echo $this->store;die;
+
         //get permanent access token
         $access_token = $this->shopify_app_helper->oauthAccessToken(
             $this->store, $this->app_settings->api_key, $this->app_settings->shared_secret, Request::input('code')
