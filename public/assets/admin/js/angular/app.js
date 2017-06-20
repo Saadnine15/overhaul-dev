@@ -79,14 +79,14 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 if(csv_row[option.mapped_to]!=''){
                                     obj[option.key] = csv_row[option.mapped_to];
                                     console.log(option.mapped_to, csv_row[option.mapped_to]);
-                                    table.push(obj);
+
                                 }
 
 
                             }
                         }
                     });
-
+                    table.push(obj);
                 });
             }
             $scope.table = table;
