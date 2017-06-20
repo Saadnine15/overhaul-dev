@@ -67,23 +67,7 @@
                                 </div>
                             </div>
 
-                            <br/>
-                            <div class="row" ng-repeat="headerOption in headerOptions.offered">
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <label>@{{ headerOption.value }}</label>
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group">
-                                        <select class="form-control" ng-model="headerOption.mapped_to" ng-change="updateTable(headerOption)">
-                                            <option ng-repeat="(key, value) in headerOptions.inCSV" value="@{{ key }}">@{{ value }}</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <table class="table table-striped">
+                            <table >
                                 <thead>
                                 <tr>
                                     <td ng-repeat="headerOption in headerOptions.offered">@{{ headerOption.value }}</td>
