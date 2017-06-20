@@ -88,7 +88,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                             }
                         }
                     });
-                  console.log(obj);
+
                         table.push(obj);
 
                 });
