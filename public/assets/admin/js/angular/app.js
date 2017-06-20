@@ -68,8 +68,8 @@ var angularApp = angular.module('product-updating-app', included_modules)
             var obj = {};
             var table = [];
             if(headerOption.mapped_to != ""){
-                console.log(11);
-                console.log($scope.csv);
+
+
                 angular.forEach($scope.csv, function(csv_row, key){
                     obj = {};
                     angular.forEach($scope.headerOptions.offered, function(option, k){
@@ -78,6 +78,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 console.log(option.mapped_to, csv_row[option.mapped_to]);
                                 obj[option.key] = csv_row[option.mapped_to];
                             } else{
+                                console.log("empty");
                                 obj[option.key] = "";
                             }
                         }
