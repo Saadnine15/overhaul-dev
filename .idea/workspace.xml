@@ -72,8 +72,8 @@
       <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6561403">
-              <caret line="55" column="167" selection-start-line="55" selection-start-column="156" selection-end-line="55" selection-end-column="167" />
+            <state vertical-scroll-proportion="0.6315789">
+              <caret line="81" column="75" selection-start-line="81" selection-start-column="75" selection-end-line="81" selection-end-column="75" />
               <folding>
                 <element signature="e#615#855#0#HTML" expanded="false" />
               </folding>
@@ -94,8 +94,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.653846">
-              <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+            <state vertical-scroll-proportion="-19.153847">
+              <caret line="91" column="44" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -792,7 +792,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
+    <frame x="-7" y="0" width="1378" height="735" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1249,16 +1249,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.653846">
-          <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
+        <state vertical-scroll-proportion="-19.153847">
+          <caret line="91" column="44" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6561403">
-          <caret line="55" column="167" selection-start-line="55" selection-start-column="156" selection-end-line="55" selection-end-column="167" />
+        <state vertical-scroll-proportion="0.6315789">
+          <caret line="81" column="75" selection-start-line="81" selection-start-column="75" selection-end-line="81" selection-end-column="75" />
           <folding>
             <element signature="e#615#855#0#HTML" expanded="false" />
           </folding>
