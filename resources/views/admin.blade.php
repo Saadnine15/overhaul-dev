@@ -80,7 +80,7 @@
                                 </thead>
                                 <tbody>
                                 <tr ng-repeat="row in table">
-                                    <td ng-repeat="headerOption in headerOptions.offered">@{{ row[headerOption.key] }}</td>
+                                    <td  ng-repeat="headerOption in headerOptions.offered">@{{ row[headerOption.key] }}</td>
                                 </tr>
                                 </tbody>
                             </table>
