@@ -69,26 +69,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.5">
-              <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+            <state vertical-scroll-proportion="1.6105263">
+              <caret line="31" column="81" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="81" />
               <folding>
                 <element signature="e#615#855#0#HTML" expanded="false" />
-                <element signature="e#880#1639#0#HTML" expanded="false" />
                 <element signature="e#1899#3982#0#HTML" expanded="false" />
-                <element signature="e#4012#4666#0#HTML" expanded="false" />
-                <element signature="e#4955#5609#0#HTML" expanded="false" />
+                <element signature="e#4271#4925#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/admin/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83601284">
+            <state vertical-scroll-proportion="-10.0">
               <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
               <folding />
             </state>
@@ -168,8 +166,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/ShopifyAppInstallationBaseController.php" />
         <option value="$PROJECT_DIR$/config/shopify.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/admin/css/style.css" />
+        <option value="$PROJECT_DIR$/resources/views/admin.blade.php" />
       </list>
     </option>
   </component>
@@ -800,7 +798,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25378788" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -810,7 +808,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37088388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37088388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1254,25 +1252,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/assets/admin/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5">
-          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
-          <folding>
-            <element signature="e#615#855#0#HTML" expanded="false" />
-            <element signature="e#880#1639#0#HTML" expanded="false" />
-            <element signature="e#1899#3982#0#HTML" expanded="false" />
-            <element signature="e#4012#4666#0#HTML" expanded="false" />
-            <element signature="e#4955#5609#0#HTML" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/admin/css/style.css">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83601284">
-          <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
-          <folding />
+        <state vertical-scroll-proportion="1.6105263">
+          <caret line="31" column="81" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="81" />
+          <folding>
+            <element signature="e#615#855#0#HTML" expanded="false" />
+            <element signature="e#1899#3982#0#HTML" expanded="false" />
+            <element signature="e#4271#4925#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
