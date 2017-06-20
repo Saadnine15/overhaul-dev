@@ -35,7 +35,6 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
         $scope.readCSV = function(csv_data){
             $scope.csv = csv_data.content;
-            console.log($scope.csv);
             $scope.headerOptions.inCSV[""] = "Select an option";
             angular.forEach(csv_data.headers, function(value, key){
                 $scope.headerOptions.inCSV[value] = value;
@@ -69,6 +68,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
             var obj = {};
             var table = [];
             if(headerOption.mapped_to != ""){
+                console.log($scope.csv);
                 angular.forEach($scope.csv, function(csv_row, key){
                     obj = {};
                     angular.forEach($scope.headerOptions.offered, function(option, k){
