@@ -75,7 +75,7 @@
                             <table class="table table-striped">
                                 <thead>
                                 <tr>
-                                    <td col-sm-3 ng-repeat="headerOption in headerOptions.offered">@{{ headerOption.value }}</td>
+                                    <td class="col-sm-3" ng-repeat="headerOption in headerOptions.offered">@{{ headerOption.value }}</td>
                                 </tr>
                                 </thead>
                                 <tbody>
