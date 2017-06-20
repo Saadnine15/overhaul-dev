@@ -222,7 +222,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     title: page_title,
                     buttons: {
                         primary: {
-                            label: 'Save',
+                            label: 'Update',
                             callback: callbackFunction
                         }
                     }
