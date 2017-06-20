@@ -86,8 +86,9 @@ var angularApp = angular.module('product-updating-app', included_modules)
                             }
                         }
                     });
-
-                            table.push(obj);
+                            if(obj.length>0){
+                                table.push(obj);
+                            }
 
 
 
