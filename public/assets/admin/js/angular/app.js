@@ -74,11 +74,12 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     obj = {};
                     angular.forEach($scope.headerOptions.offered, function(option, k){
                         if( csv_row[option.mapped_to] != undefined ){
+                            console.log(option.mapped_to );
                             if(option.mapped_to != ""){
                                 console.log(option.mapped_to, csv_row[option.mapped_to]);
                                 obj[option.key] = csv_row[option.mapped_to];
                             } else{
-                                console.log("empty");
+
                                 obj[option.key] = "";
                             }
                         }
