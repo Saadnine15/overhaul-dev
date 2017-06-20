@@ -76,9 +76,12 @@ var angularApp = angular.module('product-updating-app', included_modules)
                         if( csv_row[option.mapped_to] != undefined    ){
                             //console.log(csv_row[option.mapped_to]);
                             if(option.mapped_to != ""){
+                                if(csv_row[option.mapped_to]!=''){
+                                    obj[option.key] = csv_row[option.mapped_to];
+                                }
                                 console.log(option.mapped_to, csv_row[option.mapped_to]);
 
-                                obj[option.key] = csv_row[option.mapped_to];
+
                             } else{
 
                                 obj[option.key] = "";
