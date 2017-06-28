@@ -51,6 +51,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
             shopifyApp.Bar.loadingOn();
             $http.post('/update-variants', params, config)
                 .then(function (data, status, headers, config) {
+                    console.log(data);
                     shopifyApp.flashNotice("Successfully Updated.");
                     shopifyApp.Bar.loadingOff();
                 }, function (data, status, header, config) {
@@ -79,10 +80,6 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 if(csv_row[option.mapped_to]!=''){
                                     obj[option.key] = csv_row[option.mapped_to];
                                     console.log(option.mapped_to, csv_row[option.mapped_to]);
-                                }else{
-                                    key=key+1;
-                                        alert('Variant Sku missing on line '+key);
-                                    return;
                                 }
 
 
