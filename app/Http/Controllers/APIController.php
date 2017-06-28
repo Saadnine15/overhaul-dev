@@ -23,18 +23,17 @@ class APIController extends ShopifyApiBaseController {
 
         $variant_sku_array = $this->getVariantsArrayFromCSVData($header_options, $csv_data);
 
-        foreach($variant_sku_array as $item){
-            if($item==''){
-                $error['error']='Sku is not set or empty row';
 
-            }
 
-        }
-        if(isset($error['error'])&&$error['error']!=''){
-            return $error;
-        }
 
         if($variant_sku_array){
+            foreach($variant_sku_array as $item){
+                if($item==''){
+                    $error['error']='Sku is not set or empty row';
+
+                }
+
+            }
             $product_variants = ProductVariantModel::whereIn('sku', $variant_sku_array)->get();
             $variants_array = [];
             foreach($product_variants as $variant){
