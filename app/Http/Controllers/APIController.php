@@ -29,7 +29,7 @@ class APIController extends ShopifyApiBaseController {
         if($variant_sku_array){
             foreach($variant_sku_array as $item){
                 if($item==''){
-                    return 'Sku is not set or empty row';
+                  return  $error['error']='Sku is not set or empty row';
 
                 }
 
@@ -70,7 +70,7 @@ class APIController extends ShopifyApiBaseController {
             return $shopify_request_param_arr;
         }
         else{
-          return 'File is empty or not choosen';
+          return $error['error']='File is empty or not choosen';
       }
     }
 
