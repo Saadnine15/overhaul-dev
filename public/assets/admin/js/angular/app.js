@@ -82,6 +82,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 }else{
                                     key=key+1;
                                         alert('Variant Sku missing on line '+key);
+                                    return;
                                 }
 
 
