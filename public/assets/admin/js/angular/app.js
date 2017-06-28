@@ -80,6 +80,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                     obj[option.key] = csv_row[option.mapped_to];
                                     console.log(option.mapped_to, csv_row[option.mapped_to]);
                                 }else{
+                                    key=key+1;
                                         alert('Variant Sku missing on line '+key);
                                 }
 
