@@ -60,7 +60,7 @@ class APIController extends ShopifyApiBaseController {
             return $shopify_request_param_arr;
         }
         else{
-          return $data['error']='File is empty or not choosen';
+          return $error['error']='File is empty or not choosen';
       }
     }
 
