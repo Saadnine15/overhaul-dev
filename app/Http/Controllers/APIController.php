@@ -29,9 +29,10 @@ class APIController extends ShopifyApiBaseController {
         if($variant_sku_array){
             foreach($variant_sku_array as $item){
                 if($item==''){
-                  return  $error['error']='Sku is not set or empty row';
-
+                    $error['error']='Sku is not set or empty row';
+                    return $error;
                 }
+
 
             }
             $product_variants = ProductVariantModel::whereIn('sku', $variant_sku_array)->get();
@@ -70,7 +71,8 @@ class APIController extends ShopifyApiBaseController {
             return $shopify_request_param_arr;
         }
         else{
-          return $error['error']='File is empty or not choosen';
+        $error['error']='File is empty or not choosen';
+            return $error;
       }
     }
 
