@@ -51,7 +51,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
             shopifyApp.Bar.loadingOn();
             $http.post('/update-variants', params, config)
                 .then(function (data, status, headers, config) {
-
+                    console.log(data);
                     if(data.error!=''){
                         console.log(data.error);
                         shopifyApp.flashError(data.error);
