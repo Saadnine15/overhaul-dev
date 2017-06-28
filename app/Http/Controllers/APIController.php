@@ -59,7 +59,9 @@ class APIController extends ShopifyApiBaseController {
 
             return $shopify_request_param_arr;
         }
-        return 11;
+        else{
+          return $data['error']='File is empty or not choosen';
+      }
     }
 
     public function getVariantsArrayFromCSVData($header_options, $csv_data){
