@@ -24,7 +24,7 @@ class APIController extends ShopifyApiBaseController {
         $variant_sku_array = $this->getVariantsArrayFromCSVData($header_options, $csv_data);
 
 
-        return $variant_sku_array;
+
 
         if($variant_sku_array){
             foreach($variant_sku_array as $item){
@@ -35,6 +35,7 @@ class APIController extends ShopifyApiBaseController {
 
 
             }
+            return 11;
             $product_variants = ProductVariantModel::whereIn('sku', $variant_sku_array)->get();
             $variants_array = [];
             foreach($product_variants as $variant){
