@@ -54,10 +54,12 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     console.log(data.data);
                     if(typeof data.data.error != "undefined" ){
 
-                        shopifyApp.flashNotice("Successfully Updated.");
+                        shopifyApp.flashError(data.data.error);
                         shopifyApp.Bar.loadingOff();
                     }
-                    shopifyApp.flashError(data.data.error);
+                    shopifyApp.flashNotice("Successfully Updated.");
+                    shopifyApp.Bar.loadingOff();
+
 
 
                 }, function (data, status, header, config) {
