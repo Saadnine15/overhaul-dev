@@ -11,7 +11,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         $scope.headerOptions.offered = [
             {
                 key: "variant_sku",
-                value: "Variant Sku",
+                value: "Variant SKU",
                 mapped_to: ""
             },
             {
