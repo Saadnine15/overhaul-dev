@@ -85,8 +85,6 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                     console.log(option.mapped_to, csv_row[option.mapped_to]);
                                 }
 
-
-
                             }
 
                         }

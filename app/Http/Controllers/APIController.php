@@ -24,7 +24,7 @@ class APIController extends ShopifyApiBaseController {
         $variant_sku_array = $this->getVariantsArrayFromCSVData($header_options, $csv_data);
 
 
-
+        return $variant_sku_array;
 
         if($variant_sku_array){
             foreach($variant_sku_array as $item){
@@ -74,6 +74,7 @@ class APIController extends ShopifyApiBaseController {
         $error['error']='File is empty or not choosen';
             return $error;
       }
+
     }
 
     public function getVariantsArrayFromCSVData($header_options, $csv_data){
