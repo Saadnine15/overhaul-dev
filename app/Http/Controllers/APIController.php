@@ -25,7 +25,7 @@ class APIController extends ShopifyApiBaseController {
 
 
 
-
+        $variant_sku_array=  array_filter($variant_sku_array);
         if($variant_sku_array){
             foreach($variant_sku_array as $item){
                 if($item==''){
