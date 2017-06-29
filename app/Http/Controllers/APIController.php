@@ -66,8 +66,9 @@ class APIController extends ShopifyApiBaseController {
             }
 
             $store_settings = StoreSettings::where('store_name', session()->get('shop'))->first();
-            return $store_settings;
+
             $job = new ProductsUpdater($store_settings, $shopify_request_param_arr);
+            return 11;
             $this->dispatch($job);
 
             return $shopify_request_param_arr;
