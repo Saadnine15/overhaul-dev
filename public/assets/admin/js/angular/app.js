@@ -52,7 +52,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
             $http.post('/update-variants', params, config)
                 .then(function (data, status, headers, config) {
                     console.log(data.data);
-                    if(data.data.error.length >1 ){
+                    if(data.data.error === undefined ){
                         shopifyApp.flashError(data.data.error);
                         return;
                     }
