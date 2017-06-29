@@ -69,8 +69,7 @@ class APIController extends ShopifyApiBaseController {
 
             $job = new ProductsUpdater($store_settings, $shopify_request_param_arr);
 
-            $this->dispatch($job);
-            return 11;
+//            $this->dispatch($job);
             return $shopify_request_param_arr;
         }
         else{
