@@ -30,7 +30,7 @@
                           </div>
 
                             <div class="col-sm-3">
-                                <img src="{{ secure_asset('assets/overhaulImg.PNG') }}">
+                                <img src="{{ secure_asset('assets/admin/overhaulImg.PNG') }}">
                             </div>
                         </div>
 
