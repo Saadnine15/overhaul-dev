@@ -168,11 +168,14 @@ hr.dark-gray{
     font-family: ddc;
     src: url(DDCHardware-Regular.otf);
 }
-p.Polaris-DisplayText{
+.sfui{
     font-family: sfui;
     color: #333333;
     font-size: 18px;
     line-height: 30px;
+}
+h2.sfui{
+    font-weight: bold;
 }
 .ddHeading{
     font-family: ddc;
