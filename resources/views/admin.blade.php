@@ -62,10 +62,10 @@
                             <div class="Polaris-FormLayout">
                                 <div role="group" class="">
                                     <div class="Polaris-FormLayout__Items">
-
+                                        {{--for the second step--}}
                                         <div class="Polaris-FormLayout__Item" ng-repeat="headerOption in headerOptions.offered">
                                             <div ng-if="$first" >
-                                                {{--for the second step--}}
+
                                                 <div class="Polaris-Layout__AnnotationContent">
                                                     <h2 class="Polaris-Heading">2) Select SKU</h2>
                                                     <div class="Polaris-Card">
@@ -87,13 +87,22 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
-                                            <div ng-if="!$first" >
-                                                {{--for the third step--}}
-                                                <div class="Polaris-Layout__AnnotationContent">
-                                                    <h2 class="Polaris-Heading">3) Select fields you would like to update</h2>
-                                                    <div class="Polaris-Card">
-                                                        <div class="Polaris-Card__Section">
+
+
+
+                                            </div>
+
+                                        {{--for the third step--}}
+                                        <div class="Polaris-Layout__AnnotationContent">
+                                            <h2 class="Polaris-Heading">2) Select SKU</h2>
+                                            <div class="Polaris-Card">
+                                                <div class="Polaris-Card__Section">
+                                                    <div class="Polaris-FormLayout__Item" ng-repeat="headerOption in headerOptions.offered">
+                                                         <div ng-if="!$first" >
+
+
                                                             <div class="Polaris-Labelled__LabelWrapper">
                                                                 <div class="Polaris-Label">
                                                                     <label id="TextField13Label" for="TextField13" class="Polaris-Label__Text">@{{ headerOption.value }}</label>
@@ -111,11 +120,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
 
 
-                                            </div>
+
                                         </div>
+
+                                    </div>
 
                                     </div>
                                 </div>
