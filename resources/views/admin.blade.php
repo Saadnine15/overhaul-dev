@@ -20,7 +20,7 @@
                 <div class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Layout__AnnotationWrapper">
                         <div class="Polaris-Layout__Annotation">
-                          <div class="col-sm-9">
+                          <div class="col-sm-8">
                               <h2>OVERHAUL</h2>
                               <div>
                                   Welcome to Overhaul, we make bulk product updates quick and easy.
