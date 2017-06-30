@@ -60,7 +60,7 @@
                     <div class="Polaris-Layout__AnnotationWrapper">
                         <div class="white-block">
                             <div class="Polaris-FormLayout">
-                                <div role="group" class="">
+                                <div role="group" class="Polaris-FormLayout--condensed">
                                     <div class="Polaris-FormLayout__Items">
                                         {{--for the second step--}}
                                         <div class="Polaris-Layout__AnnotationContent">
@@ -101,53 +101,6 @@
                                             <h2 class="Polaris-Heading">2) Select SKU</h2>
                                             <div class="Polaris-Card">
                                                 <div class="Polaris-Card__Section">
-
-                                                    <div class="Polaris-FormLayout">
-                                                        <div role="group" class="Polaris-FormLayout--condensed">
-                                                            <div class="Polaris-FormLayout__Items">
-                                                                <div class="Polaris-FormLayout__Item">
-                                                                    <div class="">
-                                                                        <div class="Polaris-Labelled__LabelWrapper">
-                                                                            <div class="Polaris-Label"><label id="TextField6Label" for="TextField6" class="Polaris-Label__Text">Length</label></div>
-                                                                        </div>
-                                                                        <div class="Polaris-TextField"><input id="TextField6" value="" class="Polaris-TextField__Input" aria-labelledby="TextField6Label" aria-invalid="false">
-                                                                            <div class="Polaris-TextField__Backdrop"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="Polaris-FormLayout__Item">
-                                                                    <div class="">
-                                                                        <div class="Polaris-Labelled__LabelWrapper">
-                                                                            <div class="Polaris-Label"><label id="TextField8Label" for="TextField8" class="Polaris-Label__Text">Width</label></div>
-                                                                        </div>
-                                                                        <div class="Polaris-TextField"><input id="TextField8" value="" class="Polaris-TextField__Input" aria-labelledby="TextField8Label" aria-invalid="false">
-                                                                            <div class="Polaris-TextField__Backdrop"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="Polaris-FormLayout__Item">
-                                                                    <div class="">
-                                                                        <div class="Polaris-Labelled__LabelWrapper">
-                                                                            <div class="Polaris-Label"><label id="TextField10Label" for="TextField10" class="Polaris-Label__Text">Height</label></div>
-                                                                        </div>
-                                                                        <div class="Polaris-TextField"><input id="TextField10" value="" class="Polaris-TextField__Input" aria-labelledby="TextField10Label" aria-invalid="false">
-                                                                            <div class="Polaris-TextField__Backdrop"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="Polaris-FormLayout__Item">
-                                                                    <div class="">
-                                                                        <div class="Polaris-Labelled__LabelWrapper">
-                                                                            <div class="Polaris-Label"><label id="TextField12Label" for="TextField12" class="Polaris-Label__Text">Unit</label></div>
-                                                                        </div>
-                                                                        <div class="Polaris-TextField"><input id="TextField12" value="" class="Polaris-TextField__Input" aria-labelledby="TextField12Label" aria-invalid="false">
-                                                                            <div class="Polaris-TextField__Backdrop"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
 
                                                     <div class="Polaris-FormLayout__Item" ng-repeat="headerOption in headerOptions.offered">
                                                          <div ng-if="!$first" >
