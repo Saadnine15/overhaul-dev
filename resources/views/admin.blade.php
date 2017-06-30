@@ -124,7 +124,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="Polaris-Layout__AnnotatedSection">
+                <div ng-show="showTable==true" class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Layout__AnnotationWrapper">
                         <div class="Polaris-Layout__AnnotationContent">
                             <div class="white-block">

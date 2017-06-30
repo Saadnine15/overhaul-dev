@@ -105,6 +105,10 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
 
                 });
+                //for the first time it will be false so in next step when the other drop down will be selected table will show
+                if($scope.skuSelected.length>0){
+                    $scope.showTable=true;
+                }
                 $scope.skuSelected=true;
             }
             $scope.table = table;
