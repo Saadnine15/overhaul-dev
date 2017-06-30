@@ -61,7 +61,7 @@
                         <div class="Polaris-Layout__AnnotationContent">
                                 <div role="group" class="">
                                     <div class="Polaris-FormLayout__Items">
-                                                <div class="col-sm-3 custom-card">
+                                                <div class="col-sm-3 ">
                                                     <div class="custom-card">
 
                                                         <div ng-if="$first"   ng-repeat="headerOption in headerOptions.offered">
@@ -90,7 +90,7 @@
 
 
                                                 </div>
-                                        <div class="col-sm-9 custom-card">
+                                        <div class="col-sm-9 ">
                                             <div class="custom-card">
                                                 <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
 
