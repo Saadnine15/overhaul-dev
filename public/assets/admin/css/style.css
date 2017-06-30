@@ -147,4 +147,9 @@ hr.dark-gray{
     display: inline-block;
     width: 100%;
 }
-.oval {	height: 41px;	width: 41px;	background-color: #74DBC9;}
+.oval {
+    background-color: #74DBC9;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 7px 15px 7px 15px;
+}
