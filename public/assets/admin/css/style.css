@@ -176,4 +176,7 @@ p.Polaris-DisplayText{
 }
 .ddHeading{
     font-family: ddc;
+    color: #4BC2AD;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
