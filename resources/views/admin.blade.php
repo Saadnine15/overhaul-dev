@@ -58,8 +58,8 @@
 
                 <div class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Layout__AnnotationWrapper">
-                        <div class="white-block">
-                            <div class="Polaris-FormLayout">
+                        <div class="">
+                            <div class="">
                                 <div role="group" class="">
                                     <div class="Polaris-FormLayout__Items">
                                                 <div class="col-sm-3 custom-card">
