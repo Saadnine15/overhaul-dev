@@ -58,8 +58,7 @@
 
                 <div class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Layout__AnnotationWrapper">
-                        <div class="">
-                            <div class="">
+                        <div class="Polaris-Layout__AnnotationContent">
                                 <div role="group" class="">
                                     <div class="Polaris-FormLayout__Items">
                                                 <div class="col-sm-3 custom-card">
@@ -110,7 +109,6 @@
                                                     </div>
                                             </div>
                                         </div>
-                                    </div>
 
                                 </div>
                                 </div>
