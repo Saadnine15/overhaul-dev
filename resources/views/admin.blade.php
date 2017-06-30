@@ -22,12 +22,13 @@
                         <div class="Polaris-Layout__Annotation">
                           <div class="col-sm-9">
                               <h2>OVERHAUL</h2>
+                              <div>
+                                  Welcome to Overhaul, we make bulk product updates quick and easy.
+                                  Just upload your CSV, select the SKU, then identify the fields you would
+                                  like to update.
+                              </div>
                           </div>
-                            <div>
-                                Welcome to Overhaul, we make bulk product updates quick and easy.
-                                Just upload your CSV, select the SKU, then identify the fields you would
-                                like to update.
-                            </div>
+
                             <div class="col-sm-3">
                                 <img src="{{ secure_asset('assets/overhaulImg.PNG') }}">
                             </div>
