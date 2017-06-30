@@ -16,6 +16,37 @@
     <div ng-controller="StoreController" data-reactroot="" class="Polaris-Page">
         <div class="Polaris-Page__Content">
             <div class="Polaris-Layout">
+
+                <div class="Polaris-Layout__AnnotatedSection">
+                    <div class="Polaris-Layout__AnnotationWrapper">
+                        <div class="Polaris-Layout__Annotation">
+                          <div class="col-sm-9">
+                              <h2>OVERHAUL</h2>
+                          </div>
+                            <div>
+                                Welcome to Overhaul, we make bulk product updates quick and easy.
+                                Just upload your CSV, select the SKU, then identify the fields you would
+                                like to update.
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="{{ secure_asset('assets/overhaulImg.PNG') }}">
+                            </div>
+                        </div>
+                        <div class="Polaris-Layout__AnnotationContent">
+                            <div class="Polaris-Card">
+                                <div class="Polaris-Card__Section">
+                                    <div class="Polaris-SettingAction">
+                                        <div class="Polaris-SettingAction__Setting">Upload CSV file of products</div>
+                                        <div class="Polaris-SettingAction__Action">
+                                            <input type="file" csv-reader="" save-results-callback="readCSV(csv_data)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Layout__AnnotationWrapper">
                         <div class="Polaris-Layout__Annotation">
