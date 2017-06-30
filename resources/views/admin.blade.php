@@ -39,8 +39,9 @@
 
                 <div class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Layout__AnnotationWrapper">
-                        <h2 class="Polaris-Heading">Upload your CSV</h2>
+
                         <div class="Polaris-Layout__AnnotationContent">
+                            <h2 class="Polaris-Heading">Upload your CSV</h2>
                             <div class="Polaris-Card">
                                 <div class="Polaris-Card__Section">
                                     <div class="Polaris-SettingAction">
