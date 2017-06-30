@@ -160,3 +160,10 @@ hr.dark-gray{
     color:#fff;
 
 }
+@font-face {
+    font-family: sfui;
+    src: url(SF-UI-Text-Regular.otf);
+}
+.Polaris-DisplayText{
+    font-family: sfui;
+}
