@@ -74,7 +74,7 @@
 
                                                             <div class="Polaris-Labelled__LabelWrapper">
                                                                 <div class="Polaris-Label">
-                                                                    <label id="TextField13Label" for="TextField13" class="Polaris-Label__Text">@{{ headerOption.value }}</label>
+                                                                    <label id="TextField13Label" for="TextField13" class="Polaris-Label__Text">@{{ headerOption.value }}<div class="red">(required)</div> </label>
                                                                 </div>
                                                             </div>
 
