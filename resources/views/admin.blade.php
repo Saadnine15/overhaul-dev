@@ -41,7 +41,7 @@
                     <div class="Polaris-Layout__AnnotationWrapper">
 
                         <div class="Polaris-Layout__AnnotationContent">
-                            <h2 class="Polaris-Heading">1) Upload your CSV</h2>
+                            <h2 class="Polaris-Heading"><div class="oval">1</div> Upload your CSV</h2>
                             <div class="Polaris-Card">
                                 <div class="Polaris-Card__Section">
                                     <div class="Polaris-SettingAction">
@@ -63,7 +63,7 @@
                                     <div class="">
 
                                         <div ng-show="fileSelected==true" class="col-sm-3 " style="padding-left: 0px;">
-                                            <h2 class="Polaris-Heading">2) Select SKU</h2>
+                                            <h2 class="Polaris-Heading"><div class="oval">2</div> Select SKU</h2>
                                                     <div class="custom-card">
 
                                                         <div ng-if="$first"   ng-repeat="headerOption in headerOptions.offered">
@@ -93,7 +93,7 @@
 
                                                 </div>
                                         <div ng-show="skuSelected==true" class="col-sm-9 " style="padding-right: 0px;">
-                                            <h2 class="Polaris-Heading">3) Select fields you would like to update</h2>
+                                            <h2 class="Polaris-Heading"><div class="oval">3</div>Select fields you would like to update</h2>
                                             <div class="custom-card">
                                                 <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
 
