@@ -47,7 +47,7 @@
                                     <div class="Polaris-SettingAction">
                                         <div class="Polaris-SettingAction__Setting">Upload your CSV</div>
                                         <div class="Polaris-SettingAction__Action">
-                                            <input type="file" csv-reader="" save-results-callback="readCSV(csv_data)">
+                                            <input ng-model="file" type="file" csv-reader="" save-results-callback="readCSV(csv_data)">
                                         </div>
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@
                                 <div role="group" class="">
                                     <div class="">
 
-                                        <div class="col-sm-3 " style="padding-left: 0px;">
+                                        <div ng-show="file.length" class="col-sm-3 " style="padding-left: 0px;">
                                             <h2 class="Polaris-Heading">2) Select SKU</h2>
                                                     <div class="custom-card">
 
