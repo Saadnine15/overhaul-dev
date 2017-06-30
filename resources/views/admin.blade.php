@@ -62,8 +62,7 @@
                             <div class="Polaris-FormLayout">
                                 <div role="group" class="">
                                     <div class="Polaris-FormLayout__Items">
-                                        <div class="Polaris-Card">
-                                            <div class="Polaris-Card__Section">
+                                        <div class="col-sm-3">
                                                 <div  ng-repeat="headerOption in headerOptions.offered">
                                                     <div ng-if="$first" class="Polaris-FormLayout__Item">
 
@@ -86,10 +85,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
                                         </div>
-                                        <div class="Polaris-Card">
-                                            <div class="Polaris-Card__Section">
+                                        <div class="col-sm-9">
                                                 <div  ng-repeat="headerOption in headerOptions.offered">
                                             <div ng-if="!$first" class="Polaris-FormLayout__Item">
 
@@ -112,7 +109,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
