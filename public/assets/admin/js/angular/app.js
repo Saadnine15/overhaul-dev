@@ -105,6 +105,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
 
                 });
+                $scope.skuSelected=true;
             }
             $scope.table = table;
             console.log($scope.headerOptions)

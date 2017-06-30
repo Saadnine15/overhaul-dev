@@ -92,7 +92,7 @@
 
 
                                                 </div>
-                                        <div ng-show="headerOption.mapped_to.length" class="col-sm-9 " style="padding-right: 0px;">
+                                        <div ng-show="skuSelected==true" class="col-sm-9 " style="padding-right: 0px;">
                                             <h2 class="Polaris-Heading">3) Select fields you would like to update</h2>
                                             <div class="custom-card">
                                                 <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
