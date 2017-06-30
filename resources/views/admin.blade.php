@@ -62,9 +62,8 @@
                             <div class="Polaris-FormLayout">
                                 <div role="group" class="">
                                     <div class="Polaris-FormLayout__Items">
-                                                <div style="    background-color: #ffffff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);">
-                                                    <div ng-if="$first" ng-class="{'col-sm-3': $first}"   ng-repeat="headerOption in headerOptions.offered">
+                                                <div class="col-sm-3">
+                                                    <div  ng-repeat="headerOption in headerOptions.offered">
 
 
                                                         <h2 class="Polaris-Heading">1) Upload your CSV</h2>
@@ -85,11 +84,12 @@
                                                             <div class="Polaris-Select__Backdrop"></div>
                                                         </div>
 
+                                                    </div>
+
                                                 </div>
                                                 </div>
-                                        <div style="    background-color: #ffffff;
-    box-shadow: 0 0 0 1px rgba(63, 63, 68, 0.05), 0 1px 3px 0 rgba(63, 63, 68, 0.15);">
-                                                <div ng-if="!$first" ng-class="{'col-sm-3': !$first}"  ng-repeat="headerOption in headerOptions.offered">
+                                        <div class="col-sm-9">
+                                                <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
 
 
                                                     <h2 class="Polaris-Heading">1) Upload your CSV</h2>
