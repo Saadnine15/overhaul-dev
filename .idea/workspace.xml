@@ -61,12 +61,12 @@
       <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64285713">
-              <caret line="95" column="75" selection-start-line="95" selection-start-column="75" selection-end-line="95" selection-end-column="75" />
+            <state vertical-scroll-proportion="0.5127551">
+              <caret line="24" column="94" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
               <folding>
-                <element signature="e#2762#2788#0#HTML" expanded="true" />
-                <element signature="e#5093#5120#0#HTML" expanded="true" />
-                <element signature="e#7625#8434#0#HTML" expanded="false" />
+                <element signature="e#2761#2787#0#HTML" expanded="true" />
+                <element signature="e#5092#5119#0#HTML" expanded="true" />
+                <element signature="e#7624#8433#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -76,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/public/assets/admin/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="176" column="7" selection-start-line="176" selection-start-column="3" selection-end-line="176" selection-end-column="7" />
+              <caret line="178" column="16" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -1131,19 +1131,19 @@
     <entry file="file://$PROJECT_DIR$/public/assets/admin/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="176" column="7" selection-start-line="176" selection-start-column="3" selection-end-line="176" selection-end-column="7" />
+          <caret line="178" column="16" selection-start-line="178" selection-start-column="16" selection-end-line="178" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64285713">
-          <caret line="95" column="75" selection-start-line="95" selection-start-column="75" selection-end-line="95" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.5127551">
+          <caret line="24" column="94" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
           <folding>
-            <element signature="e#2762#2788#0#HTML" expanded="true" />
-            <element signature="e#5093#5120#0#HTML" expanded="true" />
-            <element signature="e#7625#8434#0#HTML" expanded="false" />
+            <element signature="e#2761#2787#0#HTML" expanded="true" />
+            <element signature="e#5092#5119#0#HTML" expanded="true" />
+            <element signature="e#7624#8433#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>

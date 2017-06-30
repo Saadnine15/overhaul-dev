@@ -186,4 +186,5 @@ h2.sfui{
 }
 .red{
     color:red;
+    display: inline-block;
 }
