@@ -166,7 +166,7 @@ hr.dark-gray{
 }
 @font-face {
     font-family: ddc;
-    src: url(DDCHardware-Condensed.otf);
+    src: url(DDCHardware-Compressed.otf);
 }
 p.Polaris-DisplayText{
     font-family: sfui;
