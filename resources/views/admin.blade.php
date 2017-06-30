@@ -63,12 +63,13 @@
                                     <div class="">
 
                                         <div class="col-sm-3 " style="padding-left: 0px;">
+                                            <h2 class="Polaris-Heading">2) Select SKU</h2>
                                                     <div class="custom-card">
 
                                                         <div ng-if="$first"   ng-repeat="headerOption in headerOptions.offered">
 
 
-                                                            <h2 class="Polaris-Heading">1) Upload your CSV</h2>
+
 
 
                                                             <div class="Polaris-Labelled__LabelWrapper">
@@ -92,6 +93,7 @@
 
                                                 </div>
                                         <div class="col-sm-9 " style="padding-right: 0px;">
+                                            <h2 class="Polaris-Heading">3) Select fields you would like to update</h2>
                                             <div class="custom-card">
                                                 <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
 
