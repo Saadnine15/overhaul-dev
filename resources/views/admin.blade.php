@@ -21,12 +21,12 @@
                     <div class="Polaris-Layout__AnnotationWrapper">
                         <div class="Polaris-Layout__Annotation">
                           <div class="col-sm-8">
-                              <h2>OVERHAUL</h2>
-                              <div>
-                                  Welcome to Overhaul, we make bulk product updates quick and easy.
+                              <h1 class="Polaris-DisplayText Polaris-DisplayText--sizeExtraLarge">OVERHAUL</h1>
+                              <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall"> Welcome to Overhaul, we make bulk product updates quick and easy.
                                   Just upload your CSV, select the SKU, then identify the fields you would
-                                  like to update.
-                              </div>
+                                  like to update.</p>
+
+
                           </div>
 
                             <div class="col-sm-3">
