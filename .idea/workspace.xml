@@ -61,13 +61,13 @@
       <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70408165">
-              <caret line="104" column="139" selection-start-line="104" selection-start-column="90" selection-end-line="104" selection-end-column="139" />
+            <state vertical-scroll-proportion="0.7908163">
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding>
-                <element signature="e#3080#5402#0#HTML" expanded="false" />
-                <element signature="e#5921#7674#0#HTML" expanded="false" />
-                <element signature="e#6006#6457#0#HTML" expanded="false" />
-                <element signature="e#6519#7611#0#HTML" expanded="false" />
+                <element signature="e#2993#5315#0#HTML" expanded="false" />
+                <element signature="e#5834#7587#0#HTML" expanded="false" />
+                <element signature="e#5919#6370#0#HTML" expanded="false" />
+                <element signature="e#6432#7524#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1100,13 +1100,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70408165">
-          <caret line="104" column="139" selection-start-line="104" selection-start-column="90" selection-end-line="104" selection-end-column="139" />
+        <state vertical-scroll-proportion="0.7908163">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
-            <element signature="e#3080#5402#0#HTML" expanded="false" />
-            <element signature="e#5921#7674#0#HTML" expanded="false" />
-            <element signature="e#6006#6457#0#HTML" expanded="false" />
-            <element signature="e#6519#7611#0#HTML" expanded="false" />
+            <element signature="e#2993#5315#0#HTML" expanded="false" />
+            <element signature="e#5834#7587#0#HTML" expanded="false" />
+            <element signature="e#5919#6370#0#HTML" expanded="false" />
+            <element signature="e#6432#7524#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>

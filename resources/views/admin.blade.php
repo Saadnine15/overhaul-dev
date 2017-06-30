@@ -63,8 +63,8 @@
                                 <div role="group" class="Polaris-FormLayout--condensed">
                                     <div class="Polaris-FormLayout__Items">
                                         {{--for the second step--}}
-
-                                            <div class="Polaris-FormLayout__Item" ng-repeat="headerOption in headerOptions.offered">
+                                        <div class="Polaris-FormLayout__Item">
+                                            <div  ng-repeat="headerOption in headerOptions.offered">
 
                                             <div ng-if="$first" >
 
@@ -91,7 +91,7 @@
                                                 </div>
 
                                             </div>
-
+                                        </div>
 
 
 
