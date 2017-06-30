@@ -63,10 +63,12 @@
                                 <div role="group" class="">
                                     <div class="Polaris-FormLayout__Items">
                                         {{--for the second step--}}
-                                        <div class="Polaris-FormLayout__Item" ng-repeat="headerOption in headerOptions.offered">
+                                        <div class="Polaris-Layout__AnnotationContent">
+                                            <div class="Polaris-FormLayout__Item" ng-repeat="headerOption in headerOptions.offered">
+
                                             <div ng-if="$first" >
 
-                                                <div class="Polaris-Layout__AnnotationContent">
+
                                                     <h2 class="Polaris-Heading">2) Select SKU</h2>
                                                     <div class="Polaris-Card">
                                                         <div class="Polaris-Card__Section">
@@ -92,10 +94,9 @@
 
 
 
-                                            </div>
+
 
                                         {{--for the third step--}}
-                                        <div class="Polaris-Layout__AnnotationContent">
                                             <h2 class="Polaris-Heading">2) Select SKU</h2>
                                             <div class="Polaris-Card">
                                                 <div class="Polaris-Card__Section">
