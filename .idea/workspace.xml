@@ -61,15 +61,15 @@
       <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7397959">
-              <caret line="90" column="60" selection-start-line="90" selection-start-column="60" selection-end-line="90" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.5688776">
+              <caret line="65" column="64" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
               <folding>
-                <element signature="e#2974#4816#0#HTML" expanded="false" />
-                <element signature="e#3199#3634#0#HTML" expanded="false" />
-                <element signature="e#3692#4756#0#HTML" expanded="false" />
-                <element signature="e#5039#6865#0#HTML" expanded="false" />
-                <element signature="e#5305#5724#0#HTML" expanded="false" />
-                <element signature="e#5778#6814#0#HTML" expanded="false" />
+                <element signature="e#2974#4831#0#HTML" expanded="false" />
+                <element signature="e#3214#3649#0#HTML" expanded="false" />
+                <element signature="e#3707#4771#0#HTML" expanded="false" />
+                <element signature="e#5054#6880#0#HTML" expanded="false" />
+                <element signature="e#5320#5739#0#HTML" expanded="false" />
+                <element signature="e#5793#6829#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -1102,15 +1102,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7397959">
-          <caret line="90" column="60" selection-start-line="90" selection-start-column="60" selection-end-line="90" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.5688776">
+          <caret line="65" column="64" selection-start-line="65" selection-start-column="64" selection-end-line="65" selection-end-column="64" />
           <folding>
-            <element signature="e#2974#4816#0#HTML" expanded="false" />
-            <element signature="e#3199#3634#0#HTML" expanded="false" />
-            <element signature="e#3692#4756#0#HTML" expanded="false" />
-            <element signature="e#5039#6865#0#HTML" expanded="false" />
-            <element signature="e#5305#5724#0#HTML" expanded="false" />
-            <element signature="e#5778#6814#0#HTML" expanded="false" />
+            <element signature="e#2974#4831#0#HTML" expanded="false" />
+            <element signature="e#3214#3649#0#HTML" expanded="false" />
+            <element signature="e#3707#4771#0#HTML" expanded="false" />
+            <element signature="e#5054#6880#0#HTML" expanded="false" />
+            <element signature="e#5320#5739#0#HTML" expanded="false" />
+            <element signature="e#5793#6829#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>

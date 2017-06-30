@@ -87,7 +87,6 @@
                                                     </div>
 
                                                 </div>
-                                                </div>
                                         <div class="col-sm-9">
                                                 <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
 
@@ -110,11 +109,11 @@
                                                         <div class="Polaris-Select__Backdrop"></div>
                                                     </div>
                                             </div>
-                                       </div>
                                         </div>
                                     </div>
+
                                 </div>
-                            </div>
+                                </div>
                         </div>
                     </div>
                 </div>
