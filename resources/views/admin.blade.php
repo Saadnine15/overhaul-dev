@@ -41,7 +41,7 @@
                     <div class="Polaris-Layout__AnnotationWrapper">
 
                         <div class="Polaris-Layout__AnnotationContent">
-                            <h2 class="Polaris-Heading"><div class="oval">1</div> Upload your CSV</h2>
+                            <h2 class="Polaris-Heading"><div class="oval">1</div>Upload your CSV</h2>
                             <div class="Polaris-Card">
                                 <div class="Polaris-Card__Section">
                                     <div class="Polaris-SettingAction">
@@ -63,7 +63,7 @@
                                     <div class="">
 
                                         <div ng-show="fileSelected==true" class="col-sm-3 " style="padding-left: 0px;">
-                                            <h2 class="Polaris-Heading"><div class="oval">2</div> Select SKU</h2>
+                                            <h2 class="Polaris-Heading"><div class="oval">2</div>Select SKU</h2>
                                                     <div class="custom-card">
 
                                                         <div ng-if="$first"   ng-repeat="headerOption in headerOptions.offered">
