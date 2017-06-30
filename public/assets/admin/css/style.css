@@ -135,6 +135,9 @@ hr.dark-gray{
 .m-t-30{
     margin-top: 30px;
 }
+.m-b-20{
+    margin-bottom: 20px;
+}
 .white-block{
     display: inline-block;
     width: 100%;
@@ -154,5 +157,6 @@ hr.dark-gray{
     padding: 7px 15px 7px 15px;
     margin-bottom: 20px;
     margin-right: 10px;
+    color:#fff;
 
 }
