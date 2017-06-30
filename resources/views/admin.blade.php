@@ -98,7 +98,7 @@
                                                 <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
 
 
-                                                    <h2 class="Polaris-Heading">1) Upload your CSV</h2>
+
 
 
                                                     <div class="Polaris-Labelled__LabelWrapper">
