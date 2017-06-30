@@ -63,8 +63,8 @@
                                 <div role="group" class="">
                                     <div class="Polaris-FormLayout__Items">
 
-                                                <div  ng-repeat="headerOption in headerOptions.offered">
-                                                    <div ng-if="$first" class="col-sm-3">
+                                                <div ng-class="{'col-sm-3': $first}"   ng-repeat="headerOption in headerOptions.offered">
+
 
                                                         <h2 class="Polaris-Heading">1) Upload your CSV</h2>
 
@@ -83,29 +83,29 @@
                                                             <div class="Polaris-Select__Icon"><span class="Polaris-Icon"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20"><path d="M13 8l-3-3-3 3h6zm-.1 4L10 14.9 7.1 12h5.8z" fill-rule="evenodd"></path></svg></span></div>
                                                             <div class="Polaris-Select__Backdrop"></div>
                                                         </div>
+
+                                                </div>
+
+                                                <div ng-class="{'col-sm-3': !$first}"  ng-repeat="headerOption in headerOptions.offered">
+
+
+                                                    <h2 class="Polaris-Heading">1) Upload your CSV</h2>
+
+
+                                                    <div class="Polaris-Labelled__LabelWrapper">
+                                                        <div class="Polaris-Label">
+                                                            <label id="TextField13Label" for="TextField13" class="Polaris-Label__Text">@{{ headerOption.value }}</label>
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <div  ng-repeat="headerOption in headerOptions.offered">
-                                            <div ng-if="!$first" class="col-sm-3">
-
-                                                <h2 class="Polaris-Heading">1) Upload your CSV</h2>
-
-
-                                                <div class="Polaris-Labelled__LabelWrapper">
-                                                    <div class="Polaris-Label">
-                                                        <label id="TextField13Label" for="TextField13" class="Polaris-Label__Text">@{{ headerOption.value }}</label>
+                                                    <div class="Polaris-Select Polaris-Select--placeholder">
+                                                        <select class="Polaris-Select__Input" aria-invalid="false" ng-model="headerOption.mapped_to" ng-change="updateTable(headerOption)" >
+                                                            <option label="Select" value="__placeholder__" disabled="" hidden=""></option>
+                                                            <option ng-repeat="(key, value) in headerOptions.inCSV" value="@{{ key }}">@{{ value }}</option>
+                                                        </select>
+                                                        <div class="Polaris-Select__Icon"><span class="Polaris-Icon"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20"><path d="M13 8l-3-3-3 3h6zm-.1 4L10 14.9 7.1 12h5.8z" fill-rule="evenodd"></path></svg></span></div>
+                                                        <div class="Polaris-Select__Backdrop"></div>
                                                     </div>
-                                                </div>
-
-                                                <div class="Polaris-Select Polaris-Select--placeholder">
-                                                    <select class="Polaris-Select__Input" aria-invalid="false" ng-model="headerOption.mapped_to" ng-change="updateTable(headerOption)" >
-                                                        <option label="Select" value="__placeholder__" disabled="" hidden=""></option>
-                                                        <option ng-repeat="(key, value) in headerOptions.inCSV" value="@{{ key }}">@{{ value }}</option>
-                                                    </select>
-                                                    <div class="Polaris-Select__Icon"><span class="Polaris-Icon"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20"><path d="M13 8l-3-3-3 3h6zm-.1 4L10 14.9 7.1 12h5.8z" fill-rule="evenodd"></path></svg></span></div>
-                                                    <div class="Polaris-Select__Backdrop"></div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>

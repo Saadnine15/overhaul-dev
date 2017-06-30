@@ -61,15 +61,13 @@
       <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5229592">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.57908165">
+              <caret line="89" column="64" selection-start-line="89" selection-start-column="64" selection-end-line="89" selection-end-column="64" />
               <folding>
-                <element signature="e#3071#4908#0#HTML" expanded="false" />
-                <element signature="e#3292#3727#0#HTML" expanded="false" />
-                <element signature="e#3785#4849#0#HTML" expanded="false" />
-                <element signature="e#5122#6988#0#HTML" expanded="false" />
-                <element signature="e#5429#5832#0#HTML" expanded="false" />
-                <element signature="e#5882#6890#0#HTML" expanded="false" />
+                <element signature="e#3214#3649#0#HTML" expanded="false" />
+                <element signature="e#3707#4771#0#HTML" expanded="false" />
+                <element signature="e#5210#5613#0#HTML" expanded="false" />
+                <element signature="e#5663#6671#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -662,7 +660,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26136363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -672,7 +670,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287879" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2305026" sideWeight="0.4939394" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2305026" sideWeight="0.4939394" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1102,15 +1100,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5229592">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.57908165">
+          <caret line="89" column="64" selection-start-line="89" selection-start-column="64" selection-end-line="89" selection-end-column="64" />
           <folding>
-            <element signature="e#3071#4908#0#HTML" expanded="false" />
-            <element signature="e#3292#3727#0#HTML" expanded="false" />
-            <element signature="e#3785#4849#0#HTML" expanded="false" />
-            <element signature="e#5122#6988#0#HTML" expanded="false" />
-            <element signature="e#5429#5832#0#HTML" expanded="false" />
-            <element signature="e#5882#6890#0#HTML" expanded="false" />
+            <element signature="e#3214#3649#0#HTML" expanded="false" />
+            <element signature="e#3707#4771#0#HTML" expanded="false" />
+            <element signature="e#5210#5613#0#HTML" expanded="false" />
+            <element signature="e#5663#6671#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
