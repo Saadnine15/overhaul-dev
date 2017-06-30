@@ -22,7 +22,7 @@
                         <div class="Polaris-Layout__Annotation">
                           <div class="col-sm-8">
                               <h1 class="Polaris-DisplayText Polaris-DisplayText--sizeExtraLarge m-b-20 ddHeading">OVERHAUL</h1>
-                              <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmal sfuil"> Welcome to Overhaul, we make bulk product updates quick and easy.
+                              <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmal sfui"> Welcome to Overhaul, we make bulk product updates quick and easy.
                                   Just upload your CSV, select the SKU, then identify the fields you would
                                   like to update.</p>
 
