@@ -1,7 +1,7 @@
 <?php
 return [
-    'api_key' => '5cf02a6ebe36bbcdfce37c412e860bbc',
-    'app_secrete' => '764ed69d4f9dda44c5c62fa35bf476ef',
+    'api_key' => '8b929623995ca4471d40daa26f8bdc9c',
+    'app_secrete' => 'c039dece8c2c48d4acd393cf3ac14242',
     'scope' => [
         'read_products',
         'write_products'
