@@ -82,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/config/shopify.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0867347">
-              <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+              <caret line="2" column="50" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -225,7 +225,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/nine15/shopify/automated-filter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hotelytics" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
   </component>
@@ -601,7 +601,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2689394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1035,7 +1035,7 @@
     <entry file="file://$PROJECT_DIR$/config/shopify.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0867347">
-          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="50" />
           <folding />
         </state>
       </provider>
