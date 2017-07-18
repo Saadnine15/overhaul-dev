@@ -12,9 +12,10 @@
     <title>Product Customizer</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="{{ secure_asset('assets/admin/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('assets/admin/css/style.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/latest/polaris.css">
+    <link href="{{ secure_asset('assets/admin/css/normalize.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ secure_asset('assets/admin/css/webflow.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ secure_asset('assets/admin/css/shopify-internal-projects.webflow.css') }}" rel="stylesheet" type="text/css">
+
 
     <!-- Google Web Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -57,7 +58,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<!--<script src="{{ secure_asset('assets/admin/plugins/bootstrap/js/bootstrap.min.js') }}"></script>-->
+<!--<script src="{{ secure_asset('assets/admin/js/webflow.js') }}"></script>-->
+<script src="js/webflow.js" type="text/javascript"></script>
+
 
 
 </body>

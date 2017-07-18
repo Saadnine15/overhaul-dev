@@ -1,18 +1,112 @@
 @extends('layouts.main')
 
 @section('content')
-
-    <style>
-        .white-block{
-            padding: 15px 25px;
-            background: #fff;
-        }
-        .white-block>h3{
-            text-align: center;
-            margin-bottom: 30px;
-            color: #0078bd;
-        }
-    </style>
+    <section class="section">
+        <div class="container">
+            <div class="w-row">
+                <div class="w-col w-col-8"><img class="overhaul-logo" src="images/overhaul-text.svg">
+                    <p class="get-started-text">Welcome to Overhaul, we make bulk product updates quick and easy. Just upload your CSV, select the SKU, then identify the fields you would like to update.</p>
+                </div>
+                <div class="w-clearfix w-col w-col-4"><img class="crane-img" src="images/overhaul-icon.svg"></div>
+            </div>
+            <section>
+                <div class="step-circle">
+                    <div>1</div>
+                </div>
+                <div class="step-header">Upload your CSV</div>
+                <div class="selector-container">
+                    <div class="upload-title">Upload your CSV</div>
+                    <div>No file chosen</div>
+                </div>
+                <div class="row w-row">
+                    <div class="col-pad-fix-left w-col w-col-3 w-col-stack">
+                        <div class="opacity-overlay"></div>
+                        <div class="step-circle">
+                            <div>2</div>
+                        </div>
+                        <div class="step-header">Select SKU</div>
+                        <div class="selector-container">
+                            <div class="upload-title">Variant SKU <span class="highlight-text">(required)</span></div>
+                            <div class="w-form">
+                                <form data-name="Email Form" id="email-form" name="email-form"><select class="select-field w-select" id="field" name="field"><option value="">Select one...</option>
+                                        <option value="First">First Choice</option>
+                                        <option value="Second">Second Choice</option>
+                                        <option value="Third">Third Choice</option></select></form>
+                                <div class="w-form-done">
+                                    <div>Thank you! Your submission has been received!</div>
+                                </div>
+                                <div class="w-form-fail">
+                                    <div>Oops! Something went wrong while submitting the form</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-pad-fix-right w-col w-col-9 w-col-stack">
+                        <div class="step-circle">
+                            <div>3</div>
+                        </div>
+                        <div class="step-header">Select fields you would like to update</div>
+                        <div class="selector-container">
+                            <div class="w-row">
+                                <div class="w-col w-col-4">
+                                    <div class="block-padding">
+                                        <div class="upload-title">Variant Price</div>
+                                        <div class="w-form">
+                                            <form data-name="Email Form" id="email-form" name="email-form"><select class="select-field w-select" data-name="Field 2" id="field-2" name="field-2"><option value="">Select one...</option>
+                                                    <option value="First">First Choice</option>
+                                                    <option value="Second">Second Choice</option>
+                                                    <option value="Third">Third Choice</option></select></form>
+                                            <div class="w-form-done">
+                                                <div>Thank you! Your submission has been received!</div>
+                                            </div>
+                                            <div class="w-form-fail">
+                                                <div>Oops! Something went wrong while submitting the form</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-padding w-col w-col-4">
+                                    <div class="block-padding">
+                                        <div class="upload-title">Compare at Price</div>
+                                        <div class="w-form">
+                                            <form data-name="Email Form" id="email-form" name="email-form"><select class="select-field w-select" data-name="Field 3" id="field-3" name="field-3"><option value="">Select one...</option>
+                                                    <option value="First">First Choice</option>
+                                                    <option value="Second">Second Choice</option>
+                                                    <option value="Third">Third Choice</option></select></form>
+                                            <div class="w-form-done">
+                                                <div>Thank you! Your submission has been received!</div>
+                                            </div>
+                                            <div class="w-form-fail">
+                                                <div>Oops! Something went wrong while submitting the form</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-padding w-col w-col-4">
+                                    <div class="block-padding">
+                                        <div class="upload-title">Inventory Quantity</div>
+                                        <div class="w-form">
+                                            <form data-name="Email Form" id="email-form" name="email-form"><select class="select-field w-select" data-name="Field 4" id="field-4" name="field-4"><option value="">Select one...</option>
+                                                    <option value="First">First Choice</option>
+                                                    <option value="Second">Second Choice</option>
+                                                    <option value="Third">Third Choice</option></select></form>
+                                            <div class="w-form-done">
+                                                <div>Thank you! Your submission has been received!</div>
+                                            </div>
+                                            <div class="w-form-fail">
+                                                <div>Oops! Something went wrong while submitting the form</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opacity-overlay"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
     <div ng-controller="StoreController" data-reactroot="" class="Polaris-Page">
         <div class="Polaris-Page__Content">
             <div class="Polaris-Layout">
