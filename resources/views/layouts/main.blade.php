@@ -58,8 +58,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<!--<script src="{{ secure_asset('assets/admin/js/webflow.js') }}"></script>-->
-<script src="js/webflow.js" type="text/javascript"></script>
+<script src="{{ secure_asset('assets/admin/js/webflow.js') }}"></script>
 
 
 

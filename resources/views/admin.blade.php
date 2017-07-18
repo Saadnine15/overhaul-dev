@@ -4,10 +4,10 @@
     <section class="section">
         <div class="container">
             <div class="w-row">
-                <div class="w-col w-col-8"><img class="overhaul-logo" src="images/overhaul-text.svg">
+                <div class="w-col w-col-8"><img class="overhaul-logo" src="{{ secure_asset('assets/admin/images/overhaul-text.svg') }}">
                     <p class="get-started-text">Welcome to Overhaul, we make bulk product updates quick and easy. Just upload your CSV, select the SKU, then identify the fields you would like to update.</p>
                 </div>
-                <div class="w-clearfix w-col w-col-4"><img class="crane-img" src="images/overhaul-icon.svg"></div>
+                <div class="w-clearfix w-col w-col-4"><img class="crane-img" src="{{ secure_asset('assets/admin/images/overhaul-icon.svg') }}images/overhaul-icon.svg"></div>
             </div>
             <section>
                 <div class="step-circle">
