@@ -1,5 +1,9 @@
 @extends('layouts.main')
-
+<style>
+    .selector-container{
+        box-shadow: 0 0 0 1px rgba(63,63,68,0.05), 0 1px 3px 0 rgba(63,63,68,0.15);
+    }
+</style>
 @section('content')
     <div ng-controller="StoreController" data-reactroot="" class="Polaris-Page">
         <section class="section">
