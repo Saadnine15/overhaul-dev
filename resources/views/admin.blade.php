@@ -75,7 +75,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div ng-show="skuSelected==false" class="opacity-overlay"></div>
+                        <div ng-show="skuSelected!=true" class="opacity-overlay"></div>
                     </div>
                 </div>
                 <div ng-show="showTable==true" class="results selector-container">
