@@ -22,7 +22,7 @@
                 </div>
                 <div class="row w-row">
                     <div class="col-pad-fix-left w-col w-col-3 w-col-stack">
-                        <div ng-show="fileSelected==false"   class="opacity-overlay"></div>
+                        <div ng-show="fileSelected!=true"   class="opacity-overlay"></div>
                         <div class="step-circle">
                             <div>2</div>
                         </div>
