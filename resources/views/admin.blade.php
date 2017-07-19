@@ -55,7 +55,7 @@
                         <div class="selector-container">
                             <div class="w-row">
                                 <div ng-if="!$first"   ng-repeat="headerOption in headerOptions.offered">
-                                    <div ng-class="{'col-padding': !$second} w-col w-col-4" >
+                                    <div ng-class=" w-col w-col-4" >
                                         <div class="block-padding">
                                             <div class="upload-title">@{{ headerOption.value }}</div>
                                             <div class="w-form">
