@@ -83,12 +83,7 @@
                         <div class="padding-none w-col w-col-3" ng-repeat="headerOption in headerOptions.offered">
                             <div class="info-padding upload-title">@{{ headerOption.value }}</div>
                         </div>
-                        <div class="padding-none w-col w-col-3">
-                            <div class="info-padding upload-title">Inventory Quantity</div>
-                            <div class="info-container">
-                                <div class="info-padding">32938847343</div>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="w-row"  ng-repeat="row in table">
 

@@ -64,7 +64,7 @@
             <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.6809651">
-                  <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+                  <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -119,10 +119,13 @@
           <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7017544">
-                  <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.914787">
+                  <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
                   <folding>
+                    <element signature="e#1297#2992#0#HTML" expanded="false" />
+                    <element signature="e#3013#5179#0#HTML" expanded="false" />
                     <element signature="e#3311#5063#0#HTML" expanded="false" />
+                    <element signature="e#5219#6402#0#HTML" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -1201,10 +1204,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7017544">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.914787">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
+            <element signature="e#1297#2992#0#HTML" expanded="false" />
+            <element signature="e#3013#5179#0#HTML" expanded="false" />
             <element signature="e#3311#5063#0#HTML" expanded="false" />
+            <element signature="e#5219#6402#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
