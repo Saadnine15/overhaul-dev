@@ -1,7 +1,8 @@
 @extends('layouts.main')
 
 @section('content')
-    <section class="section">
+    <div ng-controller="StoreController" data-reactroot="" class="Polaris-Page">
+        <section class="section">
         <div class="container">
             <div class="w-row">
                 <div class="w-col w-col-8"><img class="overhaul-logo" src="{{ secure_asset('assets/admin/images/overhaul-text.svg') }}">
@@ -17,6 +18,7 @@
                 <div class="selector-container">
                     <div class="upload-title">Upload your CSV</div>
                     <div>No file chosen</div>
+                    <div><input type="file" csv-reader="" save-results-callback="readCSV(csv_data)"></div>
                 </div>
                 <div class="row w-row">
                     <div class="col-pad-fix-left w-col w-col-3 w-col-stack">
@@ -24,14 +26,17 @@
                         <div class="step-circle">
                             <div>2</div>
                         </div>
-                        <div class="step-header">Select SKU</div>
-                        <div class="selector-container">
-                            <div class="upload-title">Variant SKU <span class="highlight-text">(required)</span></div>
-                            <div class="w-form">
-                                <form data-name="Email Form" id="email-form" name="email-form"><select class="select-field w-select" id="field" name="field"><option value="">Select one...</option>
-                                        <option value="First">First Choice</option>
-                                        <option value="Second">Second Choice</option>
-                                        <option value="Third">Third Choice</option></select></form>
+                            <div class="step-header">Select SKU</div>
+                            <div class="selector-container">
+                                <div ng-if="$first"   ng-repeat="headerOption in headerOptions.offered">
+                                    <div class="upload-title">@{{ headerOption.value }} <span class="highlight-text">(required)</span></div>
+                                    <div class="w-form">
+                                <form id="email-form">
+                                    <select class="select-field w-select"  aria-invalid="false" ng-model="headerOption.mapped_to" ng-change="updateTable(headerOption)" >
+                                        <option label="Select" value="__placeholder__" disabled="" hidden=""></option>
+                                        <option ng-repeat="(key, value) in headerOptions.inCSV" value="@{{ key }}">@{{ value }}</option>
+                                    </select>
+                                </form>
                                 <div class="w-form-done">
                                     <div>Thank you! Your submission has been received!</div>
                                 </div>
@@ -39,6 +44,7 @@
                                     <div>Oops! Something went wrong while submitting the form</div>
                                 </div>
                             </div>
+                                </div>
                         </div>
                     </div>
                     <div class="col-pad-fix-right w-col w-col-9 w-col-stack">
@@ -48,56 +54,28 @@
                         <div class="step-header">Select fields you would like to update</div>
                         <div class="selector-container">
                             <div class="w-row">
-                                <div class="w-col w-col-4">
-                                    <div class="block-padding">
-                                        <div class="upload-title">Variant Price</div>
-                                        <div class="w-form">
-                                            <form data-name="Email Form" id="email-form" name="email-form"><select class="select-field w-select" data-name="Field 2" id="field-2" name="field-2"><option value="">Select one...</option>
-                                                    <option value="First">First Choice</option>
-                                                    <option value="Second">Second Choice</option>
-                                                    <option value="Third">Third Choice</option></select></form>
-                                            <div class="w-form-done">
-                                                <div>Thank you! Your submission has been received!</div>
-                                            </div>
-                                            <div class="w-form-fail">
-                                                <div>Oops! Something went wrong while submitting the form</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-padding w-col w-col-4">
-                                    <div class="block-padding">
-                                        <div class="upload-title">Compare at Price</div>
-                                        <div class="w-form">
-                                            <form data-name="Email Form" id="email-form" name="email-form"><select class="select-field w-select" data-name="Field 3" id="field-3" name="field-3"><option value="">Select one...</option>
-                                                    <option value="First">First Choice</option>
-                                                    <option value="Second">Second Choice</option>
-                                                    <option value="Third">Third Choice</option></select></form>
-                                            <div class="w-form-done">
-                                                <div>Thank you! Your submission has been received!</div>
-                                            </div>
-                                            <div class="w-form-fail">
-                                                <div>Oops! Something went wrong while submitting the form</div>
+                                <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
+                                    <div ng-class="{'col-padding': !$second} w-col w-col-4" >
+                                        <div class="block-padding">
+                                            <div class="upload-title">@{{ headerOption.value }}</div>
+                                            <div class="w-form">
+                                                <form  id="email-form" >
+                                                    <select class="select-field w-select" aria-invalid="false" ng-model="headerOption.mapped_to" ng-change="updateTable(headerOption)" >
+                                                        <option label="Select" value="__placeholder__" disabled="" hidden=""></option>
+                                                        <option ng-repeat="(key, value) in headerOptions.inCSV" value="@{{ key }}">@{{ value }}</option>
+                                                    </select>
+
+                                                </form>
+                                                <div class="w-form-done">
+                                                    <div>Thank you! Your submission has been received!</div>
+                                                </div>
+                                                <div class="w-form-fail">
+                                                    <div>Oops! Something went wrong while submitting the form</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-padding w-col w-col-4">
-                                    <div class="block-padding">
-                                        <div class="upload-title">Inventory Quantity</div>
-                                        <div class="w-form">
-                                            <form data-name="Email Form" id="email-form" name="email-form"><select class="select-field w-select" data-name="Field 4" id="field-4" name="field-4"><option value="">Select one...</option>
-                                                    <option value="First">First Choice</option>
-                                                    <option value="Second">Second Choice</option>
-                                                    <option value="Third">Third Choice</option></select></form>
-                                            <div class="w-form-done">
-                                                <div>Thank you! Your submission has been received!</div>
-                                            </div>
-                                            <div class="w-form-fail">
-                                                <div>Oops! Something went wrong while submitting the form</div>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -107,29 +85,14 @@
             </section>
         </div>
     </section>
+    </div>
+
+
     <div ng-controller="StoreController" data-reactroot="" class="Polaris-Page">
         <div class="Polaris-Page__Content">
             <div class="Polaris-Layout">
 
-                <div class="Polaris-Layout__AnnotatedSection">
-                    <div class="Polaris-Layout__AnnotationWrapper">
-                        <div class="Polaris-Layout__Annotation">
-                          <div class="col-sm-8">
-                              <h1 class="Polaris-DisplayText Polaris-DisplayText--sizeExtraLarge m-b-20 ddHeading">OVERHAUL</h1>
-                              <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmal sfui"> Welcome to Overhaul, we make bulk product updates quick and easy.
-                                  Just upload your CSV, select the SKU, then identify the fields you would
-                                  like to update.</p>
 
-
-                          </div>
-
-                            <div class="col-sm-3">
-                                <img src="{{ secure_asset('assets/admin/overhaulImg.PNG') }}">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
 
                 <div class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Layout__AnnotationWrapper">
@@ -139,7 +102,9 @@
                             <div class="Polaris-Card">
                                 <div class="Polaris-Card__Section">
                                     <div class="Polaris-SettingAction">
-                                        <div class="Polaris-SettingAction__Setting">Upload your CSV<br>  <input type="file" csv-reader="" save-results-callback="readCSV(csv_data)"></div>
+                                        <div class="Polaris-SettingAction__Setting">Upload your CSV<br>
+                                            <input type="file" csv-reader="" save-results-callback="readCSV(csv_data)">
+                                        </div>
 
 
 
