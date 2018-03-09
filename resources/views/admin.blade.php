@@ -33,7 +33,8 @@
 
                     </div>
                 </div>
-                <div class="Polaris-Card">
+                <div class="Polaris-Layout__AnnotatedSection">
+                    <div class="Polaris-Card">
                     <div class="Polaris-Card__Section">
                         <div class="Polaris-SettingAction">
                             <div class="Polaris-SettingAction__Setting">
@@ -51,7 +52,7 @@
 
                     </div>
                 </div>
-
+                </div>
 
                 <div class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Layout__AnnotationWrapper">
