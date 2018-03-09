@@ -48,9 +48,7 @@
                             </div>
                             <div class="Polaris-SettingAction__Action"><input type="file" csv-reader="" save-results-callback="readCSV(csv_data)"></div>
                         </div>
-                        <div class="Polaris-AccountConnection__TermsOfService">
-                            <p>By clicking <strong>Connect</strong>, you agree to accept Sample App’s <a class="Polaris-Link" href="Example App" data-polaris-unstyled="true">terms and conditions</a>. You’ll pay a commission rate of 15% on sales made through Sample App.</p>
-                        </div>
+
                     </div>
                 </div>
 
