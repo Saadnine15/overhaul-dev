@@ -70,7 +70,7 @@
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div>
                                                     <div class="oval">2</div>
-                                                    <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall"> Select <span class="Polaris-TextStyle--variationStrong">SKU</span></p>
+                                                    Select <span class="Polaris-TextStyle--variationStrong">SKU</span>
 
                                                 </div>
                                             </div>
@@ -169,7 +169,7 @@
                                         <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div>
-                                                    Clicking the "Update" button will overwrite the fields selected above.
+                                                    Clicking the "<span class="Polaris-TextStyle--variationStrong">Update</span>" button will overwrite the fields selected above.
                                                 </div>
                                             </div>
                                         </div>
