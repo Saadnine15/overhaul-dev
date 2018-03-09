@@ -36,8 +36,18 @@
                 <div class="Polaris-Card">
                     <div class="Polaris-Card__Section">
                         <div class="Polaris-SettingAction">
+                            <div class="Polaris-SettingAction__Setting">
+                                <div class="Polaris-Stack">
+                                    <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
+                                        <div class="Polaris-AccountConnection__Content">
+                                            <div><div class="oval">1</div>Upload your CSV</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="Polaris-SettingAction__Action"><input type="file" csv-reader="" save-results-callback="readCSV(csv_data)"></div>
                         </div>
+
                     </div>
                 </div>
 
