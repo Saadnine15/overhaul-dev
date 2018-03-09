@@ -70,7 +70,7 @@
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div>
                                                     <div class="oval">2</div>
-                                                    <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall"> Select <TextStyle variation="strong">SKU</TextStyle></p>
+                                                    <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall"> Select <span class="Polaris-TextStyle--variationSubdued">SKU</span></p>
 
                                                 </div>
                                             </div>
@@ -117,8 +117,8 @@
                                     <div class="Polaris-AccountConnection__Content">
                                         <div>
                                             <div class="oval">3</div>
-                                            Select one or multiple fields you would like to update.<TextStyle variation="strong">Only selected fields
-                                                will be updated</TextStyle>
+                                            Select one or multiple fields you would like to update.<span class="Polaris-TextStyle--variationSubdued">Only selected fields
+                                                will be updated</span>
                                         </div>
                                     </div>
                                 </div>
