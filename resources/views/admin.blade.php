@@ -44,7 +44,7 @@
                                         <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div>
-                                                    <div class="oval">1</div>
+                                                    <div class="Polaris-Button--primary oval">1</div>
                                                     Upload your CSV
                                                 </div>
                                             </div>
@@ -69,7 +69,7 @@
                                         <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div>
-                                                    <div class="oval">2</div>
+                                                    <div class="Polaris-Button--primary oval">2</div>
                                                     Select <span class="Polaris-TextStyle--variationStrong">SKU</span>
 
                                                 </div>
@@ -116,7 +116,7 @@
                                 <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
                                     <div class="Polaris-AccountConnection__Content">
                                         <div>
-                                            <div class="oval">3</div>
+                                            <div class="Polaris-Button--primary oval">3</div>
                                             Select one or multiple fields you would like to update.<span class="Polaris-TextStyle--variationStrong">Only selected fields
                                                 will be updated</span>
                                         </div>
