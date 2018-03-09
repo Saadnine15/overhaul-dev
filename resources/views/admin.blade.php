@@ -42,7 +42,6 @@
                                     <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
                                         <div class="Polaris-AccountConnection__Content">
                                             <div><div class="oval">1</div>Upload your CSV</div>
-                                            <div><span class="Polaris-TextStyle--variationSubdued">No account connected</span></div>
                                         </div>
                                     </div>
                                 </div>
