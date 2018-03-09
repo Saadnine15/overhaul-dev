@@ -22,7 +22,7 @@
                     <div class="Polaris-Layout__AnnotationWrapper">
                         <div class="Polaris-Layout__Annotation">
                             <div class="col-sm-12">
-                                <h2 class="Polaris-Heading">Dashboard</h2>
+                                <h1 class="Polaris-Heading">Dashboard</h1>
                                 <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmal sfui"> Welcome to Overhaul,
                                     we make bulk product updates quick and easy.
                                     Just upload your CSV, select the SKU, then identify the fields you would
