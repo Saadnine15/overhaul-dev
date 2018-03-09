@@ -63,12 +63,12 @@
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="72" column="126" lean-forward="false" selection-start-line="72" selection-start-column="126" selection-end-line="72" selection-end-column="126" />
+              <caret line="72" column="156" lean-forward="false" selection-start-line="72" selection-start-column="156" selection-end-line="72" selection-end-column="156" />
               <folding>
                 <element signature="e#1291#2666#0#HTML" expanded="false" />
-                <element signature="e#5730#8656#0#HTML" expanded="false" />
-                <marker date="1520638811306" expanded="true" signature="9:23" ph="..." />
-                <marker date="1520638811306" expanded="true" signature="35:44" ph="..." />
+                <element signature="e#5772#8698#0#HTML" expanded="false" />
+                <marker date="1520638926884" expanded="true" signature="9:23" ph="..." />
+                <marker date="1520638926884" expanded="true" signature="35:44" ph="..." />
               </folding>
             </state>
           </provider>
@@ -386,7 +386,7 @@
       <updated>1480071896766</updated>
       <workItem from="1480071897913" duration="6078000" />
       <workItem from="1480408742989" duration="41842000" />
-      <workItem from="1520621085350" duration="14201000" />
+      <workItem from="1520621085350" duration="14317000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -735,7 +735,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62121000" />
+    <option name="totallyTimeSpent" value="62237000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1185,12 +1185,12 @@
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="72" column="126" lean-forward="false" selection-start-line="72" selection-start-column="126" selection-end-line="72" selection-end-column="126" />
+          <caret line="72" column="156" lean-forward="false" selection-start-line="72" selection-start-column="156" selection-end-line="72" selection-end-column="156" />
           <folding>
             <element signature="e#1291#2666#0#HTML" expanded="false" />
-            <element signature="e#5730#8656#0#HTML" expanded="false" />
-            <marker date="1520638811306" expanded="true" signature="9:23" ph="..." />
-            <marker date="1520638811306" expanded="true" signature="35:44" ph="..." />
+            <element signature="e#5772#8698#0#HTML" expanded="false" />
+            <marker date="1520638926884" expanded="true" signature="9:23" ph="..." />
+            <marker date="1520638926884" expanded="true" signature="35:44" ph="..." />
           </folding>
         </state>
       </provider>
