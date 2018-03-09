@@ -23,10 +23,10 @@
                         <div class="Polaris-Layout__Annotation">
                             <div class="col-sm-12">
                                 <h1 class="Polaris-Heading">Dashboard</h1>
-                                <TextStyle variation="subdued"> Welcome to Overhaul,
+                                <span class="Polaris-TextStyle--variationSubdued"> Welcome to Overhaul,
                                     we make bulk product updates quick and easy.
                                     Just upload your CSV, select the SKU, then identify the fields you would
-                                    like to update.</TextStyle>
+                                    like to update.</span>
 
 
                             </div>
@@ -70,7 +70,7 @@
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div>
                                                     <div class="oval">2</div>
-                                                    <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall"> Select <span class="Polaris-TextStyle--variationSubdued">SKU</span></p>
+                                                    <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall"> Select <span class="Polaris-TextStyle--variationStrong">SKU</span></p>
 
                                                 </div>
                                             </div>
@@ -117,7 +117,7 @@
                                     <div class="Polaris-AccountConnection__Content">
                                         <div>
                                             <div class="oval">3</div>
-                                            Select one or multiple fields you would like to update.<span class="Polaris-TextStyle--variationSubdued">Only selected fields
+                                            Select one or multiple fields you would like to update.<span class="Polaris-TextStyle--variationStrong">Only selected fields
                                                 will be updated</span>
                                         </div>
                                     </div>
