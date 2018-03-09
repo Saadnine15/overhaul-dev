@@ -70,7 +70,8 @@
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div>
                                                     <div class="oval">2</div>
-                                                    Select SKU
+                                                    <p class="Polaris-DisplayText Polaris-DisplayText--sizeMedium"> Select SKU</p>
+
                                                 </div>
                                             </div>
                                         </div>
