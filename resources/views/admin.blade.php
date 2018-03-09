@@ -23,10 +23,10 @@
                         <div class="Polaris-Layout__Annotation">
                             <div class="col-sm-12">
                                 <h1 class="Polaris-Heading">Dashboard</h1>
-                                <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmal sfui"> Welcome to Overhaul,
+                                <TextStyle variation="subdued"> Welcome to Overhaul,
                                     we make bulk product updates quick and easy.
                                     Just upload your CSV, select the SKU, then identify the fields you would
-                                    like to update.</p>
+                                    like to update.</TextStyle>
 
 
                             </div>
