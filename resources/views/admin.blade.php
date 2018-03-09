@@ -95,16 +95,14 @@
                     <div class="Polaris-Card">
                         <div class="Polaris-Card__Section">
                             <div class="Polaris-SettingAction">
-                                <div class="Polaris-SettingAction__Setting">
-                                    <div class="Polaris-Stack">
+
                                         <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
                                             <div class="Polaris-AccountConnection__Content">
-                                                <div><div class="oval">3</div>Select fields you would like to update</div>
+                                                <div><div class="oval">3</div>Select one or multiple fields you would like to update.Only selected fields will be updated</div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="Polaris-SettingAction__Action">
+
+
                                     <div class="custom-card">
                                                 <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
 
@@ -128,7 +126,7 @@
                                                     </div>
                                                 </div>
                                     </div>
-                                </div>
+
                             </div>
 
                         </div>
