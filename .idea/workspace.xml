@@ -62,11 +62,11 @@
       <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+            <state relative-caret-position="370">
+              <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
               <folding>
-                <marker date="1520631920765" expanded="true" signature="9:23" ph="..." />
-                <marker date="1520631920765" expanded="true" signature="35:44" ph="..." />
+                <marker date="1520631989363" expanded="true" signature="9:23" ph="..." />
+                <marker date="1520631989363" expanded="true" signature="35:44" ph="..." />
               </folding>
             </state>
           </provider>
@@ -379,7 +379,7 @@
       <updated>1480071896766</updated>
       <workItem from="1480071897913" duration="6078000" />
       <workItem from="1480408742989" duration="41842000" />
-      <workItem from="1520621085350" duration="8194000" />
+      <workItem from="1520621085350" duration="8263000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -728,7 +728,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56114000" />
+    <option name="totallyTimeSpent" value="56183000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1177,11 +1177,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        <state relative-caret-position="370">
+          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
           <folding>
-            <marker date="1520631920765" expanded="true" signature="9:23" ph="..." />
-            <marker date="1520631920765" expanded="true" signature="35:44" ph="..." />
+            <marker date="1520631989363" expanded="true" signature="9:23" ph="..." />
+            <marker date="1520631989363" expanded="true" signature="35:44" ph="..." />
           </folding>
         </state>
       </provider>
