@@ -33,7 +33,26 @@
 
                     </div>
                 </div>
-
+                <div class="Polaris-Card">
+                    <div class="Polaris-Card__Section">
+                        <div class="Polaris-SettingAction">
+                            <div class="Polaris-SettingAction__Setting">
+                                <div class="Polaris-Stack">
+                                    <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
+                                        <div class="Polaris-AccountConnection__Content">
+                                            <div>Example App</div>
+                                            <div><span class="Polaris-TextStyle--variationSubdued">No account connected</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Polaris-SettingAction__Action"><button type="button" class="Polaris-Button Polaris-Button--primary"><span class="Polaris-Button__Content"><span>Connect</span></span></button></div>
+                        </div>
+                        <div class="Polaris-AccountConnection__TermsOfService">
+                            <p>By clicking <strong>Connect</strong>, you agree to accept Sample App’s <a class="Polaris-Link" href="Example App" data-polaris-unstyled="true">terms and conditions</a>. You’ll pay a commission rate of 15% on sales made through Sample App.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Layout__AnnotationWrapper">
 
