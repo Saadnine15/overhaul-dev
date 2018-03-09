@@ -67,7 +67,6 @@
                                     </div>
                                 </div>
                                 <div class="Polaris-SettingAction__Action">
-                                    <div class="custom-card">
 
                                         <div ng-if="$first"   ng-repeat="headerOption in headerOptions.offered">
 
@@ -82,7 +81,6 @@
                                             </div>
 
                                         </div>
-                                    </div>
                                 </div>
                             </div>
 
@@ -103,7 +101,6 @@
                                         </div>
 
 
-                                    <div class="custom-card">
                                                 <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
 
 
@@ -125,7 +122,6 @@
                                                         <div class="Polaris-Select__Backdrop"></div>
                                                     </div>
                                                 </div>
-                                    </div>
 
                             </div>
 
@@ -142,7 +138,6 @@
 
                                         <div ng-show="skuSelected==true" class="col-sm-9 " style="padding-right: 0px;">
                                             <h2 class="Polaris-Heading sfui"><div class="oval">3</div>Select fields you would like to update</h2>
-                                            <div class="custom-card">
                                                 <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"  ng-repeat="headerOption in headerOptions.offered">
 
 
@@ -163,7 +158,6 @@
                                                         <div class="Polaris-Select__Icon"><span class="Polaris-Icon"><svg class="Polaris-Icon__Svg" viewBox="0 0 20 20"><path d="M13 8l-3-3-3 3h6zm-.1 4L10 14.9 7.1 12h5.8z" fill-rule="evenodd"></path></svg></span></div>
                                                         <div class="Polaris-Select__Backdrop"></div>
                                                     </div>
-                                            </div>
                                             </div>
                                         </div>
 
