@@ -70,7 +70,7 @@
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div>
                                                     <div class="oval">2</div>
-                                                    <p class="Polaris-DisplayText Polaris-DisplayText--sizeMedium"> Select <TextStyle variation="strong">SKU</TextStyle></p>
+                                                    <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall"> Select <TextStyle variation="strong">SKU</TextStyle></p>
 
                                                 </div>
                                             </div>
@@ -117,8 +117,8 @@
                                     <div class="Polaris-AccountConnection__Content">
                                         <div>
                                             <div class="oval">3</div>
-                                            Select one or multiple fields you would like to update.Only selected fields
-                                            will be updated
+                                            Select one or multiple fields you would like to update.<TextStyle variation="strong">Only selected fields
+                                                will be updated</TextStyle>
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +169,7 @@
                                         <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div>
-                                                    Clicking the"Update" button will overwrite the fields selected above.
+                                                    Clicking the "Update" button will overwrite the fields selected above.
                                                 </div>
                                             </div>
                                         </div>
