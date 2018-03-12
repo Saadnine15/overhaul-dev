@@ -159,7 +159,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         }
 
         //init Shopify App
-        shopifyApp.init('Product Importer', $scope.updateProducts, []);
+        // shopifyApp.init('Product Importer', $scope.updateProducts, []);
 
 
     }])
