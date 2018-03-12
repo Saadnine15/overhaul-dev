@@ -76,12 +76,12 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
         $scope.table = [];
         $scope.updateTable = function(headerOption){
-            $('.Polaris-Button').removeAttribute('disabled');
-            $('.Polaris-Button').addClass('Polaris-Button--primary');
+
             var obj = {};
             var table = [];
             if(headerOption.mapped_to != ""){
-
+                $('.Polaris-Button').removeAttr('disabled');
+                $('.Polaris-Button').addClass('Polaris-Button--primary');
 
                 angular.forEach($scope.csv, function(csv_row, key){
                     obj = {};
