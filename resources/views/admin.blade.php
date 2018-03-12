@@ -114,6 +114,7 @@
                             <div class="Polaris-SettingAction">
                                 <div class="Polaris-Stack">
                                 <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
+
                                     <div class="Polaris-AccountConnection__Content">
                                         <div>
                                             <div class="Polaris-Button--primary oval">3</div>
@@ -122,7 +123,7 @@
                                         </div>
                                     </div>
                                 </div>
-
+                                </div>
 
                                 <div ng-if="!$first" ng-class="{'col-sm-4': !$first}"
                                      ng-repeat="headerOption in headerOptions.offered">
@@ -151,7 +152,7 @@
                                         <div class="Polaris-Select__Backdrop"></div>
                                     </div>
                                 </div>
-                                </div>
+
                             </div>
 
                         </div>
