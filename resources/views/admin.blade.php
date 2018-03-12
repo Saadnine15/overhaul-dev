@@ -51,7 +51,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="Polaris-SettingAction__Action"><input data-ng-model="bankfilepath"  type="file" csv-reader=""
+                                <div class="Polaris-SettingAction__Action"><input ng-model="bankfilepath"  type="file" csv-reader=""
                                                                                   save-results-callback="readCSV(csv_data)">
                                 </div>
                             </div>
