@@ -145,7 +145,7 @@
                                                                     </div>
 
                                                                     <div class="Polaris-Select Polaris-Select--placeholder">
-                                                                        <select class="Polaris-Select__Input" aria-invalid="false"
+                                                                        <select class="Polaris-Select__Input" ng-disabled="!skuSelected" aria-invalid="false"
                                                                                 ng-model="headerOption.mapped_to" ng-change="updateTable(headerOption)">
                                                                             <option label="Select" value="__placeholder__" disabled=""
                                                                                     hidden="">Select</option>
