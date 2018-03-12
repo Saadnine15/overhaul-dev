@@ -70,7 +70,7 @@ class ProductsUpdater extends Job implements ShouldQueue
      */
     private function updateVariants(){
         Variant::initStore($this->store_settings->store_name, config('shopify.api_key'), $this->store_settings->access_token);
-
+        dd(2334);
         //to init start time
         ShopifyApiThrottle::init();
         $index = 1;
@@ -85,7 +85,7 @@ class ProductsUpdater extends Job implements ShouldQueue
                 unset($variant["sku"]);
 
                 Variant::save($variant, "/admin/variants/" . $variant_id . ".json");
-                dd(2334);
+
             }
             //to re-init start time
             ShopifyApiThrottle::init();
