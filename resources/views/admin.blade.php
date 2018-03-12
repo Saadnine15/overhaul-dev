@@ -197,7 +197,7 @@
                                     </div>
                                 </div>
                                 <div class="Polaris-SettingAction__Action">
-                                    <input type="submit" class="Polaris-Button Polaris-Button--primary"><span class="Polaris-Button__Content"><span>Update</span></span></input>
+                                    <button data-ng-click="updateProducts()" class="Polaris-Button Polaris-Button--primary"><span class="Polaris-Button__Content"><span>Update</span></span></button>
                                 </div>
                             </div>
 
