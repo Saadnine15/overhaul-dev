@@ -244,23 +244,23 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
 
     .service('shopifyApp', function(){
-        this.init = function(page_title, callbackFunction, secondaryButtons){
-            ShopifyApp.ready(function(){
-                var config = {
-                    title: page_title,
-                    buttons: {
-                        primary: {
-                            label: 'Update',
-                            callback: callbackFunction
-                        }
-                    }
-                };
-                if(secondaryButtons && secondaryButtons.length){
-                    config.buttons.secondary = secondaryButtons;
-                }
-                ShopifyApp.Bar.initialize(config);
-            });
-        }
+        // this.init = function(page_title, callbackFunction, secondaryButtons){
+        //     ShopifyApp.ready(function(){
+        //         var config = {
+        //             title: page_title,
+        //             buttons: {
+        //                 primary: {
+        //                     label: 'Update',
+        //                     callback: callbackFunction
+        //                 }
+        //             }
+        //         };
+        //         if(secondaryButtons && secondaryButtons.length){
+        //             config.buttons.secondary = secondaryButtons;
+        //         }
+        //         ShopifyApp.Bar.initialize(config);
+        //     });
+        // }
 
         this.Bar = {
             loadingOn: function(){
