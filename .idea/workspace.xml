@@ -52,8 +52,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="111" column="34" lean-forward="false" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="34" />
+            <state relative-caret-position="351">
+              <caret line="252" column="42" lean-forward="false" selection-start-line="252" selection-start-column="36" selection-end-line="252" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -62,12 +62,12 @@
       <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="199" column="47" lean-forward="true" selection-start-line="199" selection-start-column="47" selection-end-line="199" selection-end-column="47" />
+            <state relative-caret-position="223">
+              <caret line="201" column="34" lean-forward="true" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
               <folding>
                 <element signature="e#6131#6952#0#HTML" expanded="false" />
-                <marker date="1520866095405" expanded="true" signature="9:23" ph="..." />
-                <marker date="1520866095405" expanded="true" signature="35:44" ph="..." />
+                <marker date="1520866579656" expanded="true" signature="9:23" ph="..." />
+                <marker date="1520866579656" expanded="true" signature="35:44" ph="..." />
               </folding>
             </state>
           </provider>
@@ -133,8 +133,9 @@
       <find>custom</find>
       <find>oval</find>
       <find>readCSV</find>
-      <find>select</find>
       <find>updateTable</find>
+      <find>select</find>
+      <find>update</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -392,7 +393,7 @@
       <updated>1480071896766</updated>
       <workItem from="1480071897913" duration="6078000" />
       <workItem from="1480408742989" duration="41842000" />
-      <workItem from="1520621085350" duration="17672000" />
+      <workItem from="1520621085350" duration="18153000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -741,7 +742,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65592000" />
+    <option name="totallyTimeSpent" value="66073000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1161,14 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="111" column="34" lean-forward="false" selection-start-line="111" selection-start-column="23" selection-end-line="111" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/main.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1188,14 +1181,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="252" column="42" lean-forward="false" selection-start-line="252" selection-start-column="36" selection-end-line="252" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="199" column="47" lean-forward="true" selection-start-line="199" selection-start-column="47" selection-end-line="199" selection-end-column="47" />
+        <state relative-caret-position="223">
+          <caret line="201" column="34" lean-forward="true" selection-start-line="201" selection-start-column="34" selection-end-line="201" selection-end-column="34" />
           <folding>
             <element signature="e#6131#6952#0#HTML" expanded="false" />
-            <marker date="1520866095405" expanded="true" signature="9:23" ph="..." />
-            <marker date="1520866095405" expanded="true" signature="35:44" ph="..." />
+            <marker date="1520866579656" expanded="true" signature="9:23" ph="..." />
+            <marker date="1520866579656" expanded="true" signature="35:44" ph="..." />
           </folding>
         </state>
       </provider>
