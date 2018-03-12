@@ -62,12 +62,17 @@
       <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="157" column="54" lean-forward="false" selection-start-line="157" selection-start-column="54" selection-end-line="157" selection-end-column="54" />
+            <state relative-caret-position="102">
+              <caret line="178" column="14" lean-forward="false" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
               <folding>
-                <element signature="e#7101#9422#0#HTML" expanded="false" />
-                <marker date="1520864125399" expanded="true" signature="9:23" ph="..." />
-                <marker date="1520864125399" expanded="true" signature="35:44" ph="..." />
+                <element signature="e#482#1261#0#HTML" expanded="false" />
+                <element signature="e#1278#2677#0#HTML" expanded="false" />
+                <element signature="e#2762#5655#0#HTML" expanded="false" />
+                <element signature="e#5753#10797#0#HTML" expanded="false" />
+                <element signature="e#6084#6905#0#HTML" expanded="false" />
+                <element signature="e#7565#10254#0#HTML" expanded="false" />
+                <marker date="1520864576280" expanded="true" signature="9:23" ph="..." />
+                <marker date="1520864576280" expanded="true" signature="35:44" ph="..." />
               </folding>
             </state>
           </provider>
@@ -389,7 +394,7 @@
       <updated>1480071896766</updated>
       <workItem from="1480071897913" duration="6078000" />
       <workItem from="1480408742989" duration="41842000" />
-      <workItem from="1520621085350" duration="15707000" />
+      <workItem from="1520621085350" duration="16158000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -738,7 +743,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63627000" />
+    <option name="totallyTimeSpent" value="64078000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1187,12 +1192,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="157" column="54" lean-forward="false" selection-start-line="157" selection-start-column="54" selection-end-line="157" selection-end-column="54" />
+        <state relative-caret-position="102">
+          <caret line="178" column="14" lean-forward="false" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
           <folding>
-            <element signature="e#7101#9422#0#HTML" expanded="false" />
-            <marker date="1520864125399" expanded="true" signature="9:23" ph="..." />
-            <marker date="1520864125399" expanded="true" signature="35:44" ph="..." />
+            <element signature="e#482#1261#0#HTML" expanded="false" />
+            <element signature="e#1278#2677#0#HTML" expanded="false" />
+            <element signature="e#2762#5655#0#HTML" expanded="false" />
+            <element signature="e#5753#10797#0#HTML" expanded="false" />
+            <element signature="e#6084#6905#0#HTML" expanded="false" />
+            <element signature="e#7565#10254#0#HTML" expanded="false" />
+            <marker date="1520864576280" expanded="true" signature="9:23" ph="..." />
+            <marker date="1520864576280" expanded="true" signature="35:44" ph="..." />
           </folding>
         </state>
       </provider>
