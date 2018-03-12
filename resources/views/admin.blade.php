@@ -51,7 +51,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="Polaris-SettingAction__Action"><input type="file" csv-reader=""
+                                <div class="Polaris-SettingAction__Action"><input data-ng-model="bankfilepath"  type="file" csv-reader=""
                                                                                   save-results-callback="readCSV(csv_data)">
                                 </div>
                             </div>
@@ -83,7 +83,7 @@
 
 
                                         <div class="Polaris-Select Polaris-Select--placeholder">
-                                            <select class="Polaris-Select__Input" aria-invalid="false"
+                                            <select class="Polaris-Select__Input" ng-disabled="!bankfilepath" aria-invalid="false"
                                                     ng-model="headerOption.mapped_to"
                                                     ng-change="updateTable(headerOption)">
                                                 <option label="Select" value="__placeholder__" disabled=""
