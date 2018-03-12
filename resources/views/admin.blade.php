@@ -87,7 +87,7 @@
                                                     ng-model="headerOption.mapped_to"
                                                     ng-change="updateTable(headerOption)">
                                                 <option label="Select" value="__placeholder__" disabled=""
-                                                        hidden=""></option>
+                                                        hidden="">Select Product Sku</option>
                                                 <option ng-repeat="(key, value) in headerOptions.inCSV"
                                                         value="@{{ key }}">@{{ value }}
                                                 </option>
@@ -148,7 +148,7 @@
                                                                         <select class="Polaris-Select__Input" aria-invalid="false"
                                                                                 ng-model="headerOption.mapped_to" ng-change="updateTable(headerOption)">
                                                                             <option label="Select" value="__placeholder__" disabled=""
-                                                                                    hidden=""></option>
+                                                                                    hidden="">Select</option>
                                                                             <option ng-repeat="(key, value) in headerOptions.inCSV" value="@{{ key }}">
                                                                                 @{{ value }}
                                                                             </option>
