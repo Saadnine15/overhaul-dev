@@ -76,6 +76,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
         $scope.table = [];
         $scope.updateTable = function(headerOption){
+            console.log(11);
             $('.Polaris-Button').addClass('.Polaris-Button--primary');
             var obj = {};
             var table = [];
