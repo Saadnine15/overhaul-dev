@@ -33,7 +33,7 @@ class APIController extends ShopifyApiBaseController {
         //return Request::all();
 
         $job = new ProductsUpdater($store_settings, $json_file_name);
-
+        $job->handle();
         $this->dispatch($job);
 
     }
