@@ -48,7 +48,6 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 header_options: $scope.headerOptions.offered,
                 csv_content: $scope.csv
             };
-            console.log(params);
             shopifyApp.Bar.loadingOn();
             $http.post('/update-variants', params, config)
                 .then(function (data, status, headers, config) {
