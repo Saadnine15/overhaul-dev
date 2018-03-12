@@ -70,11 +70,12 @@ class ProductsUpdater extends Job implements ShouldQueue
      */
     private function updateVariants(){
         Variant::initStore($this->store_settings->store_name, config('shopify.api_key'), $this->store_settings->access_token);
-        dd(2334);
+
         //to init start time
         ShopifyApiThrottle::init();
         $index = 1;
         foreach( $this->variants_array as $variant ){
+
             //wait for some time so it doesn't reach throttle point
             if( $index > 1 ){ ShopifyApiThrottle::wait(); }
 
