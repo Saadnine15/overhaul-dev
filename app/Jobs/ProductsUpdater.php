@@ -75,7 +75,6 @@ class ProductsUpdater extends Job implements ShouldQueue
         ShopifyApiThrottle::init();
         $index = 1;
         foreach( $this->variants_array as $variant ){
-
             //wait for some time so it doesn't reach throttle point
             if( $index > 1 ){ ShopifyApiThrottle::wait(); }
 
