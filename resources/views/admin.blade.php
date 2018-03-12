@@ -197,7 +197,7 @@
                                     </div>
                                 </div>
                                 <div class="Polaris-SettingAction__Action">
-                                    <button ng-disabled="!headerOption.mapped_to" data-ng-click="updateProducts()" class="Polaris-Button @{{'Polaris-Button--primary': !headerOption.mapped_to }} "><span class="Polaris-Button__Content"><span>Update</span></span></button>
+                                    <button ng-disabled="!headerOption.mapped_to" data-ng-click="updateProducts()" class="Polaris-Button @{{'Polaris-Button--primary': headerOption.mapped_to != '' }} "><span class="Polaris-Button__Content"><span>Update</span></span></button>
                                 </div>
                             </div>
 
