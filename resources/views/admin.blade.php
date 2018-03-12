@@ -197,7 +197,7 @@
                                     </div>
                                 </div>
                                 <div class="Polaris-SettingAction__Action">
-                                    <button type="button" class="Polaris-Button Polaris-Button--primary"><span class="Polaris-Button__Content"><span>Update</span></span></button>
+                                    <button type="submit" class="Polaris-Button Polaris-Button--primary"><span class="Polaris-Button__Content"><span>Update</span></span></button>
                                 </div>
                             </div>
 
