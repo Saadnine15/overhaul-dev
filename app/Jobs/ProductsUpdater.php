@@ -85,7 +85,7 @@ class ProductsUpdater extends Job implements ShouldQueue
                 unset($variant["sku"]);
 
                 Variant::save($variant, "/admin/variants/" . $variant_id . ".json");
-
+                dd(2334);
             }
             //to re-init start time
             ShopifyApiThrottle::init();
