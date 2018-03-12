@@ -68,10 +68,9 @@
               <caret line="199" column="193" lean-forward="true" selection-start-line="199" selection-start-column="193" selection-end-line="199" selection-end-column="193" />
               <folding>
                 <element signature="e#6131#6952#0#HTML" expanded="false" />
-                <marker date="1520868805210" expanded="true" signature="9:23" ph="..." />
-                <marker date="1520868805210" expanded="true" signature="35:44" ph="..." />
-                <marker date="1520868805210" expanded="true" signature="12215:12264" ph="..." />
-                <marker date="1520868805210" expanded="true" signature="12270:12561" ph="..." />
+                <marker date="1520868968173" expanded="true" signature="9:23" ph="..." />
+                <marker date="1520868968173" expanded="true" signature="35:44" ph="..." />
+                <marker date="1520868968173" expanded="true" signature="12281:12572" ph="..." />
               </folding>
             </state>
           </provider>
@@ -400,7 +399,7 @@
       <updated>1480071896766</updated>
       <workItem from="1480071897913" duration="6078000" />
       <workItem from="1480408742989" duration="41842000" />
-      <workItem from="1520621085350" duration="20369000" />
+      <workItem from="1520621085350" duration="20536000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -749,7 +748,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68289000" />
+    <option name="totallyTimeSpent" value="68456000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1206,10 +1205,9 @@
           <caret line="199" column="193" lean-forward="true" selection-start-line="199" selection-start-column="193" selection-end-line="199" selection-end-column="193" />
           <folding>
             <element signature="e#6131#6952#0#HTML" expanded="false" />
-            <marker date="1520868805210" expanded="true" signature="9:23" ph="..." />
-            <marker date="1520868805210" expanded="true" signature="35:44" ph="..." />
-            <marker date="1520868805210" expanded="true" signature="12215:12264" ph="..." />
-            <marker date="1520868805210" expanded="true" signature="12270:12561" ph="..." />
+            <marker date="1520868968173" expanded="true" signature="9:23" ph="..." />
+            <marker date="1520868968173" expanded="true" signature="35:44" ph="..." />
+            <marker date="1520868968173" expanded="true" signature="12281:12572" ph="..." />
           </folding>
         </state>
       </provider>
