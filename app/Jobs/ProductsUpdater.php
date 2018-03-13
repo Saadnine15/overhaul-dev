@@ -5,7 +5,7 @@ namespace App\Jobs;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
-
+use Illuminate\Support\Facades\Storage;
 use App\StoreSettings;
 use App\Variant;
 use App\ShopifyApiThrottle;
@@ -14,7 +14,7 @@ use App\Models\ProductVariant as ProductVariantModel;
 class ProductsUpdater extends Job implements ShouldQueue
 {
     use InteractsWithQueue, SerializesModels;
-
+u
     protected $store_settings;
     protected $variants_array;
     protected $variant_sku_array;
@@ -45,14 +45,8 @@ class ProductsUpdater extends Job implements ShouldQueue
      */
     public function handle()
     {
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch,CURLOPT_URL,asset('public/'.$this->json_file_name));
-        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
-        curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
-        $json_file_data = json_decode(curl_exec($ch));
-        curl_close($ch);
-dd($json_file_data);
+
+        $json_file_data = json_decode( Storage::get($this->json_file_name));
         $this->csv_data = $json_file_data['csv_data'];
         $this->header_options = $json_file_data['header_options'];
         $this->getVariantsArrayFromArray();
