@@ -66,7 +66,7 @@ class ProductsUpdater extends Job implements ShouldQueue
     /**
      * Export All Products From Master Store
      *
-     * @return arrays
+     * @return array
      */
     private function updateVariants(){
         Variant::initStore($this->store_settings->store_name, config('shopify.api_key'), $this->store_settings->access_token);

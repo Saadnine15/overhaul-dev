@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\ShopifyBaseModel;
 use App\JobsFailed;
+use App\Variant;
 use Request;
 use App\StoreSettings;
 use App\BillingAPI;
@@ -100,7 +101,7 @@ class IndexController extends ShopifyAppInstallationBaseController
             }
         }*/
         $product_id = 8520300749;//$webhook_content['id'];
-            return ProductModel::where('store_url', "clubtask.myshopify.com")->get();
+            return Variant::where('product_id', "86349709330")->get();
         $product_ids = ProductModel::where('store_url', "test-shop-368.myshopify.com")->pluck('product_id', 'id')->toArray();
         //ProductModel::where('store_url', "test-shop-368.myshopify.com")->delete();
         if( !empty($product_ids) ){
