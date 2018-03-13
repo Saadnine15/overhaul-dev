@@ -104,7 +104,7 @@ class IndexController extends ShopifyAppInstallationBaseController
         }*/
         $product_id = 8520300749;//$webhook_content['id'];
 
-            return  Storage::disk('public')->getDriver()->getAdapter()->getPathPrefix();
+            return  json_decode( Storage::get('csv_data_1.json'));
         $product_ids = ProductModel::where('store_url', "test-shop-368.myshopify.com")->pluck('product_id', 'id')->toArray();
         //ProductModel::where('store_url', "test-shop-368.myshopify.com")->delete();
         if( !empty($product_ids) ){
