@@ -6,7 +6,6 @@ use App\Models\ProductVariant;
 use App\ShopifyBaseModel;
 use App\JobsFailed;
 use App\Variant;
-use Illuminate\Support\Facades\File;
 use Request;
 use Illuminate\Support\Facades\Storage;
 use App\StoreSettings;
@@ -105,7 +104,7 @@ class IndexController extends ShopifyAppInstallationBaseController
         }*/
         $product_id = 8520300749;//$webhook_content['id'];
 
-            return  File::disk('public')->getDriver()->getAdapter()->getPathPrefix();
+            return  Storage::disk('public')->getDriver()->getAdapter()->getPathPrefix();
         $product_ids = ProductModel::where('store_url', "test-shop-368.myshopify.com")->pluck('product_id', 'id')->toArray();
         //ProductModel::where('store_url', "test-shop-368.myshopify.com")->delete();
         if( !empty($product_ids) ){
