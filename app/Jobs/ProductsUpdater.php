@@ -46,7 +46,7 @@ class ProductsUpdater extends Job implements ShouldQueue
     public function handle()
     {
 
-        $json_file_data = json_decode(Storage::get($this->json_file_name));
+        $json_file_data = json_decode(public_path($this->json_file_name));
         $this->csv_data = $json_file_data['csv_data'];
         $this->header_options = $json_file_data['header_options'];
         $this->getVariantsArrayFromArray();
