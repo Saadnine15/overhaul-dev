@@ -4,7 +4,6 @@
     <list default="true" id="033fea25-32f3-4d6d-80d6-5dca2562a3b0" name="Default" comment="First Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" afterPath="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" />
     </list>
     <ignored path="shopify-product_update_client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -93,8 +92,10 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="302">
-              <caret line="103" column="60" lean-forward="false" selection-start-line="103" selection-start-column="60" selection-end-line="103" selection-end-column="60" />
-              <folding />
+              <caret line="104" column="33" lean-forward="false" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
+              <folding>
+                <element signature="e#40#70#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -432,7 +433,7 @@
       <updated>1480071896766</updated>
       <workItem from="1480071897913" duration="6078000" />
       <workItem from="1480408742989" duration="41842000" />
-      <workItem from="1520621085350" duration="39046000" />
+      <workItem from="1520621085350" duration="39144000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -781,7 +782,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86966000" />
+    <option name="totallyTimeSpent" value="87064000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1184,14 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/ProductVariant.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1242,11 +1235,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
-          <caret line="103" column="60" lean-forward="false" selection-start-line="103" selection-start-column="60" selection-end-line="103" selection-end-column="60" />
-          <folding />
+          <caret line="104" column="33" lean-forward="false" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#70#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
