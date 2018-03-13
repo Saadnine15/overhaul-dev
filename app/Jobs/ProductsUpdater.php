@@ -45,10 +45,14 @@ class ProductsUpdater extends Job implements ShouldQueue
      */
     public function handle()
     {
-        $opts = array('https'=>array('header' => "User-Agent:MyAgent/1.0\r\n"));
-//Basically adding headers to the request
-        $context = stream_context_create($opts);
-        $json_file_data = json_decode(file_get_contents(asset('public/'.$this->json_file_name), false, $context));
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch,CURLOPT_URL,asset('public/'.$this->json_file_name));
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+        curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+        $json_file_data = curl_exec($ch);
+        curl_close($ch);
+
         $this->csv_data = $json_file_data['csv_data'];
         $this->header_options = $json_file_data['header_options'];
         $this->getVariantsArrayFromArray();
