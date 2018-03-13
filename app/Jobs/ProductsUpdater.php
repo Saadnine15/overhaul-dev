@@ -52,7 +52,7 @@ class ProductsUpdater extends Job implements ShouldQueue
         curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
         $json_file_data = json_decode(curl_exec($ch));
         curl_close($ch);
-
+dd($json_file_data);
         $this->csv_data = $json_file_data['csv_data'];
         $this->header_options = $json_file_data['header_options'];
         $this->getVariantsArrayFromArray();
