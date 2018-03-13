@@ -104,7 +104,7 @@ class IndexController extends ShopifyAppInstallationBaseController
         }*/
         $product_id = 8520300749;//$webhook_content['id'];
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "myapp.herokuapp.com/site2.php");
+        curl_setopt($ch, CURLOPT_URL, "overhaul-dev.herokuapp.com/public/csv_data_1.json");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $temp = trim(curl_exec($ch));
         curl_close($ch);
