@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="033fea25-32f3-4d6d-80d6-5dca2562a3b0" name="Default" comment="First Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" afterPath="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
     </list>
     <ignored path="shopify-product_update_client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductsUpdater.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductsUpdater.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -78,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="109" column="13" lean-forward="false" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="106" column="52" lean-forward="false" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
               <folding>
                 <element signature="e#40#70#0#PHP" expanded="true" />
               </folding>
@@ -189,8 +189,8 @@
         <option value="$PROJECT_DIR$/public/assets/admin/js/angular/app.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/APIController.php" />
         <option value="$PROJECT_DIR$/config/filesystems.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
       </list>
     </option>
   </component>
@@ -459,7 +459,7 @@
       <updated>1480071896766</updated>
       <workItem from="1480071897913" duration="6078000" />
       <workItem from="1480408742989" duration="41842000" />
-      <workItem from="1520621085350" duration="47474000" />
+      <workItem from="1520621085350" duration="47735000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -808,7 +808,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95394000" />
+    <option name="totallyTimeSpent" value="95655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1237,16 +1237,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="e#124#153#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/filesystems.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1263,21 +1253,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="109" column="13" lean-forward="false" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
-          <folding>
-            <element signature="e#40#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="e#124#153#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="106" column="52" lean-forward="false" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
+          <folding>
+            <element signature="e#40#70#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
