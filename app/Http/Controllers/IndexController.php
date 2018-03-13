@@ -103,8 +103,13 @@ class IndexController extends ShopifyAppInstallationBaseController
             }
         }*/
         $product_id = 8520300749;//$webhook_content['id'];
-            return  file_get_contents('public/csv_data_1.json', true);
-            return   Storage::get('csv_data_1.json');
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "https://overhaul-dev.herokuapp.com/public/csv_data_1.json");
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $temp = trim(curl_exec($ch));
+        curl_close($ch);
+            return   $temp;
         $product_ids = ProductModel::where('store_url', "test-shop-368.myshopify.com")->pluck('product_id', 'id')->toArray();
         //ProductModel::where('store_url', "test-shop-368.myshopify.com")->delete();
         if( !empty($product_ids) ){
