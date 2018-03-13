@@ -5,7 +5,7 @@ namespace App\Jobs;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
-
+use Illuminate\Support\Facades\Storage;
 use App\StoreSettings;
 use App\Variant;
 use App\ShopifyApiThrottle;
@@ -45,7 +45,8 @@ class ProductsUpdater extends Job implements ShouldQueue
      */
     public function handle()
     {
-        $json_file_data = json_decode(file_get_contents($this->json_file_name), true);
+
+        $json_file_data = json_decode(Storage::get($this->json_file_name));
         $this->csv_data = $json_file_data['csv_data'];
         $this->header_options = $json_file_data['header_options'];
         $this->getVariantsArrayFromArray();
