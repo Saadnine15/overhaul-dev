@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ProductVariant;
 use App\ShopifyBaseModel;
 use App\JobsFailed;
-use App\Variant;
 use Request;
-use Illuminate\Support\Facades\Storage;
 use App\StoreSettings;
 use App\BillingAPI;
 use App\Orders;
@@ -104,15 +101,11 @@ class IndexController extends ShopifyAppInstallationBaseController
         }*/
         $product_id = 8520300749;//$webhook_content['id'];
 
-
-        return   $json_file_data = json_decode( Storage::get('csv_data_1.json'));
-
         $product_ids = ProductModel::where('store_url', "test-shop-368.myshopify.com")->pluck('product_id', 'id')->toArray();
         //ProductModel::where('store_url', "test-shop-368.myshopify.com")->delete();
         if( !empty($product_ids) ){
             ProductVariantModel::whereIn('product_id', $product_ids)->delete();
         }
-
     }
 
     public function deleteStores($store_id, $soft){
@@ -125,6 +118,10 @@ class IndexController extends ShopifyAppInstallationBaseController
 
     public function jobs(){
         return ShopifyBaseModel::all();
+    }
+
+    public function deleteAllJobs() {
+        return ShopifyBaseModel::where('id', '>', 0)->delete();
     }
 
     public function productsdb(){

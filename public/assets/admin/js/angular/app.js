@@ -35,7 +35,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
         $scope.readCSV = function(csv_data){
             $scope.csv = csv_data.content;
-            $scope.headerOptions.inCSV[""] = "Select an option";
+            $scope.headerOptions.inCSV[""] = "Do not update this field";
             angular.forEach(csv_data.headers, function(value, key){
                 $scope.headerOptions.inCSV[value] = value;
             });
@@ -217,7 +217,8 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
                                 var result = Papa.parse(data.csv, {
                                     delimiter: ',',
-                                    header: true
+                                    header: true,
+                                    skipEmptyLines: true
                                 });
 
 

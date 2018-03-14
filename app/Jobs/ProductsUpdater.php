@@ -5,11 +5,12 @@ namespace App\Jobs;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Support\Facades\Storage;
+
 use App\StoreSettings;
 use App\Variant;
 use App\ShopifyApiThrottle;
 use App\Models\ProductVariant as ProductVariantModel;
+use Log;
 
 class ProductsUpdater extends Job implements ShouldQueue
 {
@@ -22,20 +23,22 @@ class ProductsUpdater extends Job implements ShouldQueue
     protected $key_mapping_array;
     protected $header_options;
     protected $json_file_name;
+    protected $csvJson;
 
     /**
-     * ProductsExportAndImport constructor.
-     *
      * Create a new job instance.
      *
+     * ProductsUpdater constructor.
+     *
      * @param StoreSettings $store_settings
-     * @param $json_file_name
-     * @param $header_options
+     * @param null $json_file_name
+     * @param null $json
      */
-    public function __construct(StoreSettings $store_settings, $json_file_name)
+    public function __construct(StoreSettings $store_settings, $json_file_name = null, $json = null)
     {
         $this->store_settings = $store_settings;
         $this->json_file_name = $json_file_name;
+        $this->csvJson = $json;
     }
 
     /**
@@ -45,8 +48,15 @@ class ProductsUpdater extends Job implements ShouldQueue
      */
     public function handle()
     {
+        if( !is_null($this->json_file_name) ) {
+            $json_file_data = json_decode(file_get_contents($this->json_file_name), true);
+        } else if ( !is_null($this->csvJson) ) {
+            $json_file_data = json_decode($this->csvJson, true);
+            Log::info("JSON TO ARRAY IN JOB HANDLE", $json_file_data);
+        } else {
+            return false;
+        }
 
-        $json_file_data = json_decode( Storage::get('csv_data_1.json'));
         $this->csv_data = $json_file_data['csv_data'];
         $this->header_options = $json_file_data['header_options'];
         $this->getVariantsArrayFromArray();

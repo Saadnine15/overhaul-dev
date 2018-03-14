@@ -22,17 +22,20 @@ class APIController extends ShopifyApiBaseController {
         $csv_data = Request::input('csv_content');
         $store_settings = StoreSettings::where('store_name', session()->get('shop'))->first();
 
-        $json_file_name = 'csv_data_' . $store_settings->id . '.json';
+        /*$json_file_name = 'csv_data_' . $store_settings->id . '.json';
         $fp = fopen($json_file_name, 'w');
         fwrite($fp, json_encode([
             'csv_data' => $csv_data,
             'header_options' => $header_options
         ]));
-        fclose($fp);
+        fclose($fp);*/
 
         //return Request::all();
-
-        $job = new ProductsUpdater($store_settings, $json_file_name);
+        $json = json_encode([
+            'csv_data' => $csv_data,
+            'header_options' => $header_options
+        ]);
+        $job = new ProductsUpdater($store_settings, $json_file_name=null, $json);
 
         $this->dispatch($job);
 
