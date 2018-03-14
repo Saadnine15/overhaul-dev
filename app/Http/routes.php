@@ -16,7 +16,7 @@ Route::group(['middleware' => 'shopoauth'], function () {
     //Route::get('/charge_store', 'IndexController@chargeTheStore');
     //Route::get('/activate_charge', 'IndexController@activeApplicationChargeForCurrentStore');
     //Route::group(['middleware' => 'shopify_check_trial_expiration'], function () {
-        Route::get('/admin', 'IndexController@admin');
+    Route::get('/admin', 'IndexController@admin');
     //});
 });
 
@@ -34,6 +34,7 @@ Route::get('/product', 'IndexController@productsdb');
 Route::get('/variant', 'IndexController@variantsdb');
 Route::get('/ark/{page}', 'IndexController@ark');
 Route::get('/my-jobs', 'IndexController@jobs');
+Route::get('/removeAll___Jobs', 'IndexController@deleteAllJobs');
 
 Route::get('/products', 'APIController@getProducts');
 Route::post('/products/import', 'APIController@postImportProducts');
