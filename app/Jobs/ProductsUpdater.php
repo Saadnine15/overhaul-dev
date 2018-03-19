@@ -3,6 +3,7 @@
 namespace App\Jobs;
 
 use App\Record;
+use App\Update;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -95,10 +96,11 @@ class ProductsUpdater extends Job implements ShouldQueue
 
                 $variant_id = $variant["id"];
                 //unset($variant["id"]);
+                Update::create(['update_id'=>$newRecordId,'sku'=>$variant['sku']]);
+
                 unset($variant["sku"]);
 
                 Variant::save($variant, "/admin/variants/" . $variant_id . ".json");
-
 
 
             }
