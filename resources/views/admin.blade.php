@@ -65,7 +65,7 @@
                                         <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div class="Polaris-ProgressBar Polaris-ProgressBar--sizeMedium"><progress class="Polaris-ProgressBar__Progress" value="100" max="100"></progress>
-                                                    <div class="Polaris-ProgressBar__Indicator" role="progressbar" aria-hidden="true" style="width: 0%;"><span class="Polaris-ProgressBar__Label">75%</span></div>
+                                                    <div class="Polaris-ProgressBar__Indicator" role="progressbar" aria-hidden="true" style="width: 10%;"><span class="Polaris-ProgressBar__Label">75%</span></div>
                                                 </div>
                                             </div>
                                         </div>
