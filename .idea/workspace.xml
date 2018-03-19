@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="033fea25-32f3-4d6d-80d6-5dca2562a3b0" name="Default" comment="First Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin.blade.php" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/css/style.css" afterPath="$PROJECT_DIR$/public/assets/admin/css/style.css" />
     </list>
     <ignored path="shopify-product_update_client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="219">
@@ -51,6 +51,16 @@
                 <marker date="1521480447433" expanded="true" signature="9:23" ph="..." />
                 <marker date="1521480447433" expanded="true" signature="35:44" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/admin/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="191" column="18" lean-forward="false" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,7 +127,6 @@
         <option value="$PROJECT_DIR$/app/Jobs/ProductUpdater.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ShopifyAppInstallationBaseController.php" />
         <option value="$PROJECT_DIR$/public/assets/admin/js/custom.js" />
-        <option value="$PROJECT_DIR$/public/assets/admin/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
         <option value="$PROJECT_DIR$/config/shopify.php" />
         <option value="$PROJECT_DIR$/config/filesystems.php" />
@@ -128,6 +137,7 @@
         <option value="$PROJECT_DIR$/public/assets/admin/js/papaparse.min.js" />
         <option value="$PROJECT_DIR$/public/assets/admin/js/angular/app.js" />
         <option value="$PROJECT_DIR$/resources/views/admin.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/admin/css/style.css" />
       </list>
     </option>
   </component>
@@ -297,6 +307,14 @@
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="overhaul-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="overhaul-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -402,7 +420,7 @@
       <workItem from="1520621085350" duration="49065000" />
       <workItem from="1520976343792" duration="9299000" />
       <workItem from="1521052293173" duration="6342000" />
-      <workItem from="1521475883453" duration="3762000" />
+      <workItem from="1521475883453" duration="3953000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -751,7 +769,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116388000" />
+    <option name="totallyTimeSpent" value="116579000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1010,13 +1028,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bus/DispatchesJobs.php" />
-    <entry file="file://$PROJECT_DIR$/public/assets/admin/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
-          <caret line="188" column="26" lean-forward="false" selection-start-line="188" selection-start-column="26" selection-end-line="188" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shopify-internal-projects.webflow/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1197,6 +1208,14 @@
             <marker date="1521480447433" expanded="true" signature="9:23" ph="..." />
             <marker date="1521480447433" expanded="true" signature="35:44" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/admin/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="191" column="18" lean-forward="false" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

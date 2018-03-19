@@ -188,3 +188,6 @@ h2.sfui{
     color:red;
     display: inline-block;
 }
+.progressBar{
+    display: none;
+}
