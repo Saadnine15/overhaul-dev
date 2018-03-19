@@ -193,7 +193,7 @@ class ProductsUpdater extends Job implements ShouldQueue
     }
 
     private function storeRecord($store){
-        $newRecordId= Record::create(['store_name'=>$store]);
+        $newRecordId= Record::create(['store_name'=>$store])->id;
         return $newRecordId;
 
     }
