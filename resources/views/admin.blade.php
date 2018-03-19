@@ -45,7 +45,7 @@
                         <div>
 
                             <div class="Polaris-Banner__Content" id="Banner1Content">
-                                <p>This order was archived on March 7, 2017 at 3:12pm EDT. <a href="#">View previous updates</a> </p>
+                                <p>Last update was was complete on 2/2/2018. <a href="#">View previous updates</a> </p>
                             </div>
                         </div>
                     </div>
