@@ -13,7 +13,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Record extends Model{
     use SoftDeletes;
-    protected $table = "record";
     protected $fillable = [
         'store_name',
     ];
