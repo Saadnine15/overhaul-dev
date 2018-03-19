@@ -14,6 +14,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Update extends Model{
     use SoftDeletes;
-    protected $shopify_entity = "update";
+    protected $table = "update";
 
 }

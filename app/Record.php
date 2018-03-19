@@ -13,6 +13,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Record extends Model{
     use SoftDeletes;
-    protected $shopify_entity = "record";
+    protected $table = "record";
 
 }
