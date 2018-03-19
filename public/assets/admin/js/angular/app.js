@@ -43,6 +43,12 @@ var angularApp = angular.module('product-updating-app', included_modules)
         };
 
         $scope.updateProducts = function(){
+            $('.progressing').hide();
+            $('.progressBar').show();
+            var prgrs ;
+            for (prgrs = 0; prgrs < 100; prgrs++) {
+                $('.progressBar').css('width',prgrs+'%');
+            }
             var config = {};
             var params = {
                 header_options: $scope.headerOptions.offered,
@@ -59,6 +65,8 @@ var angularApp = angular.module('product-updating-app', included_modules)
                         return;
                     }
                     shopifyApp.flashNotice("Successfully Updated.");
+                    $('.progressing').show();
+                    $('.progressBar').hide();
                     shopifyApp.Bar.loadingOff();
 
 
