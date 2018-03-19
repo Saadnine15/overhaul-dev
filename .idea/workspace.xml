@@ -39,17 +39,17 @@
       <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="67" column="118" lean-forward="false" selection-start-line="67" selection-start-column="118" selection-end-line="67" selection-end-column="118" />
+            <state relative-caret-position="219">
+              <caret line="62" column="102" lean-forward="false" selection-start-line="62" selection-start-column="102" selection-end-line="62" selection-end-column="102" />
               <folding>
                 <element signature="e#521#1300#0#HTML" expanded="false" />
-                <element signature="e#3668#3687#0#HTML" expanded="true" />
-                <element signature="e#4174#5586#0#HTML" expanded="false" />
-                <element signature="e#5675#8626#0#HTML" expanded="false" />
-                <element signature="e#8724#13813#0#HTML" expanded="false" />
-                <element signature="e#13915#15362#0#HTML" expanded="false" />
-                <marker date="1521480350714" expanded="true" signature="9:23" ph="..." />
-                <marker date="1521480350714" expanded="true" signature="35:44" ph="..." />
+                <element signature="e#3668#3688#0#HTML" expanded="true" />
+                <element signature="e#4175#5587#0#HTML" expanded="false" />
+                <element signature="e#5676#8627#0#HTML" expanded="false" />
+                <element signature="e#8725#13814#0#HTML" expanded="false" />
+                <element signature="e#13916#15363#0#HTML" expanded="false" />
+                <marker date="1521480447433" expanded="true" signature="9:23" ph="..." />
+                <marker date="1521480447433" expanded="true" signature="35:44" ph="..." />
               </folding>
             </state>
           </provider>
@@ -402,7 +402,7 @@
       <workItem from="1520621085350" duration="49065000" />
       <workItem from="1520976343792" duration="9299000" />
       <workItem from="1521052293173" duration="6342000" />
-      <workItem from="1521475883453" duration="3681000" />
+      <workItem from="1521475883453" duration="3762000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -751,7 +751,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116307000" />
+    <option name="totallyTimeSpent" value="116388000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1185,17 +1185,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="67" column="118" lean-forward="false" selection-start-line="67" selection-start-column="118" selection-end-line="67" selection-end-column="118" />
+        <state relative-caret-position="219">
+          <caret line="62" column="102" lean-forward="false" selection-start-line="62" selection-start-column="102" selection-end-line="62" selection-end-column="102" />
           <folding>
             <element signature="e#521#1300#0#HTML" expanded="false" />
-            <element signature="e#3668#3687#0#HTML" expanded="true" />
-            <element signature="e#4174#5586#0#HTML" expanded="false" />
-            <element signature="e#5675#8626#0#HTML" expanded="false" />
-            <element signature="e#8724#13813#0#HTML" expanded="false" />
-            <element signature="e#13915#15362#0#HTML" expanded="false" />
-            <marker date="1521480350714" expanded="true" signature="9:23" ph="..." />
-            <marker date="1521480350714" expanded="true" signature="35:44" ph="..." />
+            <element signature="e#3668#3688#0#HTML" expanded="true" />
+            <element signature="e#4175#5587#0#HTML" expanded="false" />
+            <element signature="e#5676#8627#0#HTML" expanded="false" />
+            <element signature="e#8725#13814#0#HTML" expanded="false" />
+            <element signature="e#13916#15363#0#HTML" expanded="false" />
+            <marker date="1521480447433" expanded="true" signature="9:23" ph="..." />
+            <marker date="1521480447433" expanded="true" signature="35:44" ph="..." />
           </folding>
         </state>
       </provider>
