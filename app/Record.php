@@ -5,12 +5,14 @@
  * Date: 30/11/2016
  * Time: 11:31 PM
  */
-
 namespace App;
 
 
-class Record extends ShopifyModel{
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
+class Record extends Model{
+    use SoftDeletes;
     protected $shopify_entity = "record";
 
 }

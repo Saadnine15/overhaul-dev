@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 
+use App\Record;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -82,6 +83,7 @@ class ProductsUpdater extends Job implements ShouldQueue
     private function updateVariants(){
         Variant::initStore($this->store_settings->store_name, config('shopify.api_key'), $this->store_settings->access_token);
 
+        $newRecordId=$this->storeRecord($this->store_settings->store_name);
         //to init start time
         ShopifyApiThrottle::init();
         $index = 1;
@@ -96,6 +98,8 @@ class ProductsUpdater extends Job implements ShouldQueue
                 unset($variant["sku"]);
 
                 Variant::save($variant, "/admin/variants/" . $variant_id . ".json");
+
+
 
             }
             //to re-init start time
@@ -184,5 +188,11 @@ class ProductsUpdater extends Job implements ShouldQueue
             }
         }
         return $mapping;
+    }
+
+    private function storeRecord($store){
+        $newRecordId= Record::create(['store_name'=>$store]);
+        return $newRecordId;
+
     }
 }

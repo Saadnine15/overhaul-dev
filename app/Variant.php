@@ -9,6 +9,9 @@
 namespace App;
 
 
+
+
+
 class Variant extends ShopifyModel{
 
     protected $shopify_entity = "variant";

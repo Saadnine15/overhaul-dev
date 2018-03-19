@@ -9,8 +9,11 @@
 namespace App;
 
 
-class Update extends ShopifyModel{
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
+class Update extends Model{
+    use SoftDeletes;
     protected $shopify_entity = "update";
 
 }
