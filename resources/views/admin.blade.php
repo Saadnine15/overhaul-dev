@@ -62,7 +62,7 @@
                         <div class="Polaris-Card__Section">
                             {{--<div class="Polaris-SettingAction">--}}
                                 {{--<div class="Polaris-SettingAction__Setting">--}}
-                            <p class="Polaris-DisplayText Polaris-DisplayText--sizeSmall">Update in Progress</p>
+                            <h2 class="Polaris-Heading">Update in Progress</h2>
 
                             <div class="Polaris-Stack">
                                         <div class="Polaris-Stack__Item Polaris-Stack__Item--fill">
