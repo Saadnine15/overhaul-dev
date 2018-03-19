@@ -36,7 +36,7 @@ class IndexController extends ShopifyAppInstallationBaseController
 
     public function admin(){
 
-        $firstRecord=Record::where('shop',session()->get('shop'))->orderby('created_at', 'desc')->first();
+        $firstRecord=Record::where('store_name',session()->get('shop'))->orderby('created_at', 'desc')->first();
         return view('admin', [
             'shop' => session()->get('shop'),
             'api_key' => $this->app_settings->api_key
