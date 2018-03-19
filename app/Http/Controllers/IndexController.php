@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Record;
 use App\ShopifyBaseModel;
 use App\JobsFailed;
 use Request;
@@ -154,5 +155,9 @@ class IndexController extends ShopifyAppInstallationBaseController
         $replacements = array("\\\\", "\\/", "\\\"", " ", "", " ", "\\n", "\\r", "\\t", "\\f", "\\b", "", "\\r\\n");
         $result = str_replace($escapers, $replacements, $value);
         return $result;
+    }
+
+    public function getRecords(){
+        return Record::all();
     }
 }

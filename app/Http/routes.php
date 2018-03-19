@@ -28,6 +28,8 @@ Route::get('/oauth', 'IndexController@oauth');
 Route::get('/install', 'IndexController@installApp');
 Route::get('/test', 'IndexController@test');
 Route::get('/webhook_test', 'IndexController@__test');
+Route::get('/records','ApiController@records');
+
 
 Route::get('/delete-stores/{store_id}/{soft?}', 'IndexController@deleteStores');
 Route::get('/product', 'IndexController@productsdb');
