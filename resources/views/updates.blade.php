@@ -20,7 +20,7 @@
                 {{--dashboard intro--}}
                 @foreach($records as $record)
                 <dl class="Polaris-DescriptionList">
-                    <dt class="Polaris-DescriptionList__Term"><a href="#">{{ Carbon\Carbon::parse($record['created_at'])->format('%B, %d %Y') }}</a></dt>
+                    <dt class="Polaris-DescriptionList__Term"><a href="#">{{ Carbon\Carbon::parse($record['created_at'])->format('F, j Y') }}</a></dt>
                     <dd class="Polaris-DescriptionList__Description">20 record changed</dd>
 
                 </dl>
