@@ -162,4 +162,14 @@ class IndexController extends ShopifyAppInstallationBaseController
     public function getRecords(){
         return Record::where('id','>',0)->get();
     }
+
+    public function updates(){
+        $store = session()->get('shop');
+      $records= Record::where('store_name',$store)->get(10);
+
+        return view('updates', [
+            'shop' => session()->get('shop'),
+            'api_key' => $this->app_settings->api_key
+        ],compact('records'));
+    }
 }

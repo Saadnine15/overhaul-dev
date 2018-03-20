@@ -174,6 +174,16 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
     }])
 
+
+    .controller('UpdatesController', ['$rootScope', '$scope', '$http', 'shopifyApp', function ($rootScope, $scope, $http, shopifyApp) {
+
+
+        //init Shopify App
+        shopifyApp.init('Updates', $scope.updateProducts, []);
+
+
+    }])
+
     .directive('csvReader', [function () {
 
         // Function to convert to JSON
