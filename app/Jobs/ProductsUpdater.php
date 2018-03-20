@@ -96,11 +96,11 @@ class ProductsUpdater extends Job implements ShouldQueue
 
                 $variant_id = $variant["id"];
                 //unset($variant["id"]);
-                Update::create(['update_id'=>$newRecordId,'sku'=>$variant['sku']]);
+//                Update::create(['update_id'=>$newRecordId,'sku'=>$variant['sku']]);
 
                 unset($variant["sku"]);
 
-//                Variant::save($variant, "/admin/variants/" . $variant_id . ".json");
+                Variant::save($variant, "/admin/variants/" . $variant_id . ".json");
 
 
             }
