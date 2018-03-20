@@ -18,7 +18,7 @@
         <div class="Polaris-Page__Content">
             <div class="Polaris-Layout">
                 {{--dashboard intro--}}
-                <div class="Polaris-Layout__AnnotatedSection progressBar">
+                <div class="Polaris-Layout__AnnotatedSection">
                     <div class="Polaris-Card">
                         <div class="Polaris-Card__Section">
                             <dl class="Polaris-DescriptionList">
