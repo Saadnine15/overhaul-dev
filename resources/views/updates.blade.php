@@ -18,13 +18,21 @@
         <div class="Polaris-Page__Content">
             <div class="Polaris-Layout">
                 {{--dashboard intro--}}
-                @foreach($records as $record)
-                <dl class="Polaris-DescriptionList">
-                    <dt class="Polaris-DescriptionList__Term"><a href="#">{{ Carbon\Carbon::parse($record['created_at'])->format('F, j Y') }}</a></dt>
-                    <dd class="Polaris-DescriptionList__Description">20 record changed</dd>
+                <div class="Polaris-Layout__AnnotatedSection progressBar">
+                    <div class="Polaris-Card">
+                        <div class="Polaris-Card__Section">
+                            <dl class="Polaris-DescriptionList">
+                                @foreach($records as $record)
+                                    <dt class="Polaris-DescriptionList__Term"><a href="#">{{ Carbon\Carbon::parse($record['created_at'])->format('F, j Y') }}</a></dt>
+                                    <dd class="Polaris-DescriptionList__Description">20 record changed</dd>
+                                @endforeach
+                            </dl>
+                        </div>
+                    </div>
+                </div>
 
-                </dl>
-                @endforeach
+
+
 
             </div>
         </div>
