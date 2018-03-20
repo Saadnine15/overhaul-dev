@@ -18,10 +18,13 @@
         <div class="Polaris-Page__Content">
             <div class="Polaris-Layout">
                 {{--dashboard intro--}}
-                <dl class="Polaris-DescriptionList"><dt class="Polaris-DescriptionList__Term">Logistics</dt>
-                    <dd class="Polaris-DescriptionList__Description">The management of products or other resources as they travel between a point of origin and a destination.</dd><dt class="Polaris-DescriptionList__Term">Sole proprietorship</dt>
-                    <dd class="Polaris-DescriptionList__Description">A business structure where a single individual both owns and runs the company.</dd><dt class="Polaris-DescriptionList__Term">Discount code</dt>
+                @foreach($records as $record)
+                <dl class="Polaris-DescriptionList">
+                    <dt class="Polaris-DescriptionList__Term"><a href="#">{{ Carbon\Carbon::parse($record['created_at'])->format('%B, %d %Y') }}</a></dt>
+                    <dd class="Polaris-DescriptionList__Description">20 record changed</dd>
+
                 </dl>
+                @endforeach
 
             </div>
         </div>
