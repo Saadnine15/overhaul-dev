@@ -160,6 +160,6 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function getRecords(){
-        return Record::where('id','>',0)->get();
+        return Record::truncate();
     }
 }
