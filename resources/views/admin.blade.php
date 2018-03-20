@@ -46,7 +46,7 @@
                         <div>
 
                             <div class="Polaris-Banner__Content" id="Banner1Content">
-                                <p>Last update was was complete on {{ Carbon\Carbon::parse($firstRecord['created_at'])->format('m/d/Y') }}. <a href="#">View previous updates</a> </p>
+                                <p>Last update was was complete on {{ Carbon\Carbon::parse($firstRecord['created_at'])->format('m/d/Y') }}. <a href="/updates">View previous updates</a> </p>
                             </div>
                         </div>
                     </div>
