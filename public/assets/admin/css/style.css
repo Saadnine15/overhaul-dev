@@ -188,7 +188,7 @@ h2.sfui{
     display: inline-block;
 }
 .progressBar{
-    display: none;
+    display: none !important;
 }
 .Polaris-Heading{
     margin-bottom: 10px !important;
