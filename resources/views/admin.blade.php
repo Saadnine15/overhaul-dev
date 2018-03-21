@@ -109,7 +109,7 @@
                                             <div class="Polaris-AccountConnection__Content">
                                                 <div>
                                                     <div class="Polaris-Button--primary oval">1</div>
-                                                    Upload your CSV
+                                                    <span class="card-heading">Upload your CSV</span>
                                                 </div>
                                             </div>
                                         </div>
