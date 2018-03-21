@@ -165,12 +165,12 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function getRecordsDetail(){
-        Update::create([
-            'update_id'=>12,
-            'sku'=>2234,
-            'old_qty'=>12,
-            'new_qty'=>15
-        ]);
+//        Update::create([
+//            'update_id'=>12,
+//            'sku'=>2234,
+//            'old_qty'=>12,
+//            'new_qty'=>15
+//        ]);
         return Update::where('id','>',0)->get();
     }
 
