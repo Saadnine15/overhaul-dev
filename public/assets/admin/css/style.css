@@ -197,3 +197,6 @@ h2.sfui{
 .Polaris-TextStyle--variationSubdued{
     font-size: 15px;
 }
+.Polaris-Card__Section {
+    padding: 2.5rem !important;
+}
