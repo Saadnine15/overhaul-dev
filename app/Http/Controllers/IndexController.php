@@ -165,6 +165,16 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function getRecordsDetail(){
+        Update::create([
+            'update_id'=>12,
+            'sku'=>'test',
+            'old_qty'=>'12',
+            'new_qty'=>'15',
+            'old_price'=>'',
+            'new_price'=>'',
+            'old_compare_at_price'=>'',
+            'new_compare_at_price'=>''
+        ]);
         return Update::where('id','>',0)->get();
     }
 

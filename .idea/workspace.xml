@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="033fea25-32f3-4d6d-80d6-5dca2562a3b0" name="Default" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change beforePath="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" afterPath="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" />
     </list>
     <ignored path="shopify-product_update_client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="125">
-              <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
+              <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -40,12 +39,12 @@
       <file leaf-file-name="ProductsUpdater.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="100" column="16" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="109" selection-end-column="19" />
               <folding>
                 <element signature="e#28#43#0#PHP" expanded="true" />
-                <element signature="e#3350#5041#0#PHP" expanded="false" />
-                <element signature="e#5047#5660#0#PHP" expanded="false" />
+                <element signature="e#3535#5226#0#PHP" expanded="false" />
+                <element signature="e#5232#5845#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -54,31 +53,23 @@
       <file leaf-file-name="Update.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="166" column="36" lean-forward="false" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="36" />
+            <state relative-caret-position="170">
+              <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
               <folding>
-                <element signature="e#40#55#0#PHP" expanded="true" />
+                <element signature="e#111#150#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Variant.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Variant.php">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="312">
+              <caret line="171" column="26" lean-forward="false" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
+              <folding>
+                <element signature="e#40#55#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,26 +82,6 @@
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018_03_19_205932_create_updates_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_19_205932_create_updates_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Record.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Record.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="6" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="17" selection-end-column="6" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -229,9 +200,9 @@
         <option value="$PROJECT_DIR$/resources/views/updates.blade.php" />
         <option value="$PROJECT_DIR$/app/Update.php" />
         <option value="$PROJECT_DIR$/app/ShopifyModel.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -374,6 +345,12 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="overhaul-dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="overhaul-dev" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Jobs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="overhaul-dev" type="b2602c69:ProjectViewProjectNode" />
@@ -528,7 +505,7 @@
       <workItem from="1521052293173" duration="6342000" />
       <workItem from="1521475883453" duration="7235000" />
       <workItem from="1521487898350" duration="8047000" />
-      <workItem from="1521497988370" duration="20784000" />
+      <workItem from="1521497988370" duration="21562000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -877,7 +854,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148692000" />
+    <option name="totallyTimeSpent" value="149470000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1250,27 +1227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/updates.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding>
-            <marker date="1521572643596" expanded="true" signature="9:23" ph="..." />
-            <marker date="1521572643596" expanded="true" signature="35:44" ph="..." />
-            <marker date="1521572643596" expanded="true" signature="783:802" ph="..." />
-            <marker date="1521572643596" expanded="true" signature="896:960" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Record.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="17" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_19_205932_create_updates_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -1287,13 +1243,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/ShopifyModel.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="120" column="37" lean-forward="false" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="37" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="125">
+          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,41 +1259,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/updates.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <marker date="1521572643596" expanded="true" signature="9:23" ph="..." />
+            <marker date="1521572643596" expanded="true" signature="35:44" ph="..." />
+            <marker date="1521572643596" expanded="true" signature="783:802" ph="..." />
+            <marker date="1521572643596" expanded="true" signature="896:960" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ShopifyModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="120" column="37" lean-forward="false" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="37" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#110#149#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#111#150#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="100" column="16" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="109" selection-end-column="19" />
           <folding>
             <element signature="e#28#43#0#PHP" expanded="true" />
-            <element signature="e#3350#5041#0#PHP" expanded="false" />
-            <element signature="e#5047#5660#0#PHP" expanded="false" />
+            <element signature="e#3535#5226#0#PHP" expanded="false" />
+            <element signature="e#5232#5845#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="166" column="36" lean-forward="false" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="36" />
+        <state relative-caret-position="312">
+          <caret line="171" column="26" lean-forward="false" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
           <folding>
             <element signature="e#40#55#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="31" column="64" lean-forward="false" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
