@@ -24,6 +24,7 @@
                             <dl class="Polaris-DescriptionList">
                                 @foreach($records as $record)
                                     <dt class="Polaris-DescriptionList__Term"><a href="#">{{ Carbon\Carbon::parse($record['created_at'])->format('F, jS Y') }}</a></dt>
+                                    <dd class="Polaris-DescriptionList__Description"></dd>
                                 @endforeach
                             </dl>
                         </div>

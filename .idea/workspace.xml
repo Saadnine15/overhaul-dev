@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="033fea25-32f3-4d6d-80d6-5dca2562a3b0" name="Default" comment="First Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/updates.blade.php" afterPath="$PROJECT_DIR$/resources/views/updates.blade.php" />
     </list>
     <ignored path="shopify-product_update_client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
@@ -96,16 +96,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updates.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="updates.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/updates.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="26" column="85" lean-forward="false" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="85" />
               <folding>
-                <marker date="1521649940325" expanded="true" signature="9:23" ph="..." />
-                <marker date="1521649940325" expanded="true" signature="35:44" ph="..." />
-                <marker date="1521649940325" expanded="true" signature="783:802" ph="..." />
-                <marker date="1521649940325" expanded="true" signature="896:960" ph="..." />
+                <marker date="1521650186573" expanded="true" signature="9:23" ph="..." />
+                <marker date="1521650186573" expanded="true" signature="35:44" ph="..." />
+                <marker date="1521650186573" expanded="true" signature="783:802" ph="..." />
+                <marker date="1521650186573" expanded="true" signature="896:960" ph="..." />
               </folding>
             </state>
           </provider>
@@ -211,8 +211,8 @@
         <option value="$PROJECT_DIR$/app/Update.php" />
         <option value="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" />
         <option value="$PROJECT_DIR$/app/ShopifyModel.php" />
-        <option value="$PROJECT_DIR$/resources/views/updates.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/resources/views/updates.blade.php" />
       </list>
     </option>
   </component>
@@ -491,7 +491,7 @@
       <workItem from="1521052293173" duration="6342000" />
       <workItem from="1521475883453" duration="7235000" />
       <workItem from="1521487898350" duration="8047000" />
-      <workItem from="1521497988370" duration="24418000" />
+      <workItem from="1521497988370" duration="24538000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -840,7 +840,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152326000" />
+    <option name="totallyTimeSpent" value="152446000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1265,6 +1265,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/ShopifyModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="130" column="28" lean-forward="false" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="170" column="78" lean-forward="false" selection-start-line="170" selection-start-column="78" selection-end-line="170" selection-end-column="78" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -1277,35 +1297,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/ShopifyModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="130" column="28" lean-forward="false" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/updates.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="26" column="85" lean-forward="false" selection-start-line="26" selection-start-column="85" selection-end-line="26" selection-end-column="85" />
           <folding>
-            <marker date="1521649940325" expanded="true" signature="9:23" ph="..." />
-            <marker date="1521649940325" expanded="true" signature="35:44" ph="..." />
-            <marker date="1521649940325" expanded="true" signature="783:802" ph="..." />
-            <marker date="1521649940325" expanded="true" signature="896:960" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="170" column="78" lean-forward="false" selection-start-line="170" selection-start-column="78" selection-end-line="170" selection-end-column="78" />
-          <folding>
-            <element signature="e#40#55#0#PHP" expanded="true" />
+            <marker date="1521650186573" expanded="true" signature="9:23" ph="..." />
+            <marker date="1521650186573" expanded="true" signature="35:44" ph="..." />
+            <marker date="1521650186573" expanded="true" signature="783:802" ph="..." />
+            <marker date="1521650186573" expanded="true" signature="896:960" ph="..." />
           </folding>
         </state>
       </provider>
