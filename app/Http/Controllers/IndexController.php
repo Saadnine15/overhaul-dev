@@ -171,7 +171,7 @@ class IndexController extends ShopifyAppInstallationBaseController
 //            'old_qty'=>12,
 //            'new_qty'=>15
 //        ]);
-        return Update::where('id','>',0)->get();
+        return Update::where('id','>',1)->get();
     }
 
     public function updates(){
