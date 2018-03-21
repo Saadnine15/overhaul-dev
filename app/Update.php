@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Update extends Model{
     use SoftDeletes;
     protected $fillable = [
+        'update_id',
         'old_qty',
         'new_qty',
         'old_price',
