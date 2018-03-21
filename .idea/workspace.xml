@@ -4,8 +4,6 @@
     <list default="true" id="033fea25-32f3-4d6d-80d6-5dca2562a3b0" name="Default" comment="First Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" afterPath="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" />
-      <change beforePath="$PROJECT_DIR$/app/ShopifyModel.php" afterPath="$PROJECT_DIR$/app/ShopifyModel.php" />
-      <change beforePath="$PROJECT_DIR$/app/Update.php" afterPath="$PROJECT_DIR$/app/Update.php" />
     </list>
     <ignored path="shopify-product_update_client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,16 +36,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductsUpdater.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductsUpdater.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
+            <state relative-caret-position="133">
+              <caret line="98" column="47" lean-forward="false" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
               <folding>
                 <element signature="e#28#43#0#PHP" expanded="true" />
-                <element signature="e#3205#4896#0#PHP" expanded="false" />
-                <element signature="e#4902#5515#0#PHP" expanded="false" />
-                <element signature="e#5521#6363#0#PHP" expanded="false" />
+                <element signature="e#3164#4855#0#PHP" expanded="false" />
+                <element signature="e#4861#5474#0#PHP" expanded="false" />
+                <element signature="e#5480#6322#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -73,12 +71,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShopifyModel.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShopifyModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/ShopifyModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="121" column="28" lean-forward="false" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="116">
+              <caret line="120" column="37" lean-forward="false" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="37" />
+              <folding>
+                <element signature="e#6#89#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,7 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>custom</find>
       <find>oval</find>
       <find>readCSV</find>
       <find>select</find>
@@ -169,6 +168,7 @@
       <find>save</find>
       <find>postUpdatedProduct</find>
       <find>storeRecord</find>
+      <find>getVariant</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -218,8 +218,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/views/updates.blade.php" />
         <option value="$PROJECT_DIR$/app/Update.php" />
-        <option value="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" />
         <option value="$PROJECT_DIR$/app/ShopifyModel.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" />
       </list>
     </option>
   </component>
@@ -516,7 +516,7 @@
       <workItem from="1521052293173" duration="6342000" />
       <workItem from="1521475883453" duration="7235000" />
       <workItem from="1521487898350" duration="8047000" />
-      <workItem from="1521497988370" duration="19071000" />
+      <workItem from="1521497988370" duration="19840000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -865,7 +865,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146979000" />
+    <option name="totallyTimeSpent" value="147748000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1277,14 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Variant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1309,24 +1301,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
+    <entry file="file://$PROJECT_DIR$/app/Variant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
-          <folding>
-            <element signature="e#28#43#0#PHP" expanded="true" />
-            <element signature="e#3205#4896#0#PHP" expanded="false" />
-            <element signature="e#4902#5515#0#PHP" expanded="false" />
-            <element signature="e#5521#6363#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/ShopifyModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="121" column="28" lean-forward="false" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="116">
+          <caret line="120" column="37" lean-forward="false" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="37" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="98" column="47" lean-forward="false" selection-start-line="98" selection-start-column="47" selection-end-line="98" selection-end-column="47" />
+          <folding>
+            <element signature="e#28#43#0#PHP" expanded="true" />
+            <element signature="e#3164#4855#0#PHP" expanded="false" />
+            <element signature="e#4861#5474#0#PHP" expanded="false" />
+            <element signature="e#5480#6322#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
