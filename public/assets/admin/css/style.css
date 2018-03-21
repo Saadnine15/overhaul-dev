@@ -200,3 +200,6 @@ h2.sfui{
 .Polaris-Card__Section {
     padding: 2.5rem !important;
 }
+.card-heading{
+    font-size: 15px;
+}
