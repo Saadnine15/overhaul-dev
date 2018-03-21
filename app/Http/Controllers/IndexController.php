@@ -168,7 +168,7 @@ class IndexController extends ShopifyAppInstallationBaseController
 
     public function updates(){
         $store = session()->get('shop');
-      $records= Record::where('store_name',$store)->orderBy('id','DESC')->paginate(10);
+      $records= Record::where('store_name',$store)->orderBy('id','DESC')->get();
 
         return view('updates', [
             'shop' => session()->get('shop'),
