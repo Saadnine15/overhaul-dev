@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Record;
 use App\ShopifyBaseModel;
 use App\JobsFailed;
+use App\Update;
 use Request;
 use App\StoreSettings;
 use App\BillingAPI;
@@ -161,6 +162,10 @@ class IndexController extends ShopifyAppInstallationBaseController
 
     public function getRecords(){
         return Record::where('id','>',0)->get();
+    }
+
+    public function getRecordsDetail(){
+        return Update::where('id','>',0)->get();
     }
 
     public function updates(){

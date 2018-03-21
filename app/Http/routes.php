@@ -29,6 +29,7 @@ Route::get('/install', 'IndexController@installApp');
 Route::get('/test', 'IndexController@test');
 Route::get('/webhook_test', 'IndexController@__test');
 Route::get('/records','IndexController@getRecords');
+Route::get('/getRecordsDetail','IndexController@getRecordsDetail');
 Route::get('/updates','IndexController@updates');
 
 
