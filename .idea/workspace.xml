@@ -39,8 +39,8 @@
       <file leaf-file-name="ProductsUpdater.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="100" column="16" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="109" selection-end-column="19" />
+            <state relative-caret-position="248">
+              <caret line="104" column="44" lean-forward="false" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
               <folding>
                 <element signature="e#28#43#0#PHP" expanded="true" />
                 <element signature="e#3535#5226#0#PHP" expanded="false" />
@@ -331,30 +331,6 @@
             <path>
               <item name="overhaul-dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="overhaul-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="overhaul-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="overhaul-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="overhaul-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="overhaul-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="overhaul-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="overhaul-dev" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Jobs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="overhaul-dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="overhaul-dev" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -505,7 +481,7 @@
       <workItem from="1521052293173" duration="6342000" />
       <workItem from="1521475883453" duration="7235000" />
       <workItem from="1521487898350" duration="8047000" />
-      <workItem from="1521497988370" duration="21619000" />
+      <workItem from="1521497988370" duration="22025000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -854,7 +830,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149527000" />
+    <option name="totallyTimeSpent" value="149933000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1227,14 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_19_205932_create_updates_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WebhookController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -1272,16 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/ShopifyModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="120" column="37" lean-forward="false" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="37" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Record.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1302,10 +1260,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_03_19_205932_create_updates_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="23" column="48" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/ShopifyModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="120" column="37" lean-forward="false" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="37" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/ProductsUpdater.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="100" column="16" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="109" selection-end-column="19" />
+        <state relative-caret-position="248">
+          <caret line="104" column="44" lean-forward="false" selection-start-line="104" selection-start-column="44" selection-end-line="104" selection-end-column="44" />
           <folding>
             <element signature="e#28#43#0#PHP" expanded="true" />
             <element signature="e#3535#5226#0#PHP" expanded="false" />

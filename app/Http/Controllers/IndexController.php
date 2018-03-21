@@ -169,11 +169,7 @@ class IndexController extends ShopifyAppInstallationBaseController
             'update_id'=>12,
             'sku'=>'test',
             'old_qty'=>12,
-            'new_qty'=>15,
-            'old_price'=>'',
-            'new_price'=>'',
-            'old_compare_at_price'=>'',
-            'new_compare_at_price'=>''
+            'new_qty'=>15
         ]);
         return Update::where('id','>',0)->get();
     }
