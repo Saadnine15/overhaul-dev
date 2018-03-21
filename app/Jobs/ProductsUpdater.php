@@ -96,8 +96,9 @@ class ProductsUpdater extends Job implements ShouldQueue
 
                 $variant_id = $variant["id"];
                 //unset($variant["id"]);
-                Variant::getVariant($variant_id);
-//                Update::create(['update_id'=>$newRecordId,'sku'=>$variant['sku']]);
+               $shopVariant= Variant::getVariant($variant_id);
+
+                Update::create(['update_id'=>$newRecordId,'sku'=>$variant['sku'],'old_qty'=>$shopVariant['inventory_quantity'],'new_qty'=>$variant['inventory_quantity'],'old_price'=>'','new_price'=>'','old_compare_at_price'=>'','new_compare_at_price'=>'']);
 
                 unset($variant["sku"]);
 
