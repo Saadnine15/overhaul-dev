@@ -18,9 +18,9 @@
         <div class="Polaris-Page__Content">
             <div class="Polaris-Layout">
                 {{--dashboard intro--}}
-                <div class="Polaris-Layout__AnnotatedSection">
-                    <div class="Polaris-Layout__AnnotationWrapper">
-                        <div class="Polaris-Layout__Annotation">
+                <div class="Polaris-EmptyState progressing">
+                    <div class="Polaris-EmptyState__Section">
+                        <div class="Polaris-EmptyState__DetailsContainer">
                             <div class="col-sm-12">
                                 <h1 class="Polaris-Heading">Dashboard</h1>
                                 <span class="Polaris-TextStyle--variationSubdued"> Welcome to Overhaul,
