@@ -162,7 +162,7 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function getRecords(){
-        return Job::where('id','>',0)->get();
+        return Job::all();
         return Record::where('id','>',0)->get();
     }
 
