@@ -118,10 +118,7 @@ class ShopifyModel
         }
         return false;
     }
-    public static function getVariant( $entity_id, $params = [] ){
-        $uri = "/variant.json?id=".$entity_id;
-        return self::get($uri, $params);
-    }
+
 
     public static function count( $params = [] ){
         $uri = self::get_uri();
