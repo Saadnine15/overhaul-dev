@@ -168,8 +168,8 @@ class IndexController extends ShopifyAppInstallationBaseController
         Update::create([
             'update_id'=>12,
             'sku'=>'test',
-            'old_qty'=>'12',
-            'new_qty'=>'15',
+            'old_qty'=>12,
+            'new_qty'=>15,
             'old_price'=>'',
             'new_price'=>'',
             'old_compare_at_price'=>'',
