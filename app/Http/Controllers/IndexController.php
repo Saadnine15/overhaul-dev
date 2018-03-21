@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\Job;
 use App\Record;
 use App\ShopifyBaseModel;
 use App\JobsFailed;
@@ -161,6 +162,7 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function getRecords(){
+        return Job::where('id','>',0)->get();
         return Record::where('id','>',0)->get();
     }
 
