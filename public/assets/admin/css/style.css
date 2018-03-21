@@ -191,5 +191,9 @@ h2.sfui{
     display: none;
 }
 .Polaris-Heading{
-    margin-bottom: 5px;
+    margin-bottom: 10px !important;
+    font-size: 1.7rem !important;
+}
+.Polaris-TextStyle--variationSubdued{
+    font-size: 15px;
 }

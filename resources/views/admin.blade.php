@@ -18,18 +18,16 @@
         <div class="Polaris-Page__Content">
             <div class="Polaris-Layout">
                 {{--dashboard intro--}}
-                <div class="Polaris-EmptyState progressing">
+                <div class="Polaris-EmptyState">
                     <div class="Polaris-EmptyState__Section">
                         <div class="Polaris-EmptyState__DetailsContainer">
-                            <div class="col-sm-12">
-                                <h1 class="Polaris-Heading">Dashboard</h1>
-                                <span class="Polaris-TextStyle--variationSubdued"> Welcome to Overhaul,
-                                    we make bulk product updates quick and easy.
-                                    Just upload your CSV, select the SKU, then identify the fields you would
-                                    like to update.</span>
+                            <h1 class="Polaris-Heading">Dashboard</h1>
+                            <span class="Polaris-TextStyle--variationSubdued"> Welcome to Overhaul,
+                                we make bulk product updates quick and easy.
+                                Just upload your CSV, select the SKU, then identify the fields you would
+                                like to update.</span>
 
 
-                            </div>
 
                         </div>
 
