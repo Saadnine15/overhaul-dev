@@ -62,13 +62,16 @@ var angularApp = angular.module('product-updating-app', included_modules)
                         shopifyApp.Bar.loadingOff();
                         return;
                     }
-                    shopifyApp.flashNotice("Successfully Updated.");
+
                     var refreshIntervalId =   setInterval(function(){
 
                         $http.get('/checkJobStatus').then(function(value) {
-                            console.log(value.data);
+
                             if(value.data != 'running'){
                                 clearInterval(refreshIntervalId);
+                                shopifyApp.flashNotice("Successfully Updated.");
+                                $('.progressing').show();
+                                $('.progressBar').hide();
                             }
                         });
                     },10000);
