@@ -49,14 +49,14 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="136">
+              <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding>
-                <element signature="e#6881#9424#0" expanded="false" />
-                <element signature="e#10372#10674#0" expanded="false" />
-                <element signature="e#10697#10956#0" expanded="false" />
-                <element signature="e#11001#11056#0" expanded="false" />
-                <element signature="e#11102#11158#0" expanded="false" />
+                <element signature="e#6832#9375#0" expanded="false" />
+                <element signature="e#10323#10625#0" expanded="false" />
+                <element signature="e#10648#10907#0" expanded="false" />
+                <element signature="e#10952#11007#0" expanded="false" />
+                <element signature="e#11053#11109#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -549,7 +549,7 @@
       <workItem from="1521052293173" duration="6342000" />
       <workItem from="1521475883453" duration="7235000" />
       <workItem from="1521487898350" duration="8047000" />
-      <workItem from="1521497988370" duration="52315000" />
+      <workItem from="1521497988370" duration="52403000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -898,7 +898,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180223000" />
+    <option name="totallyTimeSpent" value="180311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1390,14 +1390,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        <state relative-caret-position="136">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
-            <element signature="e#6881#9424#0" expanded="false" />
-            <element signature="e#10372#10674#0" expanded="false" />
-            <element signature="e#10697#10956#0" expanded="false" />
-            <element signature="e#11001#11056#0" expanded="false" />
-            <element signature="e#11102#11158#0" expanded="false" />
+            <element signature="e#6832#9375#0" expanded="false" />
+            <element signature="e#10323#10625#0" expanded="false" />
+            <element signature="e#10648#10907#0" expanded="false" />
+            <element signature="e#10952#11007#0" expanded="false" />
+            <element signature="e#11053#11109#0" expanded="false" />
           </folding>
         </state>
       </provider>

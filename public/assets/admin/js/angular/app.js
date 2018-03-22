@@ -15,7 +15,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     console.log(11);
                     if(value.data != 'running'){
                         clearInterval(refreshIntervalId);
-                        shopifyApp.flashNotice("Successfully Updated.");
+
                         $('.progressing').show();
                         $('.progressBar').hide();
                     }else{
