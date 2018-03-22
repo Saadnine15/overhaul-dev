@@ -38,7 +38,10 @@ class IndexController extends ShopifyAppInstallationBaseController
 
 
     public function admin(){
-
+        $tracking= Tracking::where('store_name',session()->get('shop'))->orderby('created_at', 'desc')->first();
+        if($tracking ==''){
+            return "job ruunning";
+        }
         $firstRecord=Record::where('store_name',session()->get('shop'))->orderby('created_at', 'desc')->first();
         return view('admin', [
             'shop' => session()->get('shop'),

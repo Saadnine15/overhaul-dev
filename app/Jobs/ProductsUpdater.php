@@ -3,6 +3,7 @@
 namespace App\Jobs;
 
 use App\Record;
+use App\Tracking;
 use App\Update;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
@@ -109,6 +110,7 @@ class ProductsUpdater extends Job implements ShouldQueue
             ShopifyApiThrottle::init();
             $index++;
         }
+        Tracking::where('store_name',$this->store_settings->store_name)->delete();
     }
 
 
