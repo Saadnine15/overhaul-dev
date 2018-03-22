@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="033fea25-32f3-4d6d-80d6-5dca2562a3b0" name="Default" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/assets/admin/js/angular/app.js" afterPath="$PROJECT_DIR$/public/assets/admin/js/angular/app.js" />
-    </list>
+    <list default="true" id="033fea25-32f3-4d6d-80d6-5dca2562a3b0" name="Default" comment="First Commit" />
     <ignored path="shopify-product_update_client.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -50,14 +47,14 @@
         <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="269">
-              <caret line="291" column="42" lean-forward="false" selection-start-line="291" selection-start-column="42" selection-end-line="291" selection-end-column="42" />
+              <caret line="291" column="39" lean-forward="true" selection-start-line="291" selection-start-column="39" selection-end-line="291" selection-end-column="39" />
               <folding>
                 <element signature="e#488#1102#0" expanded="false" />
                 <element signature="e#6845#9388#0" expanded="false" />
-                <element signature="e#10333#10635#0" expanded="false" />
-                <element signature="e#10658#10917#0" expanded="false" />
-                <element signature="e#10962#11017#0" expanded="false" />
-                <element signature="e#11063#11119#0" expanded="false" />
+                <element signature="e#10331#10633#0" expanded="false" />
+                <element signature="e#10656#10915#0" expanded="false" />
+                <element signature="e#10960#11015#0" expanded="false" />
+                <element signature="e#11061#11117#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -550,7 +547,7 @@
       <workItem from="1521052293173" duration="6342000" />
       <workItem from="1521475883453" duration="7235000" />
       <workItem from="1521487898350" duration="8047000" />
-      <workItem from="1521497988370" duration="50167000" />
+      <workItem from="1521497988370" duration="50178000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -899,7 +896,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178075000" />
+    <option name="totallyTimeSpent" value="178086000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1392,14 +1389,14 @@
     <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
-          <caret line="291" column="42" lean-forward="false" selection-start-line="291" selection-start-column="42" selection-end-line="291" selection-end-column="42" />
+          <caret line="291" column="39" lean-forward="true" selection-start-line="291" selection-start-column="39" selection-end-line="291" selection-end-column="39" />
           <folding>
             <element signature="e#488#1102#0" expanded="false" />
             <element signature="e#6845#9388#0" expanded="false" />
-            <element signature="e#10333#10635#0" expanded="false" />
-            <element signature="e#10658#10917#0" expanded="false" />
-            <element signature="e#10962#11017#0" expanded="false" />
-            <element signature="e#11063#11119#0" expanded="false" />
+            <element signature="e#10331#10633#0" expanded="false" />
+            <element signature="e#10656#10915#0" expanded="false" />
+            <element signature="e#10960#11015#0" expanded="false" />
+            <element signature="e#11061#11117#0" expanded="false" />
           </folding>
         </state>
       </provider>

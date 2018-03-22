@@ -289,7 +289,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                         buttons: {
                             primary: {
                                 label: 'Dashboard',
-                                href: '../'
+                                href: '/'
                             }
                         }
                     }
