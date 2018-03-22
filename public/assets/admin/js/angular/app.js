@@ -26,7 +26,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                 });
             },10000);
         }
-        $scope.checkStatus();
+        // $scope.checkStatus();
         $scope.headerOptions = [];
         $scope.headerOptions.offered = [
             {
