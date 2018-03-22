@@ -64,10 +64,6 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     }
                     shopifyApp.flashNotice("Successfully Updated.");
 
-
-
-
-
                     shopifyApp.Bar.loadingOff();
 
 
@@ -307,5 +303,5 @@ var angularApp = angular.module('product-updating-app', included_modules)
         this.flashNotice = function(message){
             ShopifyApp.flashNotice(message);
         }
-    }
+    });
 
