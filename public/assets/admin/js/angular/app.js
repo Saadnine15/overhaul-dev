@@ -65,14 +65,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     shopifyApp.flashNotice("Successfully Updated.");
 
 
-                    var refreshIntervalId =   setInterval(function(){
-                        console.log(11);
-                        $http.get('/checkJobStatus').then(function(value) {
-                                if(value.data != 'running'){
-                                    clearInterval(refreshIntervalId);
-                                }
-                        });
-                    },3000);
+
 
 
                     shopifyApp.Bar.loadingOff();
@@ -88,12 +81,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     shopifyApp.Bar.loadingOff();
                 });
         }
-        $scope.checkJobCompleted = function () {
-            $http.get('/checkJobStatus').then(function(value) {
 
-            });
-            return value.data;
-        }
         $scope.table = [];
         $scope.updateTable = function(headerOption){
 
