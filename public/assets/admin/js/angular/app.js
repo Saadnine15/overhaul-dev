@@ -64,7 +64,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     }
                     shopifyApp.flashNotice("Successfully Updated.");
                     var refreshIntervalId =   setInterval(function(){
-                        console.log(running);
+                        console.log(11);
                         $http.get('/checkJobStatus').then(function(value) {
                             if(value != 'running'){
                                 clearInterval(refreshIntervalId);
