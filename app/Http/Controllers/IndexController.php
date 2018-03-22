@@ -6,6 +6,7 @@ use App\Jobs\Job;
 use App\Record;
 use App\ShopifyBaseModel;
 use App\JobsFailed;
+use App\Tracking;
 use App\Update;
 use Request;
 use App\StoreSettings;
@@ -164,6 +165,9 @@ class IndexController extends ShopifyAppInstallationBaseController
     public function getRecords(){
         return Job::all();
         return Record::where('id','>',0)->get();
+    }
+    public function tracking(){
+        return Tracking::where('id','>',0)->get();
     }
 
 

@@ -31,6 +31,7 @@ Route::get('/webhook_test', 'IndexController@__test');
 Route::get('/records','IndexController@getRecords');
 Route::get('/getRecordsDetail','IndexController@getRecordsDetail');
 Route::get('/updates','IndexController@updates');
+Route::get('/tracking','IndexController@tracking');
 
 
 Route::get('/delete-stores/{store_id}/{soft?}', 'IndexController@deleteStores');

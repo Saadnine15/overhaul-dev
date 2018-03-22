@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 use App\Jobs\ProductsUpdater;
+use App\Tracking;
 use Request;
 use App\StoreSettings;
 use App\Models\ProductVariant as ProductVariantModel;
@@ -36,7 +37,7 @@ class APIController extends ShopifyApiBaseController {
             'header_options' => $header_options
         ]);
         $job = new ProductsUpdater($store_settings, $json_file_name=null, $json);
-
+        Tracking::create(['store_name'=>session()->get('shop')]);
         $this->dispatch($job);
 
     }
