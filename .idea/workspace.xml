@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="033fea25-32f3-4d6d-80d6-5dca2562a3b0" name="Default" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/APIController.php" />
     </list>
     <ignored path="shopify-product_update_client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="APIController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="APIController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state relative-caret-position="255">
+              <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -48,8 +48,8 @@
       <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+            <state relative-caret-position="108">
+              <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
@@ -81,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppServiceProvider.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppServiceProvider.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            <state relative-caret-position="238">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
                 <element signature="e#33#50#0#PHP" expanded="true" />
               </folding>
@@ -215,13 +215,13 @@
         <option value="$PROJECT_DIR$/public/assets/admin/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/admin.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_03_22_145725_create_tracking_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/APIController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_03_22_151451_create_newupdates_table.php" />
         <option value="$PROJECT_DIR$/app/Tracking.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/app/Jobs/ProductsUpdater.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/APIController.php" />
       </list>
     </option>
   </component>
@@ -532,7 +532,7 @@
       <workItem from="1521052293173" duration="6342000" />
       <workItem from="1521475883453" duration="7235000" />
       <workItem from="1521487898350" duration="8047000" />
-      <workItem from="1521497988370" duration="37456000" />
+      <workItem from="1521497988370" duration="37642000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -881,7 +881,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165364000" />
+    <option name="totallyTimeSpent" value="165550000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1318,24 +1318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bus/DispatchesJobs.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -1358,11 +1340,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state relative-caret-position="238">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="e#33#50#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="41" column="39" lean-forward="true" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/APIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

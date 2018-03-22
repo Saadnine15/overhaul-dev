@@ -36,8 +36,10 @@ class APIController extends ShopifyApiBaseController {
             'csv_data' => $csv_data,
             'header_options' => $header_options
         ]);
-        $job = new ProductsUpdater($store_settings, $json_file_name=null, $json);
         Tracking::create(['store_name'=>session()->get('shop')]);
+
+
+        $job = new ProductsUpdater($store_settings, $json_file_name=null, $json);
         $this->dispatch($job);
 
     }
