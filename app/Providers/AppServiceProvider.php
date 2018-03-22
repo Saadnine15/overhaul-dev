@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use App\Tracking;
-use Queue;
+use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Queue\Events\JobProcessed;
 
