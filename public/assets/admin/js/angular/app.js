@@ -71,7 +71,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                                 clearInterval(refreshIntervalId);
                             }
                         });
-                    },3000);
+                    },10000);
 
                     shopifyApp.Bar.loadingOff();
 
