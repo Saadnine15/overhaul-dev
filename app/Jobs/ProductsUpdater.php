@@ -110,7 +110,6 @@ class ProductsUpdater extends Job implements ShouldQueue
             ShopifyApiThrottle::init();
             $index++;
         }
-        Tracking::where('store_name',$this->store_settings->store_name)->delete();
     }
 
 

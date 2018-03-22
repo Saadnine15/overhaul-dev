@@ -2,9 +2,11 @@
 
 namespace App\Providers;
 
+use App\Tracking;
 use Queue;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Queue\Events\JobProcessed;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,9 +18,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Queue::after(function (JobProcessed $event) {
-            // $event->connectionName
-            // $event->job
-            // $event->data
+            Tracking::where('store_name',$this->store_settings->store_name)->delete();
+
         });
     }
 
