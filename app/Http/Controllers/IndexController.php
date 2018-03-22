@@ -167,7 +167,7 @@ class IndexController extends ShopifyAppInstallationBaseController
     }
 
     public function getRecords(){
-        return Tracking::truncate();
+        return Tracking::where('id','>',0)->get();
         return Record::where('id','>',0)->get();
     }
     public function checkJobStatus(){
