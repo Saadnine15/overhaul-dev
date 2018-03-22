@@ -13,8 +13,8 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="{{ secure_asset('assets/admin/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('assets/admin/css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/latest/polaris.css">
+    <link href="{{ secure_asset('assets/admin/css/style.css') }}" rel="stylesheet">
 
     <!-- Google Web Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
