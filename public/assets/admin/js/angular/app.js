@@ -66,8 +66,8 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     var refreshIntervalId =   setInterval(function(){
 
                         $http.get('/checkJobStatus').then(function(value) {
-                            console.log(value);
-                            if(value != 'running'){
+                            console.log(value.data);
+                            if(value.data != 'running'){
                                 clearInterval(refreshIntervalId);
                             }
                         });
