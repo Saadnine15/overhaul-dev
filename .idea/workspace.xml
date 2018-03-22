@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="033fea25-32f3-4d6d-80d6-5dca2562a3b0" name="Default" comment="First Commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin.blade.php" />
     </list>
     <ignored path="shopify-product_update_client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="527">
               <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
@@ -83,6 +83,24 @@
                 <marker date="1521747885729" expanded="true" signature="1844:1858" ph="..." />
                 <marker date="1521747885729" expanded="true" signature="1904:1913" ph="..." />
                 <marker date="1521747885729" expanded="true" signature="2085:2153" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="87" column="42" lean-forward="true" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+              <folding>
+                <element signature="e#4595#4614#0#HTML" expanded="true" />
+                <marker date="1521748236144" expanded="true" signature="9:23" ph="..." />
+                <marker date="1521748236144" expanded="true" signature="35:44" ph="..." />
+                <marker date="1521748236144" expanded="true" signature="1241:1262" ph="..." />
+                <marker date="1521748236144" expanded="true" signature="1242:1261" ph="..." />
+                <marker date="1521748236144" expanded="true" signature="2978:3045" ph="..." />
+                <marker date="1521748236144" expanded="true" signature="3386:3391" ph="..." />
               </folding>
             </state>
           </provider>
@@ -201,7 +219,6 @@
         <option value="$PROJECT_DIR$/app/Update.php" />
         <option value="$PROJECT_DIR$/app/ShopifyModel.php" />
         <option value="$PROJECT_DIR$/resources/views/updates.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_03_22_145725_create_tracking_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_03_22_151451_create_newupdates_table.php" />
         <option value="$PROJECT_DIR$/app/Tracking.php" />
@@ -213,6 +230,7 @@
         <option value="$PROJECT_DIR$/public/assets/admin/css/style.css" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin.blade.php" />
       </list>
     </option>
   </component>
@@ -524,7 +542,7 @@
       <workItem from="1521052293173" duration="6342000" />
       <workItem from="1521475883453" duration="7235000" />
       <workItem from="1521487898350" duration="8047000" />
-      <workItem from="1521497988370" duration="47963000" />
+      <workItem from="1521497988370" duration="48217000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -873,7 +891,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175871000" />
+    <option name="totallyTimeSpent" value="176125000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1182,21 +1200,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="198" column="20" lean-forward="true" selection-start-line="198" selection-start-column="20" selection-end-line="198" selection-end-column="20" />
-          <folding>
-            <marker date="1521653380409" expanded="true" signature="9:23" ph="..." />
-            <marker date="1521653380409" expanded="true" signature="35:44" ph="..." />
-            <marker date="1521653380409" expanded="true" signature="1241:1262" ph="..." />
-            <marker date="1521653380409" expanded="true" signature="1242:1261" ph="..." />
-            <marker date="1521653380409" expanded="true" signature="2978:3045" ph="..." />
-            <marker date="1521653380409" expanded="true" signature="3386:3391" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1364,9 +1367,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="527">
           <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="87" column="42" lean-forward="true" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+          <folding>
+            <element signature="e#4595#4614#0#HTML" expanded="true" />
+            <marker date="1521748236144" expanded="true" signature="9:23" ph="..." />
+            <marker date="1521748236144" expanded="true" signature="35:44" ph="..." />
+            <marker date="1521748236144" expanded="true" signature="1241:1262" ph="..." />
+            <marker date="1521748236144" expanded="true" signature="1242:1261" ph="..." />
+            <marker date="1521748236144" expanded="true" signature="2978:3045" ph="..." />
+            <marker date="1521748236144" expanded="true" signature="3386:3391" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

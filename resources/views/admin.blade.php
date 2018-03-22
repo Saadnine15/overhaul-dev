@@ -82,7 +82,7 @@
                                             <progress class="Polaris-ProgressBar__Progress" value="100"
                                                       max="100"></progress>
                                             <div class="Polaris-ProgressBar__Indicator" role="progressbar"
-                                                 aria-hidden="true" style="width: 100%;"><span
+                                                 aria-hidden="true" style="width: 75%;"><span
                                                         class="Polaris-ProgressBar__Label">75%</span></div>
                                         </div>
                                     </div>
