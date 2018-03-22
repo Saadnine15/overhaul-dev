@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
         Queue::after(function (JobProcessed $event) {
             Tracking::create('store_name',$event);
 
-            Tracking::where('store_name',session()->get('shop'))->delete();
+//            Tracking::where('store_name',session()->get('shop'))->delete();
 
         });
     }
