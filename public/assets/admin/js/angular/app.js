@@ -7,6 +7,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
     })
 
     .controller('StoreController', ['$rootScope', '$scope', '$http', 'shopifyApp', function ($rootScope, $scope, $http, shopifyApp) {
+        $scope.checkStatus();
         $scope.headerOptions = [];
         $scope.headerOptions.offered = [
             {
@@ -63,18 +64,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                         return;
                     }
 
-                    var refreshIntervalId =   setInterval(function(){
-
-                        $http.get('/checkJobStatus').then(function(value) {
-
-                            if(value.data != 'running'){
-                                clearInterval(refreshIntervalId);
-                                shopifyApp.flashNotice("Successfully Updated.");
-                                $('.progressing').show();
-                                $('.progressBar').hide();
-                            }
-                        });
-                    },10000);
+                    $scope.checkStatus();
 
                     shopifyApp.Bar.loadingOff();
 
@@ -89,7 +79,23 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     shopifyApp.Bar.loadingOff();
                 });
         }
+        $scope.checkStatus =function () {
+            var refreshIntervalId =   setInterval(function(){
 
+                $http.get('/checkJobStatus').then(function(value) {
+
+                    if(value.data != 'running'){
+                        clearInterval(refreshIntervalId);
+                        shopifyApp.flashNotice("Successfully Updated.");
+                        $('.progressing').show();
+                        $('.progressBar').hide();
+                    }else{
+                        $('.progressing').hide();
+                        $('.progressBar').show();
+                    }
+                });
+            },10000);
+        }
         $scope.table = [];
         $scope.updateTable = function(headerOption){
 
@@ -275,10 +281,23 @@ var angularApp = angular.module('product-updating-app', included_modules)
     .service('shopifyApp', function(){
         this.init = function(page_title, callbackFunction, secondaryButtons){
             ShopifyApp.ready(function(){
-                var config = {
-                    title: page_title,
+                if(window.location.href.indexOf("updates") > -1) {
+                    var config = {
+                        title: page_title,
+                        buttons: {
+                            primary: {
+                                label: 'Dashboard',
+                                callback: callbackFunction
+                            }
+                        }
+                    }
+                }else{
+                    var config = {
+                        title: page_title,
 
-                };
+                    };
+                }
+
                 if(secondaryButtons && secondaryButtons.length){
                     config.buttons.secondary = secondaryButtons;
                 }
