@@ -45,10 +45,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
         $scope.updateProducts = function(){
             $('.progressing').hide();
             $('.progressBar').show();
-            var prgrs ;
-            for (prgrs = 0; prgrs < 100; prgrs++) {
-                $('.progressBar').css('width',prgrs+'%');
-            }
+           
             var config = {};
             var params = {
                 header_options: $scope.headerOptions.offered,
@@ -66,8 +63,17 @@ var angularApp = angular.module('product-updating-app', included_modules)
                         return;
                     }
                     shopifyApp.flashNotice("Successfully Updated.");
-                    $('.progressing').show();
-                    $('.progressBar').hide();
+
+
+                    var refreshIntervalId =   setInterval(function(){
+                        $http.get('/checkJobStatus').then(function(value) {
+                                if(value.data != 'running'){
+                                    clearInterval(refreshIntervalId);
+                                }
+                        });
+                    },3000);
+
+
                     shopifyApp.Bar.loadingOff();
 
 
@@ -81,7 +87,12 @@ var angularApp = angular.module('product-updating-app', included_modules)
                     shopifyApp.Bar.loadingOff();
                 });
         }
+        $scope.checkJobCompleted = function () {
+            $http.get('/checkJobStatus').then(function(value) {
 
+            });
+            return value.data;
+        }
         $scope.table = [];
         $scope.updateTable = function(headerOption){
 
@@ -307,5 +318,5 @@ var angularApp = angular.module('product-updating-app', included_modules)
         this.flashNotice = function(message){
             ShopifyApp.flashNotice(message);
         }
-    });
+    }
 
