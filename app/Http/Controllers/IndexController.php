@@ -171,7 +171,7 @@ class IndexController extends ShopifyAppInstallationBaseController
         return Record::where('id','>',0)->get();
     }
     public function checkJobStatus(){
-        $data=Tracking::where('shop_name',session()->get('shop'))->first();
+        $data=Tracking::where('store_name',session()->get('shop'))->first();
         if(isset($data[0])){
             return "running";
         }else{
