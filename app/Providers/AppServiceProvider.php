@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Queue::after(function (JobProcessed $event) {
-            Tracking::where('store_name',session()->get('shop'))->delete();
+            Tracking::where('store_name','clubtask.myshopify.com')->delete();
 
         });
     }
