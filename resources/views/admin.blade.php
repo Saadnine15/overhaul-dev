@@ -39,9 +39,8 @@
                     <div class="Polaris-EmptyState progressing">
                         <div class="Polaris-EmptyState__Section">
                             <div class="Polaris-EmptyState__DetailsContainer">
-                                <div class="Polaris-Card">
-                                    <div class="Polaris-Card__Section">
-                                        <div class="Polaris-Banner" tabindex="0" role="status" aria-live="polite"
+
+                                <div class="Polaris-Banner" tabindex="0" role="status" aria-live="polite"
                                      aria-labelledby="Banner1Heading" aria-describedby="Banner1Content">
                                     <div class="Polaris-Banner__Ribbon"><span
                                                 class="Polaris-Icon Polaris-Icon--colorInkLighter Polaris-Icon--hasBackdrop"><svg
@@ -59,8 +58,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -74,7 +71,8 @@
                 <div class="Polaris-EmptyState progressing progressBar">
                     <div class="Polaris-EmptyState__Section">
                         <div class="Polaris-EmptyState__DetailsContainer">
-
+                            <div class="Polaris-Card">
+                                <div class="Polaris-Card__Section">
                             {{--<div class="Polaris-SettingAction">--}}
                             {{--<div class="Polaris-SettingAction__Setting">--}}
                             <span class="Polaris-TextStyle--variationStrong">Update in Progress</span>
@@ -91,9 +89,9 @@
                                     </div>
                                 </div>
                             </div>
-                            {{--</div>--}}
+                            </div>
 
-                            {{--</div>--}}
+                            </div>
 
                         </div>
                     </div>
