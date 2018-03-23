@@ -8,23 +8,23 @@ var angularApp = angular.module('product-updating-app', included_modules)
 
     .controller('StoreController', ['$rootScope', '$scope', '$http', 'shopifyApp', function ($rootScope, $scope, $http, shopifyApp) {
 
-        // $scope.checkStatus =function () {
-        //     var refreshIntervalId =   setInterval(function(){
-        //
-        //         $http.get('/checkJobStatus').then(function(value) {
-        //             console.log(11);
-        //             if(value.data != 'running'){
-        //                 clearInterval(refreshIntervalId);
-        //
-        //                 $('.progressing').show();
-        //                 $('.progressBar').hide();
-        //             }else{
-        //                 $('.progressing').hide();
-        //                 $('.progressBar').show();
-        //             }
-        //         });
-        //     },10000);
-        // }
+        $scope.checkStatus =function () {
+            var refreshIntervalId =   setInterval(function(){
+
+                $http.get('/checkJobStatus').then(function(value) {
+                    console.log(11);
+                    if(value.data != 'running'){
+                        clearInterval(refreshIntervalId);
+
+                        $('.progressing').show();
+                        $('.progressBar').hide();
+                    }else{
+                        $('.progressing').hide();
+                        $('.progressBar').show();
+                    }
+                });
+            },10000);
+        }
         // $scope.checkStatus();
         $scope.headerOptions = [];
         $scope.headerOptions.offered = [
@@ -82,7 +82,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                         return;
                     }
 
-                    // $scope.checkStatus();
+                    $scope.checkStatus();
 
                     shopifyApp.Bar.loadingOff();
 
