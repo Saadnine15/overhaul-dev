@@ -17,8 +17,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Queue::after(function ($connection, $job, $data) {
-            var_dump($data);
+        Queue::after(function ($event) {
+            var_dump($event->data);
             exit;
 //            dd($event);
 //            Tracking::create(['store_name',$event]);
