@@ -36,33 +36,31 @@
 
                 {{--notification--}}
                 @if(isset($firstRecord))
-                    <div class="Polaris-Layout__AnnotatedSection">
-                        <div class="Polaris-EmptyState progressing">
-                            <div class="Polaris-EmptyState__Section">
-                                <div class="Polaris-EmptyState__DetailsContainer">
 
-                                    <div class="Polaris-Banner" tabindex="0" role="status" aria-live="polite"
-                                         aria-labelledby="Banner1Heading" aria-describedby="Banner1Content">
-                                        <div class="Polaris-Banner__Ribbon"><span
-                                                    class="Polaris-Icon Polaris-Icon--colorInkLighter Polaris-Icon--hasBackdrop"><svg
-                                                        class="Polaris-Icon__Svg" viewBox="0 0 20 20"><g
-                                                            fill-rule="evenodd"><path fill="currentColor"
-                                                                                      d="M2 3h11v4h6l-2 4 2 4H8v-4H3"></path><path
-                                                                d="M16.105 11.447L17.381 14H9v-2h4a1 1 0 0 0 1-1V8h3.38l-1.274 2.552a.993.993 0 0 0 0 .895zM2.69 4H12v6H4.027L2.692 4zm15.43 7l1.774-3.553A1 1 0 0 0 19 6h-5V3c0-.554-.447-1-1-1H2.248L1.976.782a1 1 0 1 0-1.953.434l4 18a1.006 1.006 0 0 0 1.193.76 1 1 0 0 0 .76-1.194L4.47 12H7v3a1 1 0 0 0 1 1h11c.346 0 .67-.18.85-.476a.993.993 0 0 0 .044-.972l-1.775-3.553z"></path></g></svg></span>
-                                        </div>
-                                        <div>
+                    <div class="Polaris-EmptyState progressing">
+                        <div class="Polaris-EmptyState__Section">
+                            <div class="Polaris-EmptyState__DetailsContainer">
 
-                                            <div class="Polaris-Banner__Content" id="Banner1Content">
-                                                <p>Last update was was complete
-                                                    on {{ Carbon\Carbon::parse($firstRecord['created_at'])->format('m/d/Y') }}
-                                                    . <a href="/updates">View previous updates</a></p>
-                                            </div>
+                                <div class="Polaris-Banner" tabindex="0" role="status" aria-live="polite"
+                                     aria-labelledby="Banner1Heading" aria-describedby="Banner1Content">
+                                    <div class="Polaris-Banner__Ribbon"><span
+                                                class="Polaris-Icon Polaris-Icon--colorInkLighter Polaris-Icon--hasBackdrop"><svg
+                                                    class="Polaris-Icon__Svg" viewBox="0 0 20 20"><g
+                                                        fill-rule="evenodd"><path fill="currentColor"
+                                                                                  d="M2 3h11v4h6l-2 4 2 4H8v-4H3"></path><path
+                                                            d="M16.105 11.447L17.381 14H9v-2h4a1 1 0 0 0 1-1V8h3.38l-1.274 2.552a.993.993 0 0 0 0 .895zM2.69 4H12v6H4.027L2.692 4zm15.43 7l1.774-3.553A1 1 0 0 0 19 6h-5V3c0-.554-.447-1-1-1H2.248L1.976.782a1 1 0 1 0-1.953.434l4 18a1.006 1.006 0 0 0 1.193.76 1 1 0 0 0 .76-1.194L4.47 12H7v3a1 1 0 0 0 1 1h11c.346 0 .67-.18.85-.476a.993.993 0 0 0 .044-.972l-1.775-3.553z"></path></g></svg></span>
+                                    </div>
+                                    <div>
+
+                                        <div class="Polaris-Banner__Content" id="Banner1Content">
+                                            <p>Last update was was complete
+                                                on {{ Carbon\Carbon::parse($firstRecord['created_at'])->format('m/d/Y') }}
+                                                . <a href="/updates">View previous updates</a></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 @endif
 
