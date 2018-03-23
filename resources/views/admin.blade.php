@@ -20,7 +20,7 @@
                 {{--dashboard intro--}}
                 <div class="Polaris-EmptyState">
                     <div class="Polaris-EmptyState__Section">
-                        <div class="Polaris-EmptyState__DetailsContainer">
+                        <div class="Polaris-EmptyState__DetailsContainer" style="    width: 98%;">
                             <h1 class="Polaris-Heading">Dashboard</h1>
                             <span class="Polaris-TextStyle--variationSubdued"> Welcome to Overhaul,
                                 we make bulk product updates quick and easy.
