@@ -59,14 +59,14 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="150">
+              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
-                <element signature="e#6877#9420#0" expanded="false" />
-                <element signature="e#10368#10670#0" expanded="false" />
-                <element signature="e#10693#10952#0" expanded="false" />
-                <element signature="e#10997#11052#0" expanded="false" />
-                <element signature="e#11098#11154#0" expanded="false" />
+                <element signature="e#6880#9423#0" expanded="false" />
+                <element signature="e#10371#10673#0" expanded="false" />
+                <element signature="e#10696#10955#0" expanded="false" />
+                <element signature="e#11000#11055#0" expanded="false" />
+                <element signature="e#11101#11157#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -187,11 +187,11 @@
       <find>config</find>
       <find>admin</find>
       <find>a</find>
-      <find>.ser</find>
       <find>appser</find>
       <find>getRecords</find>
       <find>progressBa</find>
       <find>trac</find>
+      <find>.ser</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -545,7 +545,7 @@
       <workItem from="1521052293173" duration="6342000" />
       <workItem from="1521475883453" duration="7235000" />
       <workItem from="1521487898350" duration="8047000" />
-      <workItem from="1521497988370" duration="60826000" />
+      <workItem from="1521497988370" duration="60912000" />
     </task>
     <task id="LOCAL-00037" summary="First Commit">
       <created>1480500761748</created>
@@ -894,7 +894,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188734000" />
+    <option name="totallyTimeSpent" value="188820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1396,14 +1396,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/admin/js/angular/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
-            <element signature="e#6877#9420#0" expanded="false" />
-            <element signature="e#10368#10670#0" expanded="false" />
-            <element signature="e#10693#10952#0" expanded="false" />
-            <element signature="e#10997#11052#0" expanded="false" />
-            <element signature="e#11098#11154#0" expanded="false" />
+            <element signature="e#6880#9423#0" expanded="false" />
+            <element signature="e#10371#10673#0" expanded="false" />
+            <element signature="e#10696#10955#0" expanded="false" />
+            <element signature="e#11000#11055#0" expanded="false" />
+            <element signature="e#11101#11157#0" expanded="false" />
           </folding>
         </state>
       </provider>

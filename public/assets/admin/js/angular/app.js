@@ -82,7 +82,7 @@ var angularApp = angular.module('product-updating-app', included_modules)
                         return;
                     }
 
-                    $scope.checkStatus();
+                    // $scope.checkStatus();
 
                     shopifyApp.Bar.loadingOff();
 
