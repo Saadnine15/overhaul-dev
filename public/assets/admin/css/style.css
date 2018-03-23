@@ -203,3 +203,6 @@ h2.sfui{
 .card-heading{
     font-size: 15px;
 }
+.Polaris-Banner:focus {
+    box-shadow:none;
+}

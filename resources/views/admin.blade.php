@@ -39,8 +39,9 @@
                     <div class="Polaris-EmptyState progressing">
                         <div class="Polaris-EmptyState__Section">
                             <div class="Polaris-EmptyState__DetailsContainer">
-
-                                <div class="Polaris-Banner" tabindex="0" role="status" aria-live="polite"
+                                <div class="Polaris-Card">
+                                    <div class="Polaris-Card__Section">
+                                        <div class="Polaris-Banner" tabindex="0" role="status" aria-live="polite"
                                      aria-labelledby="Banner1Heading" aria-describedby="Banner1Content">
                                     <div class="Polaris-Banner__Ribbon"><span
                                                 class="Polaris-Icon Polaris-Icon--colorInkLighter Polaris-Icon--hasBackdrop"><svg
@@ -56,6 +57,8 @@
                                                 on {{ Carbon\Carbon::parse($firstRecord['created_at'])->format('m/d/Y') }}
                                                 . <a href="/updates">View previous updates</a></p>
                                         </div>
+                                    </div>
+                                </div>
                                     </div>
                                 </div>
                             </div>
