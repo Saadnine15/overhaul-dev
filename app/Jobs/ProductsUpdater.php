@@ -19,7 +19,7 @@ class ProductsUpdater extends Job implements ShouldQueue
 {
     use InteractsWithQueue, SerializesModels;
 
-    protected $store_settings;
+    public $store_settings;
     protected $variants_array;
     protected $variant_sku_array;
     protected $csv_data;
