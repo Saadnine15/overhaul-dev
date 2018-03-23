@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
         Queue::after(function ($event) {
             $command = unserialize($event->data['data']['command']);
 //            $store_settings = $command->store_settings;
-            var_dump($command->store_settings);
+            var_dump($command->store_settings->store_name);
             exit;
 //            dd($event);
 //            Tracking::create(['store_name',$event]);
