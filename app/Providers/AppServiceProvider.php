@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Queue::after(function (JobProcessed $event) {
-            dd($event);
+//            dd($event);
 //            Tracking::create(['store_name',$event]);
 
 //            Tracking::where('store_name',session()->get('shop'))->delete();
