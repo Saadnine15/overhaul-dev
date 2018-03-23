@@ -39,7 +39,7 @@
 
                     <div class="Polaris-EmptyState progressing">
                         <div class="Polaris-EmptyState__Section">
-                            <div class="Polaris-EmptyState__DetailsContainer" style="width: 98%;">
+                            <div  style="width: 98%;">
 
                                 <div class="Polaris-Banner" tabindex="0" role="status" aria-live="polite"
                                      aria-labelledby="Banner1Heading" aria-describedby="Banner1Content">
